@@ -1,8 +1,8 @@
 ---
-title: Flash Multiplayer Dwarf Game
+title: "Tequila Time: Browser Based Drinking Game"
 description: 
-slug: flash-multiplayer-dwarf-game
-date: 2016-09-18 20:03:23
+slug: tequila-time-drinking-game
+date: 2016-09-18 23:09:37
 #image: cover.jpg
 categories:
   - Example Category
@@ -12,19 +12,40 @@ tags:
 weight: 1
 ---
 
-This is one of the first large projects I worked on when starting out with AS3. Me and two friends worked together; I wrote the code, Matthew Coles created the majority of the graphics and Reuben Briggs provided ideas and tested the game. I wanted to read into multiplayer game development so took a look at <a href=""https://playerio.com"">Player.IO</a>. By writing AS3 client side code and C# server side code tests, I implemented the API with a basic blocky terrain generation algorithm I had been working on to create a basic multiplayer base. We then decided to expand on this by creating a Minecraft/Terraria inspired side scroller with dwarves who explore and destroy the terrain. Requires enabled Flash player:
+"<p><strong>Click to play Tequila Time: <a href=""/tequila/"">https://jemgunay.co.uk/tequila/</a>.</strong> The required files can also be downloaded from the link below and accessed offline.</p>
+<br>
 
-<div class="col-xs-12 centre-padding vertical-padding">
-	<div class=""video-container"">
-		<object width="600" height="400" class="img-shadow">
-			<param name="movie" value="content/dwarf/dwarf.swf">
-			<embed src="content/dwarf/dwarf.swf" width="600" height="400"></embed>
-		</object>
+<p>With the introduction of tequila at uni pre-drinks, I had the idea to throw together a comical drinking game surrounding the theme of Mexico. A random time within the user defined range is generated - once the Tequila! button is pressed, the timer ticks down and triggers one of three sensational songs randomly, causing the Mexican man to rotate in excitement. A message corresponding to the tune instructs everyone to drink specific drinks or shots; these messages can be changed to accommodate the available beverages. Once a section of the tune is played, the process loops round creating a regular drinking interval for everyone. I threw together Tequila Time using HTML, CSS and JavaScript - the audio elements of HTML5 may not supported on some mobile browsers.</p>
+<br>
+
+  <div class=""row"">
+    <div class=""col-xs-6 col-sm-4"">
+        <img class=""img-responsive img-shadow img-modal"" src=""content/tequila/frame.jpg"" alt=""Game start"">
+    </div>
+    <div class=""col-xs-6 col-sm-4"">
+        <img class=""img-responsive img-shadow img-modal"" src=""content/tequila/frame2.jpg"" alt=""Message modification"">
+    </div>
+    <div class=""col-xs-6 col-sm-4"">
+        <img class=""img-responsive img-shadow img-modal"" src=""content/tequila/frame3.jpg"" alt=""Music and animation triggered"">
+    </div>
+  </div>
+<br><br>
+
+<div class=""col-xs-12"">
+	<div class=""panel panel-default"">
+		<div class=""panel-body"">
+
+			<div class=""text-center"">
+				<span>
+					<a href=""content/tequila/tequila.zip"">
+						<span class=""glyphicon glyphicon-file"" aria-hidden=""true""></span>
+					</a>
+				</span>
+				<span class=""content-download"">
+					<a href=""content/tequila/tequila.zip"">Click to download</a>
+				</span>
+			</div>
+			
+		</div>
 	</div>
-</div>
-
-Although basic and occasionally buggy, it has a great deal of character and I am still proud to call it a first major project.
-
-- Enter your name and select one of the two dwarf characters to join the game.
-- Normal biomes have mushrooms and exploding pumpkins. Snowy biomes have a destructible snowman.
-- WASD or ARROWS to move, CTRL + Left Click to remove block (temperamental), type ""/help"" in chat for commands. Enter to send a message in chat.
+</div>"

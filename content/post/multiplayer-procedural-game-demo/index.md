@@ -1,8 +1,8 @@
 ---
-title: Flash Multiplayer Dwarf Game
+title: Multiplayer Procedural Game Demo
 description: 
-slug: flash-multiplayer-dwarf-game
-date: 2016-09-18 20:03:23
+slug: multiplayer-procedural-game-demo
+date: 2020-09-07 00:00:00
 #image: cover.jpg
 categories:
   - Example Category
@@ -12,19 +12,37 @@ tags:
 weight: 1
 ---
 
-This is one of the first large projects I worked on when starting out with AS3. Me and two friends worked together; I wrote the code, Matthew Coles created the majority of the graphics and Reuben Briggs provided ideas and tested the game. I wanted to read into multiplayer game development so took a look at <a href=""https://playerio.com"">Player.IO</a>. By writing AS3 client side code and C# server side code tests, I implemented the API with a basic blocky terrain generation algorithm I had been working on to create a basic multiplayer base. We then decided to expand on this by creating a Minecraft/Terraria inspired side scroller with dwarves who explore and destroy the terrain. Requires enabled Flash player:
+"<p>See the GitHub repository <strong><a href=""https://github.com/jemgunay/procedural-game"" target=""_blank"">here</a></strong>.</p>
 
-<div class="col-xs-12 centre-padding vertical-padding">
-	<div class=""video-container"">
-		<object width="600" height="400" class="img-shadow">
-			<param name="movie" value="content/dwarf/dwarf.swf">
-			<embed src="content/dwarf/dwarf.swf" width="600" height="400"></embed>
-		</object>
-	</div>
+<p>I was keen to apply my Golang experience to the world of game development, of which I'd explored in several other languages. I came across the <a href=""https://github.com/faiface/pixel"" target=""_blank"">Pixel</a> 2D game library and wanted to combine it with the powerful concurrency model and networking packages that Go provides out of the box. The result was a multiplayer procedural terrain game consisting of:</p>
+
+<ul style=""list-style-type:square"">
+   <li><p>A seedable procedural world generator implemented with Perlin noise. Worlds consist of grassy mainland, bodies of water, sandy beaches, and a dynamically generated road network.</p></li>
+   <li><p>Ability to host multiplayer worlds for other players to join.</p></li>
+   <li><p>A basic weapons inventory and ammo system, with the ability to shoot other players.</p></li>
+   <li><p>A flexible and responsive menu system with buttons, text inputs and scroll bars.</p></li>
+   <li><p>Water wave shaders.</p></li>
+</ul>
+<br>
+
+<div class=""row"">
+   <div class=""col-xs-6 col-md-3"">
+      <img class=""img-responsive img-shadow img-modal"" src=""content/procedural_game/screenshot_1.png"">
+   </div>
+   <div class=""col-xs-6 col-md-3"">
+      <img class=""img-responsive img-shadow img-modal"" src=""content/procedural_game/screenshot_2.png"">
+   </div>
+   <div class=""col-xs-6 col-md-3"">
+      <img class=""img-responsive img-shadow img-modal"" src=""content/procedural_game/screenshot_3.png"">
+   </div>
+   <div class=""col-xs-6 col-md-3"">
+      <img class=""img-responsive img-shadow img-modal"" src=""content/procedural_game/screenshot_4.png"">
+   </div>
+   <div class=""col-xs-6 col-md-3"">
+      <img class=""img-responsive img-shadow img-modal"" src=""content/procedural_game/screenshot_5.png"">
+   </div>
+   <div class=""col-xs-6 col-md-3"">
+      <img class=""img-responsive img-shadow img-modal"" src=""content/procedural_game/screenshot_6.png"">
+   </div>
 </div>
-
-Although basic and occasionally buggy, it has a great deal of character and I am still proud to call it a first major project.
-
-- Enter your name and select one of the two dwarf characters to join the game.
-- Normal biomes have mushrooms and exploding pumpkins. Snowy biomes have a destructible snowman.
-- WASD or ARROWS to move, CTRL + Left Click to remove block (temperamental), type ""/help"" in chat for commands. Enter to send a message in chat.
+<br>"

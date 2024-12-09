@@ -1,8 +1,8 @@
 ---
-title: Flash Multiplayer Dwarf Game
+title: Controlling Window Blinds with Alexa
 description: 
-slug: flash-multiplayer-dwarf-game
-date: 2016-09-18 20:03:23
+slug: controlling-window-blinds-with-alexa
+date: 2020-09-08 00:00:00
 #image: cover.jpg
 categories:
   - Example Category
@@ -12,19 +12,23 @@ tags:
 weight: 1
 ---
 
-This is one of the first large projects I worked on when starting out with AS3. Me and two friends worked together; I wrote the code, Matthew Coles created the majority of the graphics and Reuben Briggs provided ideas and tested the game. I wanted to read into multiplayer game development so took a look at <a href=""https://playerio.com"">Player.IO</a>. By writing AS3 client side code and C# server side code tests, I implemented the API with a basic blocky terrain generation algorithm I had been working on to create a basic multiplayer base. We then decided to expand on this by creating a Minecraft/Terraria inspired side scroller with dwarves who explore and destroy the terrain. Requires enabled Flash player:
+"<p>See the GitHub repository <strong><a href=""https://github.com/jemgunay/echo-blinds"" target=""_blank"">here</a></strong>.</p>
 
-<div class="col-xs-12 centre-padding vertical-padding">
-	<div class=""video-container"">
-		<object width="600" height="400" class="img-shadow">
-			<param name="movie" value="content/dwarf/dwarf.swf">
-			<embed src="content/dwarf/dwarf.swf" width="600" height="400"></embed>
-		</object>
-	</div>
+<p>I created an Amazon Alexa skill server in Golang for controlling window blinds. It works by receiving instructions from Alexa utterances, which in turn trigger motors controlled via a Raspberry Pi Zero's GPIO pins. These motors then pull the window blinds cords to rotate and pull them open. The motors and blinds cords were mounted to a 3D printed chassis, of which the models were precisely designed in Blender.</p>
+
+<div class=""row"">
+   <div class=""col-xs-6 col-sm-3"">
+      <img class=""img-responsive img-shadow img-modal"" src=""content/echo_blinds/image_2.jpeg"">
+   </div>
+   <div class=""col-xs-6 col-sm-3"">
+      <img class=""img-responsive img-shadow img-modal"" src=""content/echo_blinds/image_1.jpeg"">
+   </div>
 </div>
+<br>
 
-Although basic and occasionally buggy, it has a great deal of character and I am still proud to call it a first major project.
-
-- Enter your name and select one of the two dwarf characters to join the game.
-- Normal biomes have mushrooms and exploding pumpkins. Snowy biomes have a destructible snowman.
-- WASD or ARROWS to move, CTRL + Left Click to remove block (temperamental), type ""/help"" in chat for commands. Enter to send a message in chat.
+<div class=""col-xs-12 col-sm-6 centre-padding vertical-padding"">
+    <div class=""video-container"">
+        <iframe class=""img-shadow"" width=""640"" height=""360"" src=""https://www.youtube.com/embed/fgj6HONCQOs"" frameborder=""0"" allowfullscreen></iframe>
+    </div>
+</div>
+"

@@ -1,8 +1,8 @@
 ---
-title: Flash Multiplayer Dwarf Game
+title: Blender 3D Modelled Chess Board
 description: 
-slug: flash-multiplayer-dwarf-game
-date: 2016-09-18 20:03:23
+slug: blender-3d-modelled-chess-board
+date: 2016-09-19 04:35:45
 #image: cover.jpg
 categories:
   - Example Category
@@ -12,19 +12,48 @@ tags:
 weight: 1
 ---
 
-This is one of the first large projects I worked on when starting out with AS3. Me and two friends worked together; I wrote the code, Matthew Coles created the majority of the graphics and Reuben Briggs provided ideas and tested the game. I wanted to read into multiplayer game development so took a look at <a href=""https://playerio.com"">Player.IO</a>. By writing AS3 client side code and C# server side code tests, I implemented the API with a basic blocky terrain generation algorithm I had been working on to create a basic multiplayer base. We then decided to expand on this by creating a Minecraft/Terraria inspired side scroller with dwarves who explore and destroy the terrain. Requires enabled Flash player:
-
-<div class="col-xs-12 centre-padding vertical-padding">
-	<div class=""video-container"">
-		<object width="600" height="400" class="img-shadow">
-			<param name="movie" value="content/dwarf/dwarf.swf">
-			<embed src="content/dwarf/dwarf.swf" width="600" height="400"></embed>
-		</object>
-	</div>
+"<p>I took a module at university focussing on 3D modelling techniques which gave me the opportunity to create a realistic and substantial model of a photographed object. I had to create an animation including the model and had to produce a Python script which manipulated the scene in some way. I settled on modelling my chess board/pieces, sculpting them to scale and texturing them realistically.</p>
+<br>
+<div class=""row"">
+    <div class=""col-xs-6 col-sm-4"">
+        <img class=""img-responsive img-shadow img-modal"" src=""content/blender_chess/frame.jpg"" alt=""Original real life chess board photo"">
+    </div>
+    <div class=""col-xs-6 col-sm-4"">
+        <img class=""img-responsive img-shadow img-modal"" src=""content/blender_chess/frame2.jpg"" alt=""Entire room scene with chess board"">
+    </div>
+    <div class=""col-xs-6 col-sm-4"">
+        <img class=""img-responsive img-shadow img-modal"" src=""content/blender_chess/frame3.jpg"" alt=""Entire room scene with chess board"">
+    </div>
+    <div class=""col-xs-6 col-sm-4"">
+        <img class=""img-responsive img-shadow img-modal"" src=""content/blender_chess/frame4.jpg"" alt=""Chess board model close up render"">
+    </div>
+    <div class=""col-xs-6 col-sm-4"">
+        <img class=""img-responsive img-shadow img-modal"" src=""content/blender_chess/frame5.jpg"" alt=""Chess board model close up render"">
+    </div>
+    <div class=""col-xs-6 col-sm-4"">
+        <img class=""img-responsive img-shadow img-modal"" src=""content/blender_chess/frame6.jpg"" alt=""Chess board model close up render with exploding king"">
+    </div>
 </div>
 
-Although basic and occasionally buggy, it has a great deal of character and I am still proud to call it a first major project.
+<br>
+<p>I animated the camera panning in towards the chess board as the piece storage draws open; a game is played by invisible players, taking turns one move at a time. Once a king is in check mate, he explodes in shame, scattering shards of himself across the scene. This was achieved using Blender's Cell Fracture add-on.</p>
+<div class=""col-xs-12 centre-padding vertical-padding"">
+    <div class=""video-container"">
+        <iframe class=""img-shadow"" width=""640"" height=""360"" src=""https://www.youtube.com/embed/pH1fOCwrZd0"" frameborder=""0"" allowfullscreen></iframe>
+    </div>
+</div>
 
-- Enter your name and select one of the two dwarf characters to join the game.
-- Normal biomes have mushrooms and exploding pumpkins. Snowy biomes have a destructible snowman.
-- WASD or ARROWS to move, CTRL + Left Click to remove block (temperamental), type ""/help"" in chat for commands. Enter to send a message in chat.
+<br>
+<p>The Python script randomises the positions and orientations of all chess pieces on their side of the board, creating a new game scenario. However, the script does not respect the rules of chess, meaning unrealistic and impossible game scenarios can be generated. Within Blender, the user can move a chess piece from one of the storage trays above the board and execute the script; this causes the piece to be included in the new randomised game scene. When a piece is moved below the top of the board, it is excluded from the game scene.</p>
+<br>
+<div class=""row"">
+    <div class=""col-xs-6 col-sm-4"">
+        <img class=""img-responsive img-shadow img-modal"" src=""content/blender_chess/frame7.jpg"" alt=""A game scene randomised by the Python script"">
+    </div>
+    <div class=""col-xs-6 col-sm-4"">
+        <img class=""img-responsive img-shadow img-modal"" src=""content/blender_chess/frame8.jpg"" alt=""A game scene randomised by the Python script"">
+    </div>
+    <div class=""col-xs-6 col-sm-4"">
+        <img class=""img-responsive img-shadow img-modal"" src=""content/blender_chess/frame9.jpg"" alt=""A game scene randomised by the Python script"">
+    </div>
+</div>"

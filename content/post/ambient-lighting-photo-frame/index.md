@@ -1,8 +1,8 @@
 ---
-title: Flash Multiplayer Dwarf Game
+title: Ambient Lighting Photo Frame
 description: 
-slug: flash-multiplayer-dwarf-game
-date: 2016-09-18 20:03:23
+slug: ambient-lighting-photo-frame
+date: 2016-09-19 02:59:59
 #image: cover.jpg
 categories:
   - Example Category
@@ -12,19 +12,24 @@ tags:
 weight: 1
 ---
 
-This is one of the first large projects I worked on when starting out with AS3. Me and two friends worked together; I wrote the code, Matthew Coles created the majority of the graphics and Reuben Briggs provided ideas and tested the game. I wanted to read into multiplayer game development so took a look at <a href=""https://playerio.com"">Player.IO</a>. By writing AS3 client side code and C# server side code tests, I implemented the API with a basic blocky terrain generation algorithm I had been working on to create a basic multiplayer base. We then decided to expand on this by creating a Minecraft/Terraria inspired side scroller with dwarves who explore and destroy the terrain. Requires enabled Flash player:
+"<p>I wanted to make a photo frame more interesting to give as a gift, so created an ambient lighting effect at the back of the frame using a small circuit which was originally powered by an Arduino Uno. The C++ code which handles the timing of the different coloured LEDs was then recompiled for an ATtiny45 microcontroller in order to reduce the overall scale, cost and wasted power consumption. There are red, green and blue LEDs allowing the display of the majority of the visible light spectrum in a smooth transition with vivid intensity.</p>
 
-<div class="col-xs-12 centre-padding vertical-padding">
-	<div class=""video-container"">
-		<object width="600" height="400" class="img-shadow">
-			<param name="movie" value="content/dwarf/dwarf.swf">
-			<embed src="content/dwarf/dwarf.swf" width="600" height="400"></embed>
-		</object>
+<br>
+<div class=""row"">
+	<div class=""col-xs-6 col-sm-4"">
+		<img class=""img-responsive img-shadow img-modal"" src=""content/ambient_frame/frame.jpg"" alt=""Frame lighting examples"">
+	</div>
+	<div class=""col-xs-6 col-sm-4"">
+		<img class=""img-responsive img-shadow img-modal"" src=""content/ambient_frame/frame2.jpg"" alt=""Frame close up with blue LED powered"">
+	</div>
+	<div class=""col-xs-6 col-sm-4"">
+		<img class=""img-responsive img-shadow img-modal"" src=""content/ambient_frame/frame3.jpg"" alt=""Frame close up with red and green LEDs powered"">
 	</div>
 </div>
+<br>
 
-Although basic and occasionally buggy, it has a great deal of character and I am still proud to call it a first major project.
-
-- Enter your name and select one of the two dwarf characters to join the game.
-- Normal biomes have mushrooms and exploding pumpkins. Snowy biomes have a destructible snowman.
-- WASD or ARROWS to move, CTRL + Left Click to remove block (temperamental), type ""/help"" in chat for commands. Enter to send a message in chat.
+<div class=""col-xs-12 centre-padding vertical-padding"">
+    <div class=""video-container"">
+        <iframe class=""img-shadow"" width=""640"" height=""360"" src=""https://www.youtube.com/embed/4v7B8vSlyEk"" frameborder=""0"" allowfullscreen></iframe>
+    </div>
+</div>"

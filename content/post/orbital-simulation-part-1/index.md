@@ -1,14 +1,14 @@
 ---
-title: Flash Multiplayer Dwarf Game
+title: C++ Orbital Simulation (Part 1)
 description: 
-slug: flash-multiplayer-dwarf-game
-date: 2016-09-18 20:03:23
+slug: orbital-simulation-part-1
+date: 2016-09-18 21:05:26
 #image: cover.jpg
 categories:
   - Example Category
 tags:
-  - "Flash (AS3)"
-  - Game
+  - "C++"
+  - Simulation
 weight: 1
 ---
 

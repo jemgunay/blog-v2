@@ -1,8 +1,8 @@
 ---
-title: Flash Multiplayer Dwarf Game
+title: Evolutionary Driving with Genetic Algorithms
 description: 
-slug: flash-multiplayer-dwarf-game
-date: 2016-09-18 20:03:23
+slug: evolutionary-driving-with-genetic-algorithms
+date: 2020-09-10 00:00:00
 #image: cover.jpg
 categories:
   - Example Category
@@ -12,19 +12,16 @@ tags:
 weight: 1
 ---
 
-This is one of the first large projects I worked on when starting out with AS3. Me and two friends worked together; I wrote the code, Matthew Coles created the majority of the graphics and Reuben Briggs provided ideas and tested the game. I wanted to read into multiplayer game development so took a look at <a href=""https://playerio.com"">Player.IO</a>. By writing AS3 client side code and C# server side code tests, I implemented the API with a basic blocky terrain generation algorithm I had been working on to create a basic multiplayer base. We then decided to expand on this by creating a Minecraft/Terraria inspired side scroller with dwarves who explore and destroy the terrain. Requires enabled Flash player:
+"<p>See the GitHub repository <strong><a href=""https://github.com/jemgunay/evolutionary-driving"" target=""_blank"">here</a></strong>.</p>
 
-<div class="col-xs-12 centre-padding vertical-padding">
-	<div class=""video-container"">
-		<object width="600" height="400" class="img-shadow">
-			<param name="movie" value="content/dwarf/dwarf.swf">
-			<embed src="content/dwarf/dwarf.swf" width="600" height="400"></embed>
-		</object>
-	</div>
-</div>
+<p>I'm a massive fan of the Box2D physics engine and have wielded it in a few languages as part of game and simulation projects. I spotted a <a href=""https://github.com/ByteArena/box2d"" target=""_blank"">port to Go</a> and wanted to somehow combine this with the Pixel 2D game library; I decided <a href=""http://domasx2.github.io/gamejs-box2d-car-example/"" target=""_blank"">this top-down car demo</a> written in JS with Box2D would be a fun base to create in Go.</p>
 
-Although basic and occasionally buggy, it has a great deal of character and I am still proud to call it a first major project.
+<p>I'd studied evolutionary algorithms at uni but had never actually implemented them. I decided to encode the car's movements as a genetic sequence, and iteratively evolve the car's performance in order to solve a basic problem. The car evolves to drive to and gracefully brake on a green target point. It uses roulette wheel selection combined with random cross overs, swaps and mutations to produce the following generation. The fitness function is a combination of the distance from the target and the final velocity at the end of the sequence execution.</p>
 
-- Enter your name and select one of the two dwarf characters to join the game.
-- Normal biomes have mushrooms and exploding pumpkins. Snowy biomes have a destructible snowman.
-- WASD or ARROWS to move, CTRL + Left Click to remove block (temperamental), type ""/help"" in chat for commands. Enter to send a message in chat.
+<p>The following video illustrates the improvement in fitness between evolutionary iterations. I've also included a surprising solution which evolved, showing how machine learning and evolution in general can provide interesting and less obvious solutions...</p>
+
+<div class=""col-xs-12 centre-padding vertical-padding"">
+   <div class=""video-container"">
+       <iframe class=""img-shadow"" width=""640"" height=""360"" src=""https://www.youtube.com/embed/F2pwEOJhNMs"" frameborder=""0"" allowfullscreen></iframe>
+   </div>
+</div>"
