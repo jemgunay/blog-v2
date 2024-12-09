@@ -13,14 +13,14 @@ tags:
 weight: 1
 ---
 
-This is one of the first large projects I worked on when starting out with AS3. Me and two friends worked together; I wrote the code, Matthew Coles created the majority of the graphics and Reuben Briggs provided ideas and tested the game. I wanted to read into multiplayer game development so took a look at <a href=""https://playerio.com"">Player.IO</a>. By writing AS3 client side code and C# server side code tests, I implemented the API with a basic blocky terrain generation algorithm I had been working on to create a basic multiplayer base. We then decided to expand on this by creating a Minecraft/Terraria inspired side scroller with dwarves who explore and destroy the terrain. Requires enabled Flash player:
+This is one of the first large projects I worked on when starting out with AS3. I worked on this with two friends; I wrote the code, Matty created the majority of the graphics and Reuben provided ideas and tested the game. I wanted to read into multiplayer game development so took a look at [Player.IO](https://playerio.com). By writing AS3 client side code and C# server side code tests, I implemented the API with a basic blocky terrain generation algorithm I had been working on to create a basic multiplayer base. We then decided to expand on this by creating a Minecraft/Terraria inspired side-scroller with dwarves who explore and destroy the terrain. Requires enabled Flash player:
 
 
 <div class="col-xs-12 centre-padding vertical-padding">
 	<div class=""video-container"">
 		<object width="600" height="400" class="img-shadow">
 			<param name="movie" value="content/dwarf/dwarf.swf">
-			<embed src="content/dwarf/dwarf.swf" width="600" height="400"></embed>
+			<embed src="dwarf.swf" width="600" height="400"></embed>
 		</object>
 	</div>
 </div>

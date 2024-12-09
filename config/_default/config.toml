@@ -15,4 +15,5 @@ hasCJKLanguage = false
 disqusShortname = "hugo-theme-stack"
 
 [pagination]
-pagerSize = 5
+# how many posts to show on the homepage
+pagerSize = 99999

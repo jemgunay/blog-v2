@@ -12,19 +12,25 @@ tags:
 weight: 1
 ---
 
-This is one of the first large projects I worked on when starting out with AS3. Me and two friends worked together; I wrote the code, Matthew Coles created the majority of the graphics and Reuben Briggs provided ideas and tested the game. I wanted to read into multiplayer game development so took a look at <a href=""https://playerio.com"">Player.IO</a>. By writing AS3 client side code and C# server side code tests, I implemented the API with a basic blocky terrain generation algorithm I had been working on to create a basic multiplayer base. We then decided to expand on this by creating a Minecraft/Terraria inspired side scroller with dwarves who explore and destroy the terrain. Requires enabled Flash player:
+I was curious about using the <a href=""https://github.com/erincatto/Box2D"">Box2D</a> physics engine to simulate orbital physics, inspired by the gravitational pull mechanic of the planets in Angry Birds Space. The <a href=""http://www.sfml-dev.org"">SFML</a> library was used to draw the planets in the simulation. Planet Earth is fixed to the centre of space, with a variable number of square and triangular satellites orbiting around it; for each satellite spawned, an impulse sized relative to the distance from the central planet is applied to launch it in a random direction, but with a velocity which guides the satellite into a stable orbit. I decided to use an abstract but clean style to make the simulation more interesting and satisfying to watch.</p>
 
-<div class="col-xs-12 centre-padding vertical-padding">
-	<div class=""video-container"">
-		<object width="600" height="400" class="img-shadow">
-			<param name="movie" value="content/dwarf/dwarf.swf">
-			<embed src="content/dwarf/dwarf.swf" width="600" height="400"></embed>
-		</object>
-	</div>
+<p>There are options to create and destroy satellites, which can in turn be dragged around with the mouse - a challenge is to try and throw the satellites back into a successful orbit. There are also controls for zooming and enabling/disabling the gravitational field which creates a gradual scattering effect. I intend to revisit the orbital test to create a more realistic and complex simulation or game.</p>
+<br>
+<p>The simulation can be seen in action below, followed by the program download link.</p>
+
+<div class=""col-xs-12 centre-padding vertical-padding"">
+    <div class=""video-container"">
+        <iframe class=""img-shadow"" width=""640"" height=""360"" src=""https://www.youtube.com/embed/qlLprQlhRuk"" frameborder=""0"" allowfullscreen></iframe>
+    </div>
 </div>
 
-Although basic and occasionally buggy, it has a great deal of character and I am still proud to call it a first major project.
-
-- Enter your name and select one of the two dwarf characters to join the game.
-- Normal biomes have mushrooms and exploding pumpkins. Snowy biomes have a destructible snowman.
-- WASD or ARROWS to move, CTRL + Left Click to remove block (temperamental), type ""/help"" in chat for commands. Enter to send a message in chat.
+<div class=""text-center"">
+    <span>
+        <a href=""content/orbital/Orbital.zip"">
+            <span class=""glyphicon glyphicon-file"" aria-hidden=""true""></span>
+        </a>
+    </span>
+    <span class=""content-download"">
+        <a href=""content/orbital/Orbital.zip"">Click to download</a>
+    </span>
+</div>
