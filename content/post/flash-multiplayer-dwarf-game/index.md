@@ -8,7 +8,6 @@ date: 2016-09-18 20:03:23
 #  - Example Category
 tags:
   - "Flash (AS3)"
-  - "C#"
   - "Game"
 weight: 1
 ---
@@ -18,7 +17,7 @@ wrote the code, Matty created the majority of the graphics and Reuben provided i
 read into multiplayer game development so took a look at [Player.IO](https://playerio.com). By writing AS3 client side
 code and C# server side code tests, I implemented the API with a basic blocky terrain generation algorithm I had been
 working on to create a basic multiplayer base. We then decided to expand on this by creating a Minecraft/Terraria
-inspired side-scroller with dwarves who explore and destroy the terrain. Requires enabled Flash player:
+inspired side-scroller with dwarves who explore and destroy the terrain.
 
 Although basic and occasionally buggy, it has a great deal of character and I'm proud to call it a first major completed 
 project.
