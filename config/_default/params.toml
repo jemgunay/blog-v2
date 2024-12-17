@@ -37,17 +37,18 @@ enabled = false
 #[widgets.homepage.params]
 #limit = 5
 
-[[widgets.homepage]]
-type = "categories"
+#[[widgets.homepage]]
+#type = "categories"
 
-[widgets.homepage.params]
-limit = 10
-
+#[widgets.homepage.params]
+#limit = 10
+#
 [[widgets.homepage]]
 type = "tag-cloud"
 
+# how many tags to display in right-hand side menu word cloud
 [widgets.homepage.params]
-limit = 10
+limit = 1000
 
 [[widgets.page]]
 type = "toc"

@@ -4,10 +4,10 @@ description:
 slug: ambient-lighting-photo-frame
 date: 2016-09-19 02:59:59
 #image: cover.jpg
-categories:
-  - Example Category
+#categories:
+#  - Example Category
 tags:
-  - Arduino
+  - Electronics
   - "C++"
 weight: 1
 ---

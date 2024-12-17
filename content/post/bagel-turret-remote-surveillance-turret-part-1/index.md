@@ -2,17 +2,19 @@
 title: "Bagel Turret: Remote Surveillance Turret (Part 1)"
 description:
 slug: bagel-turret-remote-surveillance-turret-part-1
-date: 2016-09-22 23:05:44
+date: 2016-09-22 20:50:15
 #image: cover.jpg
-categories:
-  - Example Category
+#categories:
+#  - Example Category
 tags:
   - Python
-  - Raspberry Pi
+  - Electronics
 weight: 1
 ---
 
-Me and my flat mates were fooling around with some cheap BB guns and an epic idea dawned on me: to build an automatic
+See the GitHub repository [here](https://github.com/jemgunay/bagel-turret).
+
+My flat mates and I were fooling around with some cheap BB guns and an fun idea dawned on me: to build an automatic
 surveillance turret! I wanted to develop a web interface for controlling the aiming and firing of the turret and could
 then apply computer vision technologies to detect and aim for specific targets to test the accuracy of the gun.
 
@@ -49,6 +51,5 @@ capabilities - this can be seen in action below. The Python scripts for this pro
 
 {{< youtube ZvdLwr1eku8 >}}
 
-[GitHub project repository](https://github.com/jemgunay/bagel-turret)
 
-[Click here to read part 2!](./bagel-turret-remote-surveillance-turret-part-2)
+[Click here to read part 2!](/p/bagel-turret-remote-surveillance-turret-part-2)

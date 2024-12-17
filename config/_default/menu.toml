@@ -8,10 +8,12 @@
 #icon = "home"
 #newtab = true
 
+# https://tabler.io/icons
 [[social]]
 identifier = "github"
 name = "GitHub"
 url = "https://github.com/jemgunay"
+weight = 1
 
 [social.params]
 icon = "brand-github"
@@ -20,6 +22,16 @@ icon = "brand-github"
 identifier = "linkedin"
 name = "Linkedin"
 url = "https://www.linkedin.com/in/jem-gunay/"
+weight = 2
 
 [social.params]
 icon = "brand-linkedin"
+
+[[social]]
+identifier = "instagram"
+name = "Instagram"
+url = "https://www.instagram.com/tinker_turk/"
+weight = 3
+
+[social.params]
+icon = "brand-instagram"

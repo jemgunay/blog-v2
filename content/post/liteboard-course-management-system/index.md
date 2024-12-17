@@ -1,30 +1,53 @@
 ---
-title: Flash Multiplayer Dwarf Game
-description: 
-slug: flash-multiplayer-dwarf-game
-date: 2016-09-18 20:03:23
+title: "liteboard (Course Management System)"
+description:
+slug: liteboard-course-management-system
+date: 2017-09-26 13:00:00
 #image: cover.jpg
-categories:
-  - Example Category
+#categories:
+#  - Example Category
 tags:
-  - "Flash (AS3)"
-  - Game
+  - "Web Dev"
+  - PHP
 weight: 1
 ---
 
-This is one of the first large projects I worked on when starting out with AS3. Me and two friends worked together; I wrote the code, Matthew Coles created the majority of the graphics and Reuben Briggs provided ideas and tested the game. I wanted to read into multiplayer game development so took a look at <a href=""https://playerio.com"">Player.IO</a>. By writing AS3 client side code and C# server side code tests, I implemented the API with a basic blocky terrain generation algorithm I had been working on to create a basic multiplayer base. We then decided to expand on this by creating a Minecraft/Terraria inspired side scroller with dwarves who explore and destroy the terrain. Requires enabled Flash player:
+See the GitHub repository [here](https://github.com/jemgunay/liteboard).
 
-<div class="col-xs-12 centre-padding vertical-padding">
-	<div class=""video-container"">
-		<object width="600" height="400" class="img-shadow">
-			<param name="movie" value="content/dwarf/dwarf.swf">
-			<embed src="content/dwarf/dwarf.swf" width="600" height="400"></embed>
-		</object>
-	</div>
-</div>
+**liteboard** is a flexible, lightweight and open-source course management system developed for courses and schools which
+do not have access to alternative paid learning tools such as Blackboard or Moodle. The high school sixth form where my
+mum teaches at is an example of such a school, whose resources are limited to a local network shared documents system
+which offers little structure or clarity; in addition, students cannot access this system from home. 'liteboard'
+overcomes these limitations and is currently being successfully trialled by the school's sociology department.
 
-Although basic and occasionally buggy, it has a great deal of character and I am still proud to call it a first major project.
+The following features are supported:
 
-- Enter your name and select one of the two dwarf characters to join the game.
-- Normal biomes have mushrooms and exploding pumpkins. Snowy biomes have a destructible snowman.
-- WASD or ARROWS to move, CTRL + Left Click to remove block (temperamental), type ""/help"" in chat for commands. Enter to send a message in chat.
+- Categorised homepage alerts and news article posts for extended reading.
+- Year plan/calendar with multiple views (year/month/week/day).
+- Customisable nested folder functionality for organising uploaded files and written descriptions (including description
+  formatting tools).
+- Login portal for 'Student' and 'Teacher' accounts; the latter offers administrator controls for creating and modifying
+  content.
+- Account log in and download counters to provide a rough estimate of how many students are using the system.
+- Slick and responsive user interface design - information is displayed very cleanly on mobile (see below).
+
+This comprehensive feature set allows teachers to organise their files and other course content in an organised fashion,
+facilitates the presentation of important dates and notes for students and fellow teachers and can be accessed any the
+majority of desktop, tablet and mobile devices at school or from home; for example, this is useful for students who have
+missed lessons due to illness, providing them with the means to catch up with missed lessons from home.
+
+The project was developed in PHP with the [Fat-Free Framework (F3)](https://fatfreeframework.com) for the back end. HTML, CSS (with Bootstrap) and
+Javascript/jQuery were used for the front end functionality. The application files can be found on GitHub (link at the
+bottom) where installation instructions are provided.
+
+Screenshots on desktop:
+
+![Log in screen](frame.png) ![Editing a description from the 'Teacher' account](frame2.png) 
+![Same folder as previous image but from the 'Student' account view](frame3.png) ![Alerts and News homepage from 'Student' account view](frame4.png)
+
+![Alerts and News homepage from 'Teacher' account view](frame5.png) ![Year Plan/Calendar page from 'Student' account view](frame6.png) ![Year Plan/Calendar page from 'Teacher' account view](frame7.png)
+
+Screenshots demonstrating the responsive design on mobile:
+
+![Alerts and News homepage on a mobile device](frame8.png) ![Collapsed side navigation menu on a mobile device](frame9.png)
+![Files in a folder on a tablet device](frame10.png)
