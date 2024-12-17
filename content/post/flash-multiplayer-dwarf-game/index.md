@@ -8,7 +8,7 @@ date: 2016-09-18 20:03:23
 #  - Example Category
 tags:
   - "Flash (AS3)"
-  - "Game"
+  - Game
 weight: 1
 ---
 

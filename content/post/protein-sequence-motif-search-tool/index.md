@@ -1,7 +1,7 @@
 ---
 title: Protein Sequence Motif Search Tool
-description:
-slug: flash-multiplayer-dwarf-game
+description: 
+slug: protein-sequence-motif-search-tool
 date: 2017-01-10 20:40:38
 #image: cover.jpg
 #categories:
