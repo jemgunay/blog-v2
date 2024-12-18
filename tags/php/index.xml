@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>PHP on Jem Gunay</title><link>https://jemgunay.co.uk/tags/php/</link><description>Recent content in PHP on Jem Gunay</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Tue, 26 Sep 2017 13:00:00 +0000</lastBuildDate><atom:link href="https://jemgunay.co.uk/tags/php/index.xml" rel="self" type="application/rss+xml"/><item><title>liteboard Course Management System</title><link>https://jemgunay.co.uk/p/liteboard-course-management-system/</link><pubDate>Tue, 26 Sep 2017 13:00:00 +0000</pubDate><guid>https://jemgunay.co.uk/p/liteboard-course-management-system/</guid><description>&lt;img src="https://jemgunay.co.uk/p/liteboard-course-management-system/preview.png" alt="Featured image of post liteboard Course Management System" />&lt;p>See the GitHub repository &lt;a class="link" href="https://github.com/jemgunay/liteboard" target="_blank" rel="noopener"
+>here&lt;/a>.&lt;/p>
+&lt;p>&lt;strong>liteboard&lt;/strong> is a flexible, lightweight and open-source course management system developed for courses and schools which
+do not have access to alternative paid learning tools such as Blackboard or Moodle. The high school sixth form where my
+mum teaches at is an example of such a school, whose resources are limited to a local network shared documents system
+which offers little structure or clarity; in addition, students cannot access this system from home. &amp;rsquo;liteboard'
+overcomes these limitations and is currently being successfully trialled by the school&amp;rsquo;s sociology department.&lt;/p>
+&lt;p>The following features are supported:&lt;/p>
+&lt;ul>
+&lt;li>Categorised homepage alerts and news article posts for extended reading.&lt;/li>
+&lt;li>Year plan/calendar with multiple views (year/month/week/day).&lt;/li>
+&lt;li>Customisable nested folder functionality for organising uploaded files and written descriptions (including description
+formatting tools).&lt;/li>
+&lt;li>Login portal for &amp;lsquo;Student&amp;rsquo; and &amp;lsquo;Teacher&amp;rsquo; accounts; the latter offers administrator controls for creating and modifying
+content.&lt;/li>
+&lt;li>Account log in and download counters to provide a rough estimate of how many students are using the system.&lt;/li>
+&lt;li>Slick and responsive user interface design - information is displayed very cleanly on mobile (see below).&lt;/li>
+&lt;/ul>
+&lt;p>This comprehensive feature set allows teachers to organise their files and other course content in an organised fashion,
+facilitates the presentation of important dates and notes for students and fellow teachers and can be accessed any the
+majority of desktop, tablet and mobile devices at school or from home; for example, this is useful for students who have
+missed lessons due to illness, providing them with the means to catch up with missed lessons from home.&lt;/p>
+&lt;p>The project was developed in PHP with the &lt;a class="link" href="https://fatfreeframework.com" target="_blank" rel="noopener"
+>Fat-Free Framework (F3)&lt;/a> for the back end. HTML, CSS (with Bootstrap) and
+Javascript/jQuery were used for the front end functionality. The application files can be found on GitHub (link at the
+bottom) where installation instructions are provided.&lt;/p>
+&lt;p>Screenshots on desktop:&lt;/p>
+&lt;p>&lt;img src="https://jemgunay.co.uk/p/liteboard-course-management-system/frame.png"
+width="1920"
+height="952"
+srcset="https://jemgunay.co.uk/p/liteboard-course-management-system/frame_hu17349309641015120078.png 480w, https://jemgunay.co.uk/p/liteboard-course-management-system/frame_hu8865505292199707974.png 1024w"
+loading="lazy"
+alt="Log in screen"
+class="gallery-image"
+data-flex-grow="201"
+data-flex-basis="484px"
+> &lt;img src="https://jemgunay.co.uk/p/liteboard-course-management-system/frame2.png"
+width="1920"
+height="952"
+srcset="https://jemgunay.co.uk/p/liteboard-course-management-system/frame2_hu18303025857241693653.png 480w, https://jemgunay.co.uk/p/liteboard-course-management-system/frame2_hu7447687314822250536.png 1024w"
+loading="lazy"
+alt="Editing a description from the Teacher account"
+class="gallery-image"
+data-flex-grow="201"
+data-flex-basis="484px"
+>
+&lt;img src="https://jemgunay.co.uk/p/liteboard-course-management-system/frame3.png"
+width="1920"
+height="952"
+srcset="https://jemgunay.co.uk/p/liteboard-course-management-system/frame3_hu11805905592935585571.png 480w, https://jemgunay.co.uk/p/liteboard-course-management-system/frame3_hu15761717916657140607.png 1024w"
+loading="lazy"
+alt="Same folder as previous image but from the Student account view"
+class="gallery-image"
+data-flex-grow="201"
+data-flex-basis="484px"
+> &lt;img src="https://jemgunay.co.uk/p/liteboard-course-management-system/frame4.png"
+width="1919"
+height="950"
+srcset="https://jemgunay.co.uk/p/liteboard-course-management-system/frame4_hu1917903944417180241.png 480w, https://jemgunay.co.uk/p/liteboard-course-management-system/frame4_hu7377449418941651926.png 1024w"
+loading="lazy"
+alt="Alerts and News homepage from Student account view"
+class="gallery-image"
+data-flex-grow="202"
+data-flex-basis="484px"
+>&lt;/p>
+&lt;p>&lt;img src="https://jemgunay.co.uk/p/liteboard-course-management-system/frame5.png"
+width="1920"
+height="953"
+srcset="https://jemgunay.co.uk/p/liteboard-course-management-system/frame5_hu3444321646534642072.png 480w, https://jemgunay.co.uk/p/liteboard-course-management-system/frame5_hu14555228391079631386.png 1024w"
+loading="lazy"
+alt="Alerts and News homepage from Teacher account view"
+class="gallery-image"
+data-flex-grow="201"
+data-flex-basis="483px"
+> &lt;img src="https://jemgunay.co.uk/p/liteboard-course-management-system/frame6.png"
+width="1920"
+height="950"
+srcset="https://jemgunay.co.uk/p/liteboard-course-management-system/frame6_hu9942242098145017571.png 480w, https://jemgunay.co.uk/p/liteboard-course-management-system/frame6_hu12548304240784262644.png 1024w"
+loading="lazy"
+alt="Year Plan/Calendar page from Student account view"
+class="gallery-image"
+data-flex-grow="202"
+data-flex-basis="485px"
+> &lt;img src="https://jemgunay.co.uk/p/liteboard-course-management-system/frame7.png"
+width="1920"
+height="952"
+srcset="https://jemgunay.co.uk/p/liteboard-course-management-system/frame7_hu15601107983589485212.png 480w, https://jemgunay.co.uk/p/liteboard-course-management-system/frame7_hu4542553201725199676.png 1024w"
+loading="lazy"
+alt="Year Plan/Calendar page from Teacher account view"
+class="gallery-image"
+data-flex-grow="201"
+data-flex-basis="484px"
+>&lt;/p>
+&lt;p>Screenshots demonstrating the responsive design on mobile:&lt;/p>
+&lt;p>&lt;img src="https://jemgunay.co.uk/p/liteboard-course-management-system/frame8.png"
+width="540"
+height="960"
+srcset="https://jemgunay.co.uk/p/liteboard-course-management-system/frame8_hu7127533418181037438.png 480w, https://jemgunay.co.uk/p/liteboard-course-management-system/frame8_hu16213418415769652507.png 1024w"
+loading="lazy"
+alt="Alerts and News homepage on a mobile device"
+class="gallery-image"
+data-flex-grow="56"
+data-flex-basis="135px"
+> &lt;img src="https://jemgunay.co.uk/p/liteboard-course-management-system/frame9.png"
+width="540"
+height="960"
+srcset="https://jemgunay.co.uk/p/liteboard-course-management-system/frame9_hu14720795001966703262.png 480w, https://jemgunay.co.uk/p/liteboard-course-management-system/frame9_hu9391032419832530448.png 1024w"
+loading="lazy"
+alt="Collapsed side navigation menu on a mobile device"
+class="gallery-image"
+data-flex-grow="56"
+data-flex-basis="135px"
+>
+&lt;img src="https://jemgunay.co.uk/p/liteboard-course-management-system/frame10.png"
+width="787"
+height="565"
+srcset="https://jemgunay.co.uk/p/liteboard-course-management-system/frame10_hu5790468594994108585.png 480w, https://jemgunay.co.uk/p/liteboard-course-management-system/frame10_hu9087711157321060312.png 1024w"
+loading="lazy"
+alt="Files in a folder on a tablet device"
+class="gallery-image"
+data-flex-grow="139"
+data-flex-basis="334px"
+>&lt;/p></description></item></channel></rss>

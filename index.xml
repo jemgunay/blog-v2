@@ -1,0 +1,914 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Jem Gunay</title><link>https://jemgunay.co.uk/</link><description>Recent content on Jem Gunay</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Thu, 10 Sep 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://jemgunay.co.uk/index.xml" rel="self" type="application/rss+xml"/><item><title>Evolutionary Driving with Genetic Algorithms</title><link>https://jemgunay.co.uk/p/evolutionary-driving-with-genetic-algorithms/</link><pubDate>Thu, 10 Sep 2020 00:00:00 +0000</pubDate><guid>https://jemgunay.co.uk/p/evolutionary-driving-with-genetic-algorithms/</guid><description>&lt;img src="https://jemgunay.co.uk/p/evolutionary-driving-with-genetic-algorithms/preview.png" alt="Featured image of post Evolutionary Driving with Genetic Algorithms" />&lt;p>See the GitHub repository &lt;a class="link" href="https://github.com/jemgunay/evolutionary-driving" target="_blank" rel="noopener"
+>here&lt;/a>.&lt;/p>
+&lt;p>I&amp;rsquo;m a massive fan of the Box2D physics engine and have wielded it in a few languages as part of game and simulation
+projects. I spotted a &lt;a class="link" href="https://github.com/ByteArena/box2d" target="_blank" rel="noopener"
+>Go port&lt;/a> and wanted to somehow combine this with the Pixel 2D
+game library and
+decided &lt;a class="link" href="http://domasx2.github.io/gamejs-box2d-car-example/" target="_blank" rel="noopener"
+>this&lt;/a> top-down car demo written in JS with Box2D would be a
+fun base to start with. So, I went ahead and migrated it to Go with Pixel &amp;amp; Box2D, adding enhancements such as vehicle
+health and destruction.&lt;/p>
+&lt;p>I&amp;rsquo;d studied evolutionary algorithms at uni but had never actually implemented them. I decided to encode the car&amp;rsquo;s
+movements as a genetic sequence, and iteratively evolve the car&amp;rsquo;s performance in order to solve a basic problem. The car
+evolves to drive to and gracefully brake on a green target point. It uses roulette wheel selection combined with random
+cross-overs, swaps and mutations to produce the following generation. The fitness function is a combination of the
+distance from the target and the final velocity at the end of the sequence execution to encourage the car to precisely
+park on the target rather than speed over it.&lt;/p>
+&lt;p>The following video illustrates the improvement in fitness between evolutionary iterations. I&amp;rsquo;ve also included a
+surprising solution which evolved after hundreds of iterations, showing how machine learning and evolution in general
+can provide interesting and less obvious solutions&amp;hellip;&lt;/p>
+&lt;div class="video-wrapper">
+&lt;iframe loading="lazy"
+src="https://www.youtube.com/embed/F2pwEOJhNMs"
+allowfullscreen
+title="YouTube Video"
+>
+&lt;/iframe>
+&lt;/div></description></item><item><title>Controlling Window Blinds with Alexa</title><link>https://jemgunay.co.uk/p/controlling-window-blinds-with-alexa/</link><pubDate>Tue, 08 Sep 2020 00:00:00 +0000</pubDate><guid>https://jemgunay.co.uk/p/controlling-window-blinds-with-alexa/</guid><description>&lt;img src="https://jemgunay.co.uk/p/controlling-window-blinds-with-alexa/preview.png" alt="Featured image of post Controlling Window Blinds with Alexa" />&lt;p>See the GitHub repository &lt;a class="link" href="https://github.com/jemgunay/echo-blinds" target="_blank" rel="noopener"
+>here&lt;/a>.&lt;/p>
+&lt;p>I created an Amazon Alexa skill server in Golang for controlling window blinds. It works by receiving instructions from
+Alexa utterances via AWS, which in turn trigger motors controlled via a Raspberry Pi Zero&amp;rsquo;s GPIO pins. These motors then
+pull the window blinds cords to rotate and pull them open. The motors and blinds cords were mounted to a 3D printed
+chassis, of which the models were precisely designed in Blender.&lt;/p>
+&lt;p>&lt;img src="https://jemgunay.co.uk/p/controlling-window-blinds-with-alexa/frame.jpeg"
+width="2592"
+height="4608"
+srcset="https://jemgunay.co.uk/p/controlling-window-blinds-with-alexa/frame_hu210251372238286484.jpeg 480w, https://jemgunay.co.uk/p/controlling-window-blinds-with-alexa/frame_hu6367401925089421934.jpeg 1024w"
+loading="lazy"
+alt="Initial menu"
+class="gallery-image"
+data-flex-grow="56"
+data-flex-basis="135px"
+> &lt;img src="https://jemgunay.co.uk/p/controlling-window-blinds-with-alexa/frame2.jpeg"
+width="2592"
+height="4608"
+srcset="https://jemgunay.co.uk/p/controlling-window-blinds-with-alexa/frame2_hu4145761068815898416.jpeg 480w, https://jemgunay.co.uk/p/controlling-window-blinds-with-alexa/frame2_hu3317240559596597738.jpeg 1024w"
+loading="lazy"
+alt="Server hosting &amp; world creation menu"
+class="gallery-image"
+data-flex-grow="56"
+data-flex-basis="135px"
+>&lt;/p>
+&lt;div class="video-wrapper">
+&lt;iframe loading="lazy"
+src="https://www.youtube.com/embed/fgj6HONCQOs"
+allowfullscreen
+title="YouTube Video"
+>
+&lt;/iframe>
+&lt;/div></description></item><item><title>Multiplayer Procedural Game Demo</title><link>https://jemgunay.co.uk/p/multiplayer-procedural-game-demo/</link><pubDate>Mon, 07 Sep 2020 00:00:00 +0000</pubDate><guid>https://jemgunay.co.uk/p/multiplayer-procedural-game-demo/</guid><description>&lt;img src="https://jemgunay.co.uk/p/multiplayer-procedural-game-demo/preview.png" alt="Featured image of post Multiplayer Procedural Game Demo" />&lt;p>See the GitHub repository &lt;a class="link" href="https://github.com/jemgunay/procedural-game" target="_blank" rel="noopener"
+>here&lt;/a>.&lt;/p>
+&lt;p>I was keen to apply my Golang experience to the world of game development, of which I&amp;rsquo;d explored in several other
+languages. I came across the Pixel 2D game library and wanted to combine it with the powerful concurrency model and
+networking packages that Go provides out of the box. The result was a multiplayer procedural terrain game consisting of:&lt;/p>
+&lt;ul>
+&lt;li>A seedable procedural world generator implemented with Perlin noise. Worlds consist of grassy mainland, bodies of
+water, sandy beaches, and a dynamically generated road network.&lt;/li>
+&lt;li>Ability to host multiplayer worlds for other players to join over TCP.&lt;/li>
+&lt;li>A basic weapons inventory and ammo system, with the ability to shoot other players.&lt;/li>
+&lt;li>A flexible and responsive menu system with buttons, text inputs and scroll bars.&lt;/li>
+&lt;li>Water wave shaders.&lt;/li>
+&lt;/ul>
+&lt;p>&lt;img src="https://jemgunay.co.uk/p/multiplayer-procedural-game-demo/frame.png"
+width="1024"
+height="768"
+srcset="https://jemgunay.co.uk/p/multiplayer-procedural-game-demo/frame_hu5639500397985427788.png 480w, https://jemgunay.co.uk/p/multiplayer-procedural-game-demo/frame_hu6682959269037469107.png 1024w"
+loading="lazy"
+alt="Initial menu"
+class="gallery-image"
+data-flex-grow="133"
+data-flex-basis="320px"
+> &lt;img src="https://jemgunay.co.uk/p/multiplayer-procedural-game-demo/frame2.png"
+width="1024"
+height="768"
+srcset="https://jemgunay.co.uk/p/multiplayer-procedural-game-demo/frame2_hu3421977475257489033.png 480w, https://jemgunay.co.uk/p/multiplayer-procedural-game-demo/frame2_hu4334257161669706193.png 1024w"
+loading="lazy"
+alt="Server hosting &amp; world creation menu"
+class="gallery-image"
+data-flex-grow="133"
+data-flex-basis="320px"
+> &lt;img src="https://jemgunay.co.uk/p/multiplayer-procedural-game-demo/frame3.png"
+width="1024"
+height="768"
+srcset="https://jemgunay.co.uk/p/multiplayer-procedural-game-demo/frame3_hu7337649393219526808.png 480w, https://jemgunay.co.uk/p/multiplayer-procedural-game-demo/frame3_hu1110367419143654132.png 1024w"
+loading="lazy"
+alt="Join server menu"
+class="gallery-image"
+data-flex-grow="133"
+data-flex-basis="320px"
+>&lt;/p>
+&lt;p>&lt;img src="https://jemgunay.co.uk/p/multiplayer-procedural-game-demo/frame4.png"
+width="1024"
+height="768"
+srcset="https://jemgunay.co.uk/p/multiplayer-procedural-game-demo/frame4_hu5628761198531880146.png 480w, https://jemgunay.co.uk/p/multiplayer-procedural-game-demo/frame4_hu4485808468217058574.png 1024w"
+loading="lazy"
+alt="Gameplay with two players"
+class="gallery-image"
+data-flex-grow="133"
+data-flex-basis="320px"
+> &lt;img src="https://jemgunay.co.uk/p/multiplayer-procedural-game-demo/frame5.png"
+width="1024"
+height="768"
+srcset="https://jemgunay.co.uk/p/multiplayer-procedural-game-demo/frame5_hu7372387667261321701.png 480w, https://jemgunay.co.uk/p/multiplayer-procedural-game-demo/frame5_hu14790872490848086108.png 1024w"
+loading="lazy"
+alt="Zoomed out gameplay"
+class="gallery-image"
+data-flex-grow="133"
+data-flex-basis="320px"
+> &lt;img src="https://jemgunay.co.uk/p/multiplayer-procedural-game-demo/frame6.png"
+width="1024"
+height="768"
+srcset="https://jemgunay.co.uk/p/multiplayer-procedural-game-demo/frame6_hu3253068923764947848.png 480w, https://jemgunay.co.uk/p/multiplayer-procedural-game-demo/frame6_hu15429480442823764227.png 1024w"
+loading="lazy"
+alt="Pause menu"
+class="gallery-image"
+data-flex-grow="133"
+data-flex-basis="320px"
+>&lt;/p></description></item><item><title>liteboard Course Management System</title><link>https://jemgunay.co.uk/p/liteboard-course-management-system/</link><pubDate>Tue, 26 Sep 2017 13:00:00 +0000</pubDate><guid>https://jemgunay.co.uk/p/liteboard-course-management-system/</guid><description>&lt;img src="https://jemgunay.co.uk/p/liteboard-course-management-system/preview.png" alt="Featured image of post liteboard Course Management System" />&lt;p>See the GitHub repository &lt;a class="link" href="https://github.com/jemgunay/liteboard" target="_blank" rel="noopener"
+>here&lt;/a>.&lt;/p>
+&lt;p>&lt;strong>liteboard&lt;/strong> is a flexible, lightweight and open-source course management system developed for courses and schools which
+do not have access to alternative paid learning tools such as Blackboard or Moodle. The high school sixth form where my
+mum teaches at is an example of such a school, whose resources are limited to a local network shared documents system
+which offers little structure or clarity; in addition, students cannot access this system from home. &amp;rsquo;liteboard'
+overcomes these limitations and is currently being successfully trialled by the school&amp;rsquo;s sociology department.&lt;/p>
+&lt;p>The following features are supported:&lt;/p>
+&lt;ul>
+&lt;li>Categorised homepage alerts and news article posts for extended reading.&lt;/li>
+&lt;li>Year plan/calendar with multiple views (year/month/week/day).&lt;/li>
+&lt;li>Customisable nested folder functionality for organising uploaded files and written descriptions (including description
+formatting tools).&lt;/li>
+&lt;li>Login portal for &amp;lsquo;Student&amp;rsquo; and &amp;lsquo;Teacher&amp;rsquo; accounts; the latter offers administrator controls for creating and modifying
+content.&lt;/li>
+&lt;li>Account log in and download counters to provide a rough estimate of how many students are using the system.&lt;/li>
+&lt;li>Slick and responsive user interface design - information is displayed very cleanly on mobile (see below).&lt;/li>
+&lt;/ul>
+&lt;p>This comprehensive feature set allows teachers to organise their files and other course content in an organised fashion,
+facilitates the presentation of important dates and notes for students and fellow teachers and can be accessed any the
+majority of desktop, tablet and mobile devices at school or from home; for example, this is useful for students who have
+missed lessons due to illness, providing them with the means to catch up with missed lessons from home.&lt;/p>
+&lt;p>The project was developed in PHP with the &lt;a class="link" href="https://fatfreeframework.com" target="_blank" rel="noopener"
+>Fat-Free Framework (F3)&lt;/a> for the back end. HTML, CSS (with Bootstrap) and
+Javascript/jQuery were used for the front end functionality. The application files can be found on GitHub (link at the
+bottom) where installation instructions are provided.&lt;/p>
+&lt;p>Screenshots on desktop:&lt;/p>
+&lt;p>&lt;img src="https://jemgunay.co.uk/p/liteboard-course-management-system/frame.png"
+width="1920"
+height="952"
+srcset="https://jemgunay.co.uk/p/liteboard-course-management-system/frame_hu17349309641015120078.png 480w, https://jemgunay.co.uk/p/liteboard-course-management-system/frame_hu8865505292199707974.png 1024w"
+loading="lazy"
+alt="Log in screen"
+class="gallery-image"
+data-flex-grow="201"
+data-flex-basis="484px"
+> &lt;img src="https://jemgunay.co.uk/p/liteboard-course-management-system/frame2.png"
+width="1920"
+height="952"
+srcset="https://jemgunay.co.uk/p/liteboard-course-management-system/frame2_hu18303025857241693653.png 480w, https://jemgunay.co.uk/p/liteboard-course-management-system/frame2_hu7447687314822250536.png 1024w"
+loading="lazy"
+alt="Editing a description from the Teacher account"
+class="gallery-image"
+data-flex-grow="201"
+data-flex-basis="484px"
+>
+&lt;img src="https://jemgunay.co.uk/p/liteboard-course-management-system/frame3.png"
+width="1920"
+height="952"
+srcset="https://jemgunay.co.uk/p/liteboard-course-management-system/frame3_hu11805905592935585571.png 480w, https://jemgunay.co.uk/p/liteboard-course-management-system/frame3_hu15761717916657140607.png 1024w"
+loading="lazy"
+alt="Same folder as previous image but from the Student account view"
+class="gallery-image"
+data-flex-grow="201"
+data-flex-basis="484px"
+> &lt;img src="https://jemgunay.co.uk/p/liteboard-course-management-system/frame4.png"
+width="1919"
+height="950"
+srcset="https://jemgunay.co.uk/p/liteboard-course-management-system/frame4_hu1917903944417180241.png 480w, https://jemgunay.co.uk/p/liteboard-course-management-system/frame4_hu7377449418941651926.png 1024w"
+loading="lazy"
+alt="Alerts and News homepage from Student account view"
+class="gallery-image"
+data-flex-grow="202"
+data-flex-basis="484px"
+>&lt;/p>
+&lt;p>&lt;img src="https://jemgunay.co.uk/p/liteboard-course-management-system/frame5.png"
+width="1920"
+height="953"
+srcset="https://jemgunay.co.uk/p/liteboard-course-management-system/frame5_hu3444321646534642072.png 480w, https://jemgunay.co.uk/p/liteboard-course-management-system/frame5_hu14555228391079631386.png 1024w"
+loading="lazy"
+alt="Alerts and News homepage from Teacher account view"
+class="gallery-image"
+data-flex-grow="201"
+data-flex-basis="483px"
+> &lt;img src="https://jemgunay.co.uk/p/liteboard-course-management-system/frame6.png"
+width="1920"
+height="950"
+srcset="https://jemgunay.co.uk/p/liteboard-course-management-system/frame6_hu9942242098145017571.png 480w, https://jemgunay.co.uk/p/liteboard-course-management-system/frame6_hu12548304240784262644.png 1024w"
+loading="lazy"
+alt="Year Plan/Calendar page from Student account view"
+class="gallery-image"
+data-flex-grow="202"
+data-flex-basis="485px"
+> &lt;img src="https://jemgunay.co.uk/p/liteboard-course-management-system/frame7.png"
+width="1920"
+height="952"
+srcset="https://jemgunay.co.uk/p/liteboard-course-management-system/frame7_hu15601107983589485212.png 480w, https://jemgunay.co.uk/p/liteboard-course-management-system/frame7_hu4542553201725199676.png 1024w"
+loading="lazy"
+alt="Year Plan/Calendar page from Teacher account view"
+class="gallery-image"
+data-flex-grow="201"
+data-flex-basis="484px"
+>&lt;/p>
+&lt;p>Screenshots demonstrating the responsive design on mobile:&lt;/p>
+&lt;p>&lt;img src="https://jemgunay.co.uk/p/liteboard-course-management-system/frame8.png"
+width="540"
+height="960"
+srcset="https://jemgunay.co.uk/p/liteboard-course-management-system/frame8_hu7127533418181037438.png 480w, https://jemgunay.co.uk/p/liteboard-course-management-system/frame8_hu16213418415769652507.png 1024w"
+loading="lazy"
+alt="Alerts and News homepage on a mobile device"
+class="gallery-image"
+data-flex-grow="56"
+data-flex-basis="135px"
+> &lt;img src="https://jemgunay.co.uk/p/liteboard-course-management-system/frame9.png"
+width="540"
+height="960"
+srcset="https://jemgunay.co.uk/p/liteboard-course-management-system/frame9_hu14720795001966703262.png 480w, https://jemgunay.co.uk/p/liteboard-course-management-system/frame9_hu9391032419832530448.png 1024w"
+loading="lazy"
+alt="Collapsed side navigation menu on a mobile device"
+class="gallery-image"
+data-flex-grow="56"
+data-flex-basis="135px"
+>
+&lt;img src="https://jemgunay.co.uk/p/liteboard-course-management-system/frame10.png"
+width="787"
+height="565"
+srcset="https://jemgunay.co.uk/p/liteboard-course-management-system/frame10_hu5790468594994108585.png 480w, https://jemgunay.co.uk/p/liteboard-course-management-system/frame10_hu9087711157321060312.png 1024w"
+loading="lazy"
+alt="Files in a folder on a tablet device"
+class="gallery-image"
+data-flex-grow="139"
+data-flex-basis="334px"
+>&lt;/p></description></item><item><title>Bottle Classifier &amp; Cocktail Resolver</title><link>https://jemgunay.co.uk/p/bottle-classifier-cocktail-resolver/</link><pubDate>Tue, 26 Sep 2017 07:00:00 +0000</pubDate><guid>https://jemgunay.co.uk/p/bottle-classifier-cocktail-resolver/</guid><description>&lt;img src="https://jemgunay.co.uk/p/bottle-classifier-cocktail-resolver/preview.png" alt="Featured image of post Bottle Classifier &amp; Cocktail Resolver" />&lt;p>See the GitHub repository &lt;a class="link" href="https://github.com/jemgunay/bottle-classifier" target="_blank" rel="noopener"
+>here&lt;/a>.&lt;/p>
+&lt;p>For my university third year dissertation project, I developed a computer vision-orientated application for detecting
+and classifying bottles from a camera stream or image frame, as well as displaying appropriate cocktail recipes based on
+the classified bottles in an aesthetically pleasing web page.&lt;/p>
+&lt;p>This was achieved using trained &lt;strong>HAAR/LBP&lt;/strong> cascades (using the &lt;a class="link" href="https://opencv.org/" target="_blank" rel="noopener"
+>OpenCV&lt;/a> implementations) for
+detection and colour histograms generated from detected regions of interest to improve classification performance. The
+applications were written primarily in Python utilising a wide number of libraries (list can be seen on GitHub
+repository), though web languages were also used for rendering the resolved recipes. The tool currently classifies
+&lt;em>Smirnoff Vodka&lt;/em> and &lt;em>Jack Daniel&amp;rsquo;s&lt;/em> bottles, as well as &lt;em>Red Bull&lt;/em> cans, &lt;em>Monster Energy&lt;/em> cans and an &lt;em>orange juice
+carton&lt;/em>. MySQL was used to store the scraped cocktail recipes.&lt;/p>
+&lt;p>Several command line tools were developed which allow the flexible execution and maintenance of the tool:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Recipe Scraper&lt;/strong>: used to scrape a recipe by name or multiple recipes by ingredient name from a cocktail recipe
+website into the database.&lt;/li>
+&lt;li>&lt;strong>Histogram Generator&lt;/strong>: used to generate specially formatted histogram files which represent the colour spectrum of
+the target image.&lt;/li>
+&lt;li>&lt;strong>Main Application&lt;/strong>: used to perform classification of the target image frame or camera stream. Also used to resolve
+the cocktail recipes and to launch the web server for hosting the recipe view render.&lt;/li>
+&lt;/ul>
+&lt;p>Screenshots of the classification of bottles from a live webcam feed:&lt;/p>
+&lt;p>&lt;img src="https://jemgunay.co.uk/p/bottle-classifier-cocktail-resolver/frame.png"
+width="600"
+height="335"
+srcset="https://jemgunay.co.uk/p/bottle-classifier-cocktail-resolver/frame_hu10248343704155948762.png 480w, https://jemgunay.co.uk/p/bottle-classifier-cocktail-resolver/frame_hu13656433202197453811.png 1024w"
+loading="lazy"
+alt="Example bottle classifications"
+class="gallery-image"
+data-flex-grow="179"
+data-flex-basis="429px"
+> &lt;img src="https://jemgunay.co.uk/p/bottle-classifier-cocktail-resolver/frame2.png"
+width="600"
+height="335"
+srcset="https://jemgunay.co.uk/p/bottle-classifier-cocktail-resolver/frame2_hu178515798945724208.png 480w, https://jemgunay.co.uk/p/bottle-classifier-cocktail-resolver/frame2_hu1614399620244658469.png 1024w"
+loading="lazy"
+alt="Example bottle classifications"
+class="gallery-image"
+data-flex-grow="179"
+data-flex-basis="429px"
+> &lt;img src="https://jemgunay.co.uk/p/bottle-classifier-cocktail-resolver/frame3.png"
+width="600"
+height="335"
+srcset="https://jemgunay.co.uk/p/bottle-classifier-cocktail-resolver/frame3_hu3980620513148193226.png 480w, https://jemgunay.co.uk/p/bottle-classifier-cocktail-resolver/frame3_hu17499495236751693152.png 1024w"
+loading="lazy"
+alt="Example bottle classifications"
+class="gallery-image"
+data-flex-grow="179"
+data-flex-basis="429px"
+>
+&lt;img src="https://jemgunay.co.uk/p/bottle-classifier-cocktail-resolver/frame4.png"
+width="600"
+height="335"
+srcset="https://jemgunay.co.uk/p/bottle-classifier-cocktail-resolver/frame4_hu15298461472701831588.png 480w, https://jemgunay.co.uk/p/bottle-classifier-cocktail-resolver/frame4_hu2500999430482250618.png 1024w"
+loading="lazy"
+alt="Example bottle classifications"
+class="gallery-image"
+data-flex-grow="179"
+data-flex-basis="429px"
+> &lt;img src="https://jemgunay.co.uk/p/bottle-classifier-cocktail-resolver/frame5.png"
+width="600"
+height="335"
+srcset="https://jemgunay.co.uk/p/bottle-classifier-cocktail-resolver/frame5_hu4405106009666152611.png 480w, https://jemgunay.co.uk/p/bottle-classifier-cocktail-resolver/frame5_hu12224516837932263985.png 1024w"
+loading="lazy"
+alt="Example bottle classifications"
+class="gallery-image"
+data-flex-grow="179"
+data-flex-basis="429px"
+>&lt;/p>
+&lt;p>Screenshots of the cocktail recipe lists resolved from classified bottles:&lt;/p>
+&lt;p>&lt;img src="https://jemgunay.co.uk/p/bottle-classifier-cocktail-resolver/frame6.png"
+width="1855"
+height="1056"
+srcset="https://jemgunay.co.uk/p/bottle-classifier-cocktail-resolver/frame6_hu4074398409383853274.png 480w, https://jemgunay.co.uk/p/bottle-classifier-cocktail-resolver/frame6_hu18142607044239141400.png 1024w"
+loading="lazy"
+alt="Example resolved cocktail recipe view"
+class="gallery-image"
+data-flex-grow="175"
+data-flex-basis="421px"
+> &lt;img src="https://jemgunay.co.uk/p/bottle-classifier-cocktail-resolver/frame7.png"
+width="1855"
+height="1056"
+srcset="https://jemgunay.co.uk/p/bottle-classifier-cocktail-resolver/frame7_hu7325782387439536279.png 480w, https://jemgunay.co.uk/p/bottle-classifier-cocktail-resolver/frame7_hu5564769176583133468.png 1024w"
+loading="lazy"
+alt="Example resolved cocktail recipe view"
+class="gallery-image"
+data-flex-grow="175"
+data-flex-basis="421px"
+>&lt;/p></description></item><item><title>C++ Orbital Simulation (Part 2)</title><link>https://jemgunay.co.uk/p/orbital-simulation-part-2/</link><pubDate>Tue, 26 Sep 2017 00:00:00 +0000</pubDate><guid>https://jemgunay.co.uk/p/orbital-simulation-part-2/</guid><description>&lt;img src="https://jemgunay.co.uk/p/orbital-simulation-part-2/preview.jpg" alt="Featured image of post C++ Orbital Simulation (Part 2)" />&lt;p>See the GitHub repository &lt;a class="link" href="https://github.com/jemgunay/orbital-sim" target="_blank" rel="noopener"
+>here&lt;/a>.&lt;/p>
+&lt;p>As a follow-up to &lt;a class="link" href="https://jemgunay.co.uk/p/orbital-simulation-part-1" >Part 1&lt;/a>, I decided to rewrite the orbital planet simulation from scratch, this time scrapping the
+physics library and instead implementing my own physics. On launch, three galaxies consisting of around 100 planets each
+are spawned which orbit a larger planet sitting at the centre of their galaxy. These planets are all gravitationally
+attracted towards each other and deflect on collision.&lt;/p>
+&lt;p>Each planet has a randomised size, shape and texture; smaller planets are given an initial impulse to push them into an
+orbit. The controllable rocket can be used to navigate the cosmos and its physics are also simulated; the rocket vector
+graphic was created in Adobe Illustrator.&lt;/p>
+&lt;p>&lt;img src="https://jemgunay.co.uk/p/orbital-simulation-part-2/frame.jpg"
+width="1936"
+height="1056"
+srcset="https://jemgunay.co.uk/p/orbital-simulation-part-2/frame_hu1460826660553803094.jpg 480w, https://jemgunay.co.uk/p/orbital-simulation-part-2/frame_hu13884898411630764141.jpg 1024w"
+loading="lazy"
+alt="Example simulation"
+class="gallery-image"
+data-flex-grow="183"
+data-flex-basis="440px"
+> &lt;img src="https://jemgunay.co.uk/p/orbital-simulation-part-2/frame2.jpg"
+width="1936"
+height="1056"
+srcset="https://jemgunay.co.uk/p/orbital-simulation-part-2/frame2_hu15577714237923668406.jpg 480w, https://jemgunay.co.uk/p/orbital-simulation-part-2/frame2_hu9042251298951106865.jpg 1024w"
+loading="lazy"
+alt="Example simulation"
+class="gallery-image"
+data-flex-grow="183"
+data-flex-basis="440px"
+> &lt;img src="https://jemgunay.co.uk/p/orbital-simulation-part-2/frame3.jpg"
+width="1936"
+height="1056"
+srcset="https://jemgunay.co.uk/p/orbital-simulation-part-2/frame3_hu11063349811697599931.jpg 480w, https://jemgunay.co.uk/p/orbital-simulation-part-2/frame3_hu12710098379079281343.jpg 1024w"
+loading="lazy"
+alt="Example simulation"
+class="gallery-image"
+data-flex-grow="183"
+data-flex-basis="440px"
+>&lt;/p>
+&lt;p>&lt;img src="https://jemgunay.co.uk/p/orbital-simulation-part-2/frame4.jpg"
+width="1936"
+height="1056"
+srcset="https://jemgunay.co.uk/p/orbital-simulation-part-2/frame4_hu14813374577102209948.jpg 480w, https://jemgunay.co.uk/p/orbital-simulation-part-2/frame4_hu3042348197284961574.jpg 1024w"
+loading="lazy"
+alt="Example simulation"
+class="gallery-image"
+data-flex-grow="183"
+data-flex-basis="440px"
+> &lt;img src="https://jemgunay.co.uk/p/orbital-simulation-part-2/frame5.jpg"
+width="1936"
+height="1056"
+srcset="https://jemgunay.co.uk/p/orbital-simulation-part-2/frame5_hu10457035373088277041.jpg 480w, https://jemgunay.co.uk/p/orbital-simulation-part-2/frame5_hu6609331672162152360.jpg 1024w"
+loading="lazy"
+alt="Vector rocket graphic creation in Illustrator"
+class="gallery-image"
+data-flex-grow="183"
+data-flex-basis="440px"
+>&lt;/p>
+&lt;p>The simulation can be seen in action below:&lt;/p>
+&lt;div class="video-wrapper">
+&lt;iframe loading="lazy"
+src="https://www.youtube.com/embed/0GOfqRuKk8A"
+allowfullscreen
+title="YouTube Video"
+>
+&lt;/iframe>
+&lt;/div></description></item><item><title>Protein Sequence Motif Search Tool</title><link>https://jemgunay.co.uk/p/protein-sequence-motif-search-tool/</link><pubDate>Tue, 10 Jan 2017 20:40:38 +0000</pubDate><guid>https://jemgunay.co.uk/p/protein-sequence-motif-search-tool/</guid><description>&lt;img src="https://jemgunay.co.uk/p/protein-sequence-motif-search-tool/preview.jpg" alt="Featured image of post Protein Sequence Motif Search Tool" />&lt;p>See the GitHub repository &lt;a class="link" href="https://github.com/jemgunay/amyloid-motif" target="_blank" rel="noopener"
+>here&lt;/a>.&lt;/p>
+&lt;p>I took a Bioinformatics module which explores the development of methods and software tools for understanding biological
+data. I was tasked with producing a tool that searches a protein sequence for any matched motifs, providing the position
+of each motif found. In particular, the tool had to detect regions of protein sequences which could form amyloid
+associations; these have been associated with neurodegenerative diseases such as Alzheimer’s disease and Parkinson’s
+disease.&lt;/p>
+&lt;p>User provided input can consist of either a UniProt Accessor Code or a FASTA-Formatted Protein Sequence and will result
+in the output of the UniProt Accessor Code, the FASTA-Formatted Protein Sequence, the Protein Name and the corresponding
+Sequence Motif Matches. The tool has two main functions; the ability to search a singular protein sequence for patterns
+and the ability to search through a batch of protein sequences by their UniProt Accessor Codes all at once. For both
+functions, there are example inputs and options to clear input and output. The search algorithm and input validations
+utilise regular expressions to search for relevant motifs and to prevent malformed user input from leading to
+undesirable results or performance.&lt;/p>
+&lt;p>&lt;img src="https://jemgunay.co.uk/p/protein-sequence-motif-search-tool/frame.jpg"
+width="1936"
+height="963"
+srcset="https://jemgunay.co.uk/p/protein-sequence-motif-search-tool/frame_hu13330965581162241797.jpg 480w, https://jemgunay.co.uk/p/protein-sequence-motif-search-tool/frame_hu5548170376156196203.jpg 1024w"
+loading="lazy"
+alt="Single Search feature with empty input fields"
+class="gallery-image"
+data-flex-grow="201"
+data-flex-basis="482px"
+> &lt;img src="https://jemgunay.co.uk/p/protein-sequence-motif-search-tool/frame2.jpg"
+width="1936"
+height="960"
+srcset="https://jemgunay.co.uk/p/protein-sequence-motif-search-tool/frame2_hu5696001005605418627.jpg 480w, https://jemgunay.co.uk/p/protein-sequence-motif-search-tool/frame2_hu1269626937886437555.jpg 1024w"
+loading="lazy"
+alt="Single Search feature performed using a UniProt Accession Code"
+class="gallery-image"
+data-flex-grow="201"
+data-flex-basis="484px"
+> &lt;img src="https://jemgunay.co.uk/p/protein-sequence-motif-search-tool/frame3.jpg"
+width="1936"
+height="960"
+srcset="https://jemgunay.co.uk/p/protein-sequence-motif-search-tool/frame3_hu2750159817865462067.jpg 480w, https://jemgunay.co.uk/p/protein-sequence-motif-search-tool/frame3_hu11707596099242268180.jpg 1024w"
+loading="lazy"
+alt="Single Search feature performed using a FASTA-formatted Protein Sequence"
+class="gallery-image"
+data-flex-grow="201"
+data-flex-basis="484px"
+>&lt;/p>
+&lt;p>The tool was developed using Python 2.7, as well as HTML5, CSS3 and JavaScript. The Bootstrap front-end framework was
+used to design the front-end of the system efficiently and the jQuery library was used to write more elegant dynamic
+code. It can run offline on local web servers which allow the execution of Python files via CGI (Common Gateway
+Interface) assuming sufficient permissions have been set.&lt;/p>
+&lt;p>&lt;img src="https://jemgunay.co.uk/p/protein-sequence-motif-search-tool/frame4.jpg"
+width="1936"
+height="963"
+srcset="https://jemgunay.co.uk/p/protein-sequence-motif-search-tool/frame4_hu3106927501350415952.jpg 480w, https://jemgunay.co.uk/p/protein-sequence-motif-search-tool/frame4_hu5538284721267806982.jpg 1024w"
+loading="lazy"
+alt="Batch Search feature performed using a UniProt Accession Code"
+class="gallery-image"
+data-flex-grow="201"
+data-flex-basis="482px"
+> &lt;img src="https://jemgunay.co.uk/p/protein-sequence-motif-search-tool/frame5.jpg"
+width="1936"
+height="963"
+srcset="https://jemgunay.co.uk/p/protein-sequence-motif-search-tool/frame5_hu6771232006673790943.jpg 480w, https://jemgunay.co.uk/p/protein-sequence-motif-search-tool/frame5_hu11016791870340466159.jpg 1024w"
+loading="lazy"
+alt="Batch Search results output"
+class="gallery-image"
+data-flex-grow="201"
+data-flex-basis="482px"
+>&lt;/p></description></item><item><title>C++ Mousey Maze Game</title><link>https://jemgunay.co.uk/p/mousey-maze-game/</link><pubDate>Tue, 10 Jan 2017 15:59:54 +0000</pubDate><guid>https://jemgunay.co.uk/p/mousey-maze-game/</guid><description>&lt;img src="https://jemgunay.co.uk/p/mousey-maze-game/preview.png" alt="Featured image of post C++ Mousey Maze Game" />&lt;p>This classical maze game was developed during my university games computing module. It is written in C++ and compiled
+under Linux with g++, utilising the Ogre3D graphical library for rendering the scene (with its shipped OIS library for
+handling mouse and keyboard input) and ODE for simulating the game physics. The objective of the game will be to
+navigate your mouse character around a hedge maze to capture all of the collectable rotating cheese segments in the
+shortest time possible, with the ability to replay the same level in order to beat your previous time record. There is a
+graphical display of the number of cheese segments collected, the current time elapsed since starting the level and the
+previous record time. The game can be downloaded below.&lt;/p>
+&lt;p>&lt;img src="https://jemgunay.co.uk/p/mousey-maze-game/frame.jpg"
+width="1920"
+height="1032"
+srcset="https://jemgunay.co.uk/p/mousey-maze-game/frame_hu9196175057613656587.jpg 480w, https://jemgunay.co.uk/p/mousey-maze-game/frame_hu493551639393671649.jpg 1024w"
+loading="lazy"
+alt="Initial game launch"
+class="gallery-image"
+data-flex-grow="186"
+data-flex-basis="446px"
+> &lt;img src="https://jemgunay.co.uk/p/mousey-maze-game/frame2.jpg"
+width="1920"
+height="1032"
+srcset="https://jemgunay.co.uk/p/mousey-maze-game/frame2_hu2272134211454246068.jpg 480w, https://jemgunay.co.uk/p/mousey-maze-game/frame2_hu11427264459533977298.jpg 1024w"
+loading="lazy"
+alt="Player character in top left corner of the maze"
+class="gallery-image"
+data-flex-grow="186"
+data-flex-basis="446px"
+>
+&lt;img src="https://jemgunay.co.uk/p/mousey-maze-game/frame3.jpg"
+width="1920"
+height="1032"
+srcset="https://jemgunay.co.uk/p/mousey-maze-game/frame3_hu11713865124943665399.jpg 480w, https://jemgunay.co.uk/p/mousey-maze-game/frame3_hu15321049467533215205.jpg 1024w"
+loading="lazy"
+alt="Winning screen"
+class="gallery-image"
+data-flex-grow="186"
+data-flex-basis="446px"
+> &lt;img src="https://jemgunay.co.uk/p/mousey-maze-game/frame4.jpg"
+width="1920"
+height="1032"
+srcset="https://jemgunay.co.uk/p/mousey-maze-game/frame4_hu13192209827238561144.jpg 480w, https://jemgunay.co.uk/p/mousey-maze-game/frame4_hu6960535771111806866.jpg 1024w"
+loading="lazy"
+alt="Hovering the mouse over the replay button"
+class="gallery-image"
+data-flex-grow="186"
+data-flex-basis="446px"
+>&lt;/p>
+&lt;p>The mouse was textured in &lt;a class="link" href="https://www.blender.org/" target="_blank" rel="noopener"
+>Blender&lt;/a> by unwrapping a sphere mesh and UV mapping a minimalistic
+mouse texture created in Photoshop to it. The Blender
+plug-in &lt;a class="link" href="https://bitbucket.org/iboshkov/blender2ogre" target="_blank" rel="noopener"
+>Blender RealXtend Tundra&lt;/a> was then used to export the Blender mesh
+with UV co-ordinate data and
+the &lt;a class="link" href="https://sourceforge.net/projects/ogre/files/ogre-tools/1.7.2/OgreCommandLineTools_1.7.2.zip" target="_blank" rel="noopener"
+>OgreCommandLineTools 1.7.2&lt;/a>
+set of scripts was used convert this into a &lt;code>.mesh&lt;/code> file to be rendered by the Ogre3D engine. Blender was also used to
+model and texture the cheese segment asset. I created an interpreter to parse game level creating instructions from a
+text file in order to make creating new levels more efficient without having to recompile the game each time. It ignores
+new lines and comment lines prefixed with a hash character; this improves readability by making it easy to group and
+label sections of wall creation instructions together. This project encouraged me to learn how to utilise Makefiles in
+order more efficiently build C++ programs.&lt;/p>
+&lt;p>&lt;img src="https://jemgunay.co.uk/p/mousey-maze-game/frame5.jpg"
+width="1936"
+height="1056"
+srcset="https://jemgunay.co.uk/p/mousey-maze-game/frame5_hu12004561549543409014.jpg 480w, https://jemgunay.co.uk/p/mousey-maze-game/frame5_hu6836510551829878449.jpg 1024w"
+loading="lazy"
+alt="Mouse texture in Photoshop"
+class="gallery-image"
+data-flex-grow="183"
+data-flex-basis="440px"
+> &lt;img src="https://jemgunay.co.uk/p/mousey-maze-game/frame6.jpg"
+width="1936"
+height="1056"
+srcset="https://jemgunay.co.uk/p/mousey-maze-game/frame6_hu351976017321011850.jpg 480w, https://jemgunay.co.uk/p/mousey-maze-game/frame6_hu14719848828558003773.jpg 1024w"
+loading="lazy"
+alt="Cheese texture UV mapped to the cheese segment mesh in Blender"
+class="gallery-image"
+data-flex-grow="183"
+data-flex-basis="440px"
+>&lt;/p>
+&lt;ul>
+&lt;li>Execute &lt;code>MazeGame&lt;/code> to launch the game.&lt;/li>
+&lt;li>WASD or arrow keys to roll the mouse.&lt;/li>
+&lt;li>Escape key to exit the game.&lt;/li>
+&lt;li>Built on Ubuntu 14.04. Dependencies: Ogre3D 1.9&lt;/li>
+&lt;/ul>
+&lt;p>TODO: Click to download&lt;/p></description></item><item><title>Bagel Turret: Remote Surveillance Turret (Part 2)</title><link>https://jemgunay.co.uk/p/bagel-turret-remote-surveillance-turret-part-2/</link><pubDate>Thu, 22 Sep 2016 23:05:44 +0000</pubDate><guid>https://jemgunay.co.uk/p/bagel-turret-remote-surveillance-turret-part-2/</guid><description>&lt;img src="https://jemgunay.co.uk/p/bagel-turret-remote-surveillance-turret-part-2/preview.png" alt="Featured image of post Bagel Turret: Remote Surveillance Turret (Part 2)" />&lt;p>Now that the framework for the turret movement was sorted, I moved onto the video streaming functionality. This was
+implemented by creating a web application using the Flask framework to serve the video stream one frame at a time to the
+user’s browser by reading an image from the Pi Camera and encoding it with appropriate headers before sending it as a
+response. When a user clicks a command button, a request is received by the server, and the desired action is carried
+out by the hardware manipulating Python classes such as stepping the servo to aim vertically, applying power to the
+motor to turn the turret horizontally or firing the gun. Basic access authentication is forced so that only users who
+have been provided with the username/password combination can access the turret’s stream.&lt;/p>
+&lt;p>In order to make connecting to the Raspberry Pi Flask server more straightforward, the Python script also sends a
+request to my external testing server which hosts a PHP script; this script logs the public IP address of the Pi and
+displays it to the user, allowing them to be able to access the turret’s stream (assuming the Pi is connected to a
+router which has its private IP port forwarded). Last but not least, the Bagel Turret wouldn’t be a Bagel Turret without
+a few bagels – the favicon is a tiny bagel and the web page for displaying the Raspberry Pi’s public IP address features
+a full size bagel just in case someone is uncertain about the purpose of the page.&lt;/p>
+&lt;p>&lt;img src="https://jemgunay.co.uk/p/bagel-turret-remote-surveillance-turret-part-2/frame1.jpg"
+width="1136"
+height="720"
+srcset="https://jemgunay.co.uk/p/bagel-turret-remote-surveillance-turret-part-2/frame1_hu15519298592468656800.jpg 480w, https://jemgunay.co.uk/p/bagel-turret-remote-surveillance-turret-part-2/frame1_hu9658912678116149645.jpg 1024w"
+loading="lazy"
+alt="Pure video stream without user input"
+class="gallery-image"
+data-flex-grow="157"
+data-flex-basis="378px"
+> &lt;img src="https://jemgunay.co.uk/p/bagel-turret-remote-surveillance-turret-part-2/frame2.jpg"
+width="1136"
+height="720"
+srcset="https://jemgunay.co.uk/p/bagel-turret-remote-surveillance-turret-part-2/frame2_hu9832342822964504137.jpg 480w, https://jemgunay.co.uk/p/bagel-turret-remote-surveillance-turret-part-2/frame2_hu13419397641547359220.jpg 1024w"
+loading="lazy"
+alt="Video stream with user input"
+class="gallery-image"
+data-flex-grow="157"
+data-flex-basis="378px"
+> &lt;img src="https://jemgunay.co.uk/p/bagel-turret-remote-surveillance-turret-part-2/frame3.jpg"
+width="1136"
+height="720"
+srcset="https://jemgunay.co.uk/p/bagel-turret-remote-surveillance-turret-part-2/frame3_hu10261164919792022978.jpg 480w, https://jemgunay.co.uk/p/bagel-turret-remote-surveillance-turret-part-2/frame3_hu11030818895759301664.jpg 1024w"
+loading="lazy"
+alt="External web page showing the Pi’s public IP address"
+class="gallery-image"
+data-flex-grow="157"
+data-flex-basis="378px"
+>&lt;/p>
+&lt;p>&lt;a class="link" href="https://github.com/jemgunay/bagel-turret" target="_blank" rel="noopener"
+>GitHub project repository&lt;/a>&lt;/p>
+&lt;p>&lt;a class="link" href="https://jemgunay.co.uk/p/bagel-turret-remote-surveillance-turret-part-1" >Click here to read part 1!&lt;/a>&lt;/p></description></item><item><title>Bagel Turret: Remote Surveillance Turret (Part 1)</title><link>https://jemgunay.co.uk/p/bagel-turret-remote-surveillance-turret-part-1/</link><pubDate>Thu, 22 Sep 2016 20:50:15 +0000</pubDate><guid>https://jemgunay.co.uk/p/bagel-turret-remote-surveillance-turret-part-1/</guid><description>&lt;img src="https://jemgunay.co.uk/p/bagel-turret-remote-surveillance-turret-part-1/preview.png" alt="Featured image of post Bagel Turret: Remote Surveillance Turret (Part 1)" />&lt;p>See the GitHub repository &lt;a class="link" href="https://github.com/jemgunay/bagel-turret" target="_blank" rel="noopener"
+>here&lt;/a>.&lt;/p>
+&lt;p>My flat mates and I were fooling around with some cheap BB guns and an fun idea dawned on me: to build an automatic
+surveillance turret! I wanted to develop a web interface for controlling the aiming and firing of the turret and could
+then apply computer vision technologies to detect and aim for specific targets to test the accuracy of the gun.&lt;/p>
+&lt;p>I dug out my old childhood &lt;a class="link" href="http://www.meccano.com" target="_blank" rel="noopener"
+>Meccano&lt;/a> set which would be used to construct a frame to mount the
+gun and electronics onto. I searched online for a cheap electric BB gun that would be easy to modify; I went with the
+automatic CYBER STRYKE X4 BB gun as it was cheap and had a semi-transparent housing, meaning I would be able to locate
+the electronics and firing mechanisms with ease. Having experimented with &lt;a class="link" href="http://opencv.org" target="_blank" rel="noopener"
+>OpenCV&lt;/a> on my old original
+Raspberry Pi, I soon realised that if I wanted to stream the turret’s view to a web interface in real time with minimum
+lag, as well as perform object classification/detection, I would have to invest in a Raspberry Pi 3 which has
+significantly more processing power. I already had a NOIR Pi Camera which I will use for now to stream the turret&amp;rsquo;s
+view - I may get a standard Pi Camera when I reach the computer vision implementation phase as the colourisation from
+the IR light may impact upon accuracy.&lt;/p>
+&lt;p>&lt;img src="https://jemgunay.co.uk/p/bagel-turret-remote-surveillance-turret-part-1/frame1.jpg"
+width="1136"
+height="720"
+srcset="https://jemgunay.co.uk/p/bagel-turret-remote-surveillance-turret-part-1/frame1_hu14943883050479881308.jpg 480w, https://jemgunay.co.uk/p/bagel-turret-remote-surveillance-turret-part-1/frame1_hu3427232530715679048.jpg 1024w"
+loading="lazy"
+alt="Original BB gun"
+class="gallery-image"
+data-flex-grow="157"
+data-flex-basis="378px"
+> &lt;img src="https://jemgunay.co.uk/p/bagel-turret-remote-surveillance-turret-part-1/frame2.jpg"
+width="1136"
+height="720"
+srcset="https://jemgunay.co.uk/p/bagel-turret-remote-surveillance-turret-part-1/frame2_hu5891564207614353582.jpg 480w, https://jemgunay.co.uk/p/bagel-turret-remote-surveillance-turret-part-1/frame2_hu18107498915043079096.jpg 1024w"
+loading="lazy"
+alt="Recently cut wood pieces for the base support"
+class="gallery-image"
+data-flex-grow="157"
+data-flex-basis="378px"
+> &lt;img src="https://jemgunay.co.uk/p/bagel-turret-remote-surveillance-turret-part-1/frame3.jpg"
+width="1136"
+height="720"
+srcset="https://jemgunay.co.uk/p/bagel-turret-remote-surveillance-turret-part-1/frame3_hu1046428587605751645.jpg 480w, https://jemgunay.co.uk/p/bagel-turret-remote-surveillance-turret-part-1/frame3_hu153433107724829722.jpg 1024w"
+loading="lazy"
+alt="Finished wood base support"
+class="gallery-image"
+data-flex-grow="157"
+data-flex-basis="378px"
+>&lt;/p>
+&lt;p>A cheap hobby motor was used to control the horizontal rotation and a servo was used to control the vertical aiming. I
+hacked together a couple of gears to reduce the load on the motor and glue-gunned a retractable arm to the servo and
+attached the other end to the gun, allowing the arm to extend and retract when the servo changes orientation. The servo
+was wired directly to the Pi&amp;rsquo;s 5V output, though the motor required more power; by using an L293D Motor Driver IC, I was
+able to supply power via a 9V battery to the motor whilst providing easier control over the motor&amp;rsquo;s direction of
+rotation. Short python classes were then written to interface with the motor and servo, making it easier for me to test
+how well they functioned under the weight of the gun. The servo struggled to sustain the weight of the gun so I trimmed
+off the extra aesthetic plastic housing and removed the battery storage section towards the back – this can be
+repositioned elsewhere on the turret frame reducing the load on the servo. Despite these modifications, sharp movements
+caused the unstable Meccano base to wobble; I decided to build a new bottom base out of wood to structure the rest of
+the Meccano frame onto.&lt;/p>
+&lt;p>&lt;img src="https://jemgunay.co.uk/p/bagel-turret-remote-surveillance-turret-part-1/frame4.jpg"
+width="1136"
+height="720"
+srcset="https://jemgunay.co.uk/p/bagel-turret-remote-surveillance-turret-part-1/frame4_hu1863856955815549440.jpg 480w, https://jemgunay.co.uk/p/bagel-turret-remote-surveillance-turret-part-1/frame4_hu15940367980352454228.jpg 1024w"
+loading="lazy"
+alt="Close up of turret BB gun with Raspberry Pi and PiCamera mounted"
+class="gallery-image"
+data-flex-grow="157"
+data-flex-basis="378px"
+> &lt;img src="https://jemgunay.co.uk/p/bagel-turret-remote-surveillance-turret-part-1/frame5.jpg"
+width="1136"
+height="720"
+srcset="https://jemgunay.co.uk/p/bagel-turret-remote-surveillance-turret-part-1/frame5_hu7145363529745108944.jpg 480w, https://jemgunay.co.uk/p/bagel-turret-remote-surveillance-turret-part-1/frame5_hu15636187973817497220.jpg 1024w"
+loading="lazy"
+alt="Motor mechanism for horizontal rotation"
+class="gallery-image"
+data-flex-grow="157"
+data-flex-basis="378px"
+> &lt;img src="https://jemgunay.co.uk/p/bagel-turret-remote-surveillance-turret-part-1/frame6.jpg"
+width="1136"
+height="720"
+srcset="https://jemgunay.co.uk/p/bagel-turret-remote-surveillance-turret-part-1/frame6_hu16452581732079321866.jpg 480w, https://jemgunay.co.uk/p/bagel-turret-remote-surveillance-turret-part-1/frame6_hu14348787629500977231.jpg 1024w"
+loading="lazy"
+alt="Servo mechanism for vertical rotation"
+class="gallery-image"
+data-flex-grow="157"
+data-flex-basis="378px"
+>&lt;/p>
+&lt;p>A further python script was then programmed to create a simple demo to show off the horizontal and vertical aiming
+capabilities - this can be seen in action below. The Python scripts for this project can be found on GitHub below.&lt;/p>
+&lt;p>&lt;img src="https://jemgunay.co.uk/p/bagel-turret-remote-surveillance-turret-part-1/frame7.jpg"
+width="1136"
+height="720"
+srcset="https://jemgunay.co.uk/p/bagel-turret-remote-surveillance-turret-part-1/frame7_hu216252765430017826.jpg 480w, https://jemgunay.co.uk/p/bagel-turret-remote-surveillance-turret-part-1/frame7_hu17790491105135308366.jpg 1024w"
+loading="lazy"
+alt="Side on view of turret"
+class="gallery-image"
+data-flex-grow="157"
+data-flex-basis="378px"
+> &lt;img src="https://jemgunay.co.uk/p/bagel-turret-remote-surveillance-turret-part-1/frame8.jpg"
+width="1136"
+height="720"
+srcset="https://jemgunay.co.uk/p/bagel-turret-remote-surveillance-turret-part-1/frame8_hu10387947804662451847.jpg 480w, https://jemgunay.co.uk/p/bagel-turret-remote-surveillance-turret-part-1/frame8_hu10044582923454436096.jpg 1024w"
+loading="lazy"
+alt="Servo mechanism for vertical rotation"
+class="gallery-image"
+data-flex-grow="157"
+data-flex-basis="378px"
+>&lt;/p>
+&lt;div class="video-wrapper">
+&lt;iframe loading="lazy"
+src="https://www.youtube.com/embed/ZvdLwr1eku8"
+allowfullscreen
+title="YouTube Video"
+>
+&lt;/iframe>
+&lt;/div>
+&lt;p>&lt;a class="link" href="https://jemgunay.co.uk/p/bagel-turret-remote-surveillance-turret-part-2" >Click here to read part 2!&lt;/a>&lt;/p></description></item><item><title>Blender 3D Modelled Chess Board</title><link>https://jemgunay.co.uk/p/blender-3d-modelled-chess-board/</link><pubDate>Mon, 19 Sep 2016 04:35:45 +0000</pubDate><guid>https://jemgunay.co.uk/p/blender-3d-modelled-chess-board/</guid><description>&lt;img src="https://jemgunay.co.uk/p/blender-3d-modelled-chess-board/preview.png" alt="Featured image of post Blender 3D Modelled Chess Board" />&lt;p>I took a module at university focussing on 3D modelling techniques which gave me the opportunity to create a realistic
+and substantial model of a photographed object. I had to create an animation including the model and had to produce a
+Python script which manipulated the scene in some way. I settled on modelling my chess board/pieces, sculpting them to
+scale and texturing them realistically.&lt;/p>
+&lt;p>&lt;img src="https://jemgunay.co.uk/p/blender-3d-modelled-chess-board/frame.jpg"
+width="2048"
+height="1152"
+srcset="https://jemgunay.co.uk/p/blender-3d-modelled-chess-board/frame_hu7973605474016446449.jpg 480w, https://jemgunay.co.uk/p/blender-3d-modelled-chess-board/frame_hu13156138935466318709.jpg 1024w"
+loading="lazy"
+alt="Original real life chess board photo"
+class="gallery-image"
+data-flex-grow="177"
+data-flex-basis="426px"
+> &lt;img src="https://jemgunay.co.uk/p/blender-3d-modelled-chess-board/frame2.jpg"
+width="1920"
+height="1080"
+srcset="https://jemgunay.co.uk/p/blender-3d-modelled-chess-board/frame2_hu13120141217724445097.jpg 480w, https://jemgunay.co.uk/p/blender-3d-modelled-chess-board/frame2_hu7738251120141100847.jpg 1024w"
+loading="lazy"
+alt="Entire room scene with chess board"
+class="gallery-image"
+data-flex-grow="177"
+data-flex-basis="426px"
+> &lt;img src="https://jemgunay.co.uk/p/blender-3d-modelled-chess-board/frame3.jpg"
+width="1920"
+height="1080"
+srcset="https://jemgunay.co.uk/p/blender-3d-modelled-chess-board/frame3_hu6903742630288931920.jpg 480w, https://jemgunay.co.uk/p/blender-3d-modelled-chess-board/frame3_hu14700324747992516516.jpg 1024w"
+loading="lazy"
+alt="Entire room scene with chess board"
+class="gallery-image"
+data-flex-grow="177"
+data-flex-basis="426px"
+>&lt;/p>
+&lt;p>&lt;img src="https://jemgunay.co.uk/p/blender-3d-modelled-chess-board/frame4.jpg"
+width="1920"
+height="1080"
+srcset="https://jemgunay.co.uk/p/blender-3d-modelled-chess-board/frame4_hu2463025021958615333.jpg 480w, https://jemgunay.co.uk/p/blender-3d-modelled-chess-board/frame4_hu17298839119104193681.jpg 1024w"
+loading="lazy"
+alt="Chess board model close up render"
+class="gallery-image"
+data-flex-grow="177"
+data-flex-basis="426px"
+> &lt;img src="https://jemgunay.co.uk/p/blender-3d-modelled-chess-board/frame5.jpg"
+width="1920"
+height="1080"
+srcset="https://jemgunay.co.uk/p/blender-3d-modelled-chess-board/frame5_hu10842888992139386422.jpg 480w, https://jemgunay.co.uk/p/blender-3d-modelled-chess-board/frame5_hu1439035983326232467.jpg 1024w"
+loading="lazy"
+alt="Chess board model close up render"
+class="gallery-image"
+data-flex-grow="177"
+data-flex-basis="426px"
+> &lt;img src="https://jemgunay.co.uk/p/blender-3d-modelled-chess-board/frame6.jpg"
+width="1920"
+height="1080"
+srcset="https://jemgunay.co.uk/p/blender-3d-modelled-chess-board/frame6_hu1723209388347619785.jpg 480w, https://jemgunay.co.uk/p/blender-3d-modelled-chess-board/frame6_hu7634928425954803834.jpg 1024w"
+loading="lazy"
+alt="Chess board model close up render with exploding king"
+class="gallery-image"
+data-flex-grow="177"
+data-flex-basis="426px"
+>&lt;/p>
+&lt;p>I animated the camera panning in towards the chess board as the piece storage draws open; a game is played by invisible
+players, taking turns one move at a time. Once a king is in check mate, he explodes out of shame, scattering shards of
+himself across the scene. This was achieved using Blender&amp;rsquo;s Cell Fracture add-on.&lt;/p>
+&lt;div class="video-wrapper">
+&lt;iframe loading="lazy"
+src="https://www.youtube.com/embed/pH1fOCwrZd0"
+allowfullscreen
+title="YouTube Video"
+>
+&lt;/iframe>
+&lt;/div>
+&lt;p>The Python script randomises the positions and orientations of all chess pieces on their side of the board, creating a
+new game scenario. However, the script does not respect the rules of chess, meaning unrealistic and impossible game
+scenarios can be generated. Within Blender, the user can move a chess piece from one of the storage trays above the
+board and execute the script; this causes the piece to be included in the new randomised game scene. When a piece is
+moved below the top of the board, it is excluded from the game scene.&lt;/p>
+&lt;p>&lt;img src="https://jemgunay.co.uk/p/blender-3d-modelled-chess-board/frame7.jpg"
+width="1920"
+height="1080"
+srcset="https://jemgunay.co.uk/p/blender-3d-modelled-chess-board/frame7_hu16683978600884719025.jpg 480w, https://jemgunay.co.uk/p/blender-3d-modelled-chess-board/frame7_hu10299288328908555119.jpg 1024w"
+loading="lazy"
+alt="A game scene randomised by the Python script"
+class="gallery-image"
+data-flex-grow="177"
+data-flex-basis="426px"
+> &lt;img src="https://jemgunay.co.uk/p/blender-3d-modelled-chess-board/frame8.jpg"
+width="1920"
+height="1080"
+srcset="https://jemgunay.co.uk/p/blender-3d-modelled-chess-board/frame8_hu16252829169903676070.jpg 480w, https://jemgunay.co.uk/p/blender-3d-modelled-chess-board/frame8_hu8177914460344014962.jpg 1024w"
+loading="lazy"
+alt="A game scene randomised by the Python script"
+class="gallery-image"
+data-flex-grow="177"
+data-flex-basis="426px"
+> &lt;img src="https://jemgunay.co.uk/p/blender-3d-modelled-chess-board/frame9.jpg"
+width="1920"
+height="1080"
+srcset="https://jemgunay.co.uk/p/blender-3d-modelled-chess-board/frame9_hu12946676668665460199.jpg 480w, https://jemgunay.co.uk/p/blender-3d-modelled-chess-board/frame9_hu13853770120061317282.jpg 1024w"
+loading="lazy"
+alt="A game scene randomised by the Python script"
+class="gallery-image"
+data-flex-grow="177"
+data-flex-basis="426px"
+>&lt;/p></description></item><item><title>Trippy Recursive Circles in Processing</title><link>https://jemgunay.co.uk/p/trippy-recursive-circles-in-processing/</link><pubDate>Mon, 19 Sep 2016 03:19:37 +0000</pubDate><guid>https://jemgunay.co.uk/p/trippy-recursive-circles-in-processing/</guid><description>&lt;img src="https://jemgunay.co.uk/p/trippy-recursive-circles-in-processing/preview.png" alt="Featured image of post Trippy Recursive Circles in Processing" />&lt;p>Simple use of recursion to make a warped tunnelling effect with circles using &lt;a class="link" href="https://processing.org/" target="_blank" rel="noopener"
+>Processing&lt;/a>.
+Processing sketch/source and compiled executable can be found below.&lt;/p>
+&lt;ul>
+&lt;li>Starts off slowly iterating over the four different rendering modes.&lt;/li>
+&lt;li>Use keys 1, 2, 3 and 4 to change the visual/render mode (dynamic rainbow, static rainbow, dynamic greyscale, static
+greyscale).&lt;/li>
+&lt;li>Use left and right arrow keys to switch to a different motion path (there are 4 motion paths, each with varied use of
+the trigonometric functions sin, cos and tan).&lt;/li>
+&lt;/ul>
+&lt;p>TODO: Click to download application &amp;amp; source files&lt;/p>
+&lt;div class="video-wrapper">
+&lt;iframe loading="lazy"
+src="https://www.youtube.com/embed/qIsaU927Jxs"
+allowfullscreen
+title="YouTube Video"
+>
+&lt;/iframe>
+&lt;/div></description></item><item><title>Ambient Lighting Photo Frame</title><link>https://jemgunay.co.uk/p/ambient-lighting-photo-frame/</link><pubDate>Mon, 19 Sep 2016 02:59:59 +0000</pubDate><guid>https://jemgunay.co.uk/p/ambient-lighting-photo-frame/</guid><description>&lt;img src="https://jemgunay.co.uk/p/ambient-lighting-photo-frame/preview.png" alt="Featured image of post Ambient Lighting Photo Frame" />&lt;p>I wanted to make a photo frame gift more interesting, so added an ambient lighting effect by attaching a
+small circuit to the back of the frame. Initially powered by an Arduino Uno, the C++ code controlling the timing of the
+RGB LEDs was recompiled for an ATtiny45 microcontroller (enabling AA battery power) to significantly reduced the
+project’s physical size, cost, and power consumption. The red, green, and blue LEDs can produce a smooth transition
+across most of the visible light spectrum with vibrant intensity which refracts nicely to illuminate the glass frame and
+backdrop.&lt;/p>
+&lt;p>&lt;img src="https://jemgunay.co.uk/p/ambient-lighting-photo-frame/frame.jpg"
+width="3264"
+height="1836"
+srcset="https://jemgunay.co.uk/p/ambient-lighting-photo-frame/frame_hu14606910164051644681.jpg 480w, https://jemgunay.co.uk/p/ambient-lighting-photo-frame/frame_hu10715920011948690449.jpg 1024w"
+loading="lazy"
+alt="The colour cycle"
+class="gallery-image"
+data-flex-grow="177"
+data-flex-basis="426px"
+> &lt;img src="https://jemgunay.co.uk/p/ambient-lighting-photo-frame/frame2.jpg"
+width="3264"
+height="1836"
+srcset="https://jemgunay.co.uk/p/ambient-lighting-photo-frame/frame2_hu10544709942967225568.jpg 480w, https://jemgunay.co.uk/p/ambient-lighting-photo-frame/frame2_hu3932855547178097760.jpg 1024w"
+loading="lazy"
+alt="Back of frame (blue)"
+class="gallery-image"
+data-flex-grow="177"
+data-flex-basis="426px"
+> &lt;img src="https://jemgunay.co.uk/p/ambient-lighting-photo-frame/frame3.jpg"
+width="3264"
+height="1836"
+srcset="https://jemgunay.co.uk/p/ambient-lighting-photo-frame/frame3_hu8195381554329540420.jpg 480w, https://jemgunay.co.uk/p/ambient-lighting-photo-frame/frame3_hu12814012635047113438.jpg 1024w"
+loading="lazy"
+alt="Back of frame (red/green)"
+class="gallery-image"
+data-flex-grow="177"
+data-flex-basis="426px"
+>&lt;/p>
+&lt;div class="video-wrapper">
+&lt;iframe loading="lazy"
+src="https://www.youtube.com/embed/4v7B8vSlyEk"
+allowfullscreen
+title="YouTube Video"
+>
+&lt;/iframe>
+&lt;/div></description></item><item><title>Flash Tables Craft Children's Game</title><link>https://jemgunay.co.uk/p/flash-tables-craft-childrens-game/</link><pubDate>Sun, 18 Sep 2016 21:51:56 +0000</pubDate><guid>https://jemgunay.co.uk/p/flash-tables-craft-childrens-game/</guid><description>&lt;img src="https://jemgunay.co.uk/p/flash-tables-craft-childrens-game/preview.png" alt="Featured image of post Flash Tables Craft Children's Game" />&lt;p>My little brother and sister (aged 7 and 8 at the time) wanted a more motivational way to practice their times tables
+for their school homework. They are obsessed with the popular game Minecraft, so I combined the two!&lt;/p>
+&lt;ul>
+&lt;li>Options to select multiple tables to practice with randomised question order.&lt;/li>
+&lt;li>Optional timer to speed up the pace of a game.&lt;/li>
+&lt;li>Summary at the end with correctly and incorrectly answered questions with their solutions.&lt;/li>
+&lt;li>Characters from the game pop in and out at random areas and timings around the screen, with sounds and textures from
+the game recycled throughout.&lt;/li>
+&lt;/ul>
+&lt;p>TODO: Add SWF screenshots here.
+TODO: Add SWF download.&lt;/p></description></item><item><title>C++ Orbital Simulation (Part 1)</title><link>https://jemgunay.co.uk/p/orbital-simulation-part-1/</link><pubDate>Sun, 18 Sep 2016 21:05:26 +0000</pubDate><guid>https://jemgunay.co.uk/p/orbital-simulation-part-1/</guid><description>&lt;img src="https://jemgunay.co.uk/p/orbital-simulation-part-1/preview.png" alt="Featured image of post C++ Orbital Simulation (Part 1)" />&lt;p>I was curious about using the &lt;a class="link" href="https://github.com/erincatto/Box2D" target="_blank" rel="noopener"
+>Box2D&lt;/a> physics engine to simulate orbital physics,
+inspired by the gravitational pull mechanic of the planets in Angry Birds Space. The &lt;a class="link" href="http://www.sfml-dev.org" target="_blank" rel="noopener"
+>SFML&lt;/a>
+library was used to draw the planets in the simulation. Planet Earth is fixed to the centre of space, with a variable
+number of square and triangular satellites orbiting around it; for each satellite spawned, an impulse sized relative to
+the distance from the central planet is applied to launch it in a random direction, but with a velocity which guides the
+satellite into a stable orbit. I decided to use an abstract but clean style to make the simulation more interesting and
+satisfying to watch.&lt;/p>
+&lt;p>There are options to create and destroy satellites, which can in turn be dragged around with the mouse - a challenge is
+to try and throw the satellites back into a successful orbit. There are also controls for zooming and enabling/disabling
+the gravitational field which creates a gradual scattering effect. I intend to revisit the orbital test to create a more
+realistic and complex simulation or game.&lt;/p>
+&lt;p>The simulation can be seen in action below, followed by the program download link.&lt;/p>
+&lt;div class="video-wrapper">
+&lt;iframe loading="lazy"
+src="https://www.youtube.com/embed/qlLprQlhRuk"
+allowfullscreen
+title="YouTube Video"
+>
+&lt;/iframe>
+&lt;/div>
+&lt;p>TODO: Click to download&lt;/p></description></item><item><title>Flash Multiplayer Dwarf Game</title><link>https://jemgunay.co.uk/p/flash-multiplayer-dwarf-game/</link><pubDate>Sun, 18 Sep 2016 20:03:23 +0000</pubDate><guid>https://jemgunay.co.uk/p/flash-multiplayer-dwarf-game/</guid><description>&lt;img src="https://jemgunay.co.uk/p/flash-multiplayer-dwarf-game/preview.png" alt="Featured image of post Flash Multiplayer Dwarf Game" />&lt;p>This is one of the first large projects I worked on when starting out with AS3. I worked on this with two friends; I
+wrote the code, Matty created the majority of the graphics and Reuben provided ideas and tested the game. I wanted to
+read into multiplayer game development so took a look at &lt;a class="link" href="https://playerio.com" target="_blank" rel="noopener"
+>Player.IO&lt;/a>. By writing AS3 client side
+code and C# server side code tests, I implemented the API with a basic blocky terrain generation algorithm I had been
+working on to create a basic multiplayer base. We then decided to expand on this by creating a Minecraft/Terraria
+inspired side-scroller with dwarves who explore and destroy the terrain.&lt;/p>
+&lt;p>Although basic and occasionally buggy, it has a great deal of character and I&amp;rsquo;m proud to call it a first major completed
+project.&lt;/p>
+&lt;ul>
+&lt;li>Enter your name and select one of the two dwarf characters to join the game.&lt;/li>
+&lt;li>Normal biomes have mushrooms and exploding pumpkins. Snowy biomes have a destructible snowman.&lt;/li>
+&lt;li>WASD or ARROWS to move, CTRL + Left Click to remove block (temperamental), type &lt;code>/help&lt;/code> in chat for commands. Enter
+to send a message in chat.&lt;/li>
+&lt;/ul>
+&lt;p>TODO: Add SWF screenshots here.
+TODO: Add SWF download.&lt;/p></description></item><item><title>Links</title><link>https://jemgunay.co.uk/links/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://jemgunay.co.uk/links/</guid><description/></item><item><title>Search</title><link>https://jemgunay.co.uk/search/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://jemgunay.co.uk/search/</guid><description/></item></channel></rss>

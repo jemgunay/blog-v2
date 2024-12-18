@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>C++ on Jem Gunay</title><link>https://jemgunay.co.uk/tags/c++/</link><description>Recent content in C++ on Jem Gunay</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Tue, 26 Sep 2017 00:00:00 +0000</lastBuildDate><atom:link href="https://jemgunay.co.uk/tags/c++/index.xml" rel="self" type="application/rss+xml"/><item><title>C++ Orbital Simulation (Part 2)</title><link>https://jemgunay.co.uk/p/orbital-simulation-part-2/</link><pubDate>Tue, 26 Sep 2017 00:00:00 +0000</pubDate><guid>https://jemgunay.co.uk/p/orbital-simulation-part-2/</guid><description>&lt;img src="https://jemgunay.co.uk/p/orbital-simulation-part-2/preview.jpg" alt="Featured image of post C++ Orbital Simulation (Part 2)" />&lt;p>See the GitHub repository &lt;a class="link" href="https://github.com/jemgunay/orbital-sim" target="_blank" rel="noopener"
+>here&lt;/a>.&lt;/p>
+&lt;p>As a follow-up to &lt;a class="link" href="https://jemgunay.co.uk/p/orbital-simulation-part-1" >Part 1&lt;/a>, I decided to rewrite the orbital planet simulation from scratch, this time scrapping the
+physics library and instead implementing my own physics. On launch, three galaxies consisting of around 100 planets each
+are spawned which orbit a larger planet sitting at the centre of their galaxy. These planets are all gravitationally
+attracted towards each other and deflect on collision.&lt;/p>
+&lt;p>Each planet has a randomised size, shape and texture; smaller planets are given an initial impulse to push them into an
+orbit. The controllable rocket can be used to navigate the cosmos and its physics are also simulated; the rocket vector
+graphic was created in Adobe Illustrator.&lt;/p>
+&lt;p>&lt;img src="https://jemgunay.co.uk/p/orbital-simulation-part-2/frame.jpg"
+width="1936"
+height="1056"
+srcset="https://jemgunay.co.uk/p/orbital-simulation-part-2/frame_hu1460826660553803094.jpg 480w, https://jemgunay.co.uk/p/orbital-simulation-part-2/frame_hu13884898411630764141.jpg 1024w"
+loading="lazy"
+alt="Example simulation"
+class="gallery-image"
+data-flex-grow="183"
+data-flex-basis="440px"
+> &lt;img src="https://jemgunay.co.uk/p/orbital-simulation-part-2/frame2.jpg"
+width="1936"
+height="1056"
+srcset="https://jemgunay.co.uk/p/orbital-simulation-part-2/frame2_hu15577714237923668406.jpg 480w, https://jemgunay.co.uk/p/orbital-simulation-part-2/frame2_hu9042251298951106865.jpg 1024w"
+loading="lazy"
+alt="Example simulation"
+class="gallery-image"
+data-flex-grow="183"
+data-flex-basis="440px"
+> &lt;img src="https://jemgunay.co.uk/p/orbital-simulation-part-2/frame3.jpg"
+width="1936"
+height="1056"
+srcset="https://jemgunay.co.uk/p/orbital-simulation-part-2/frame3_hu11063349811697599931.jpg 480w, https://jemgunay.co.uk/p/orbital-simulation-part-2/frame3_hu12710098379079281343.jpg 1024w"
+loading="lazy"
+alt="Example simulation"
+class="gallery-image"
+data-flex-grow="183"
+data-flex-basis="440px"
+>&lt;/p>
+&lt;p>&lt;img src="https://jemgunay.co.uk/p/orbital-simulation-part-2/frame4.jpg"
+width="1936"
+height="1056"
+srcset="https://jemgunay.co.uk/p/orbital-simulation-part-2/frame4_hu14813374577102209948.jpg 480w, https://jemgunay.co.uk/p/orbital-simulation-part-2/frame4_hu3042348197284961574.jpg 1024w"
+loading="lazy"
+alt="Example simulation"
+class="gallery-image"
+data-flex-grow="183"
+data-flex-basis="440px"
+> &lt;img src="https://jemgunay.co.uk/p/orbital-simulation-part-2/frame5.jpg"
+width="1936"
+height="1056"
+srcset="https://jemgunay.co.uk/p/orbital-simulation-part-2/frame5_hu10457035373088277041.jpg 480w, https://jemgunay.co.uk/p/orbital-simulation-part-2/frame5_hu6609331672162152360.jpg 1024w"
+loading="lazy"
+alt="Vector rocket graphic creation in Illustrator"
+class="gallery-image"
+data-flex-grow="183"
+data-flex-basis="440px"
+>&lt;/p>
+&lt;p>The simulation can be seen in action below:&lt;/p>
+&lt;div class="video-wrapper">
+&lt;iframe loading="lazy"
+src="https://www.youtube.com/embed/0GOfqRuKk8A"
+allowfullscreen
+title="YouTube Video"
+>
+&lt;/iframe>
+&lt;/div></description></item><item><title>C++ Mousey Maze Game</title><link>https://jemgunay.co.uk/p/mousey-maze-game/</link><pubDate>Tue, 10 Jan 2017 15:59:54 +0000</pubDate><guid>https://jemgunay.co.uk/p/mousey-maze-game/</guid><description>&lt;img src="https://jemgunay.co.uk/p/mousey-maze-game/preview.png" alt="Featured image of post C++ Mousey Maze Game" />&lt;p>This classical maze game was developed during my university games computing module. It is written in C++ and compiled
+under Linux with g++, utilising the Ogre3D graphical library for rendering the scene (with its shipped OIS library for
+handling mouse and keyboard input) and ODE for simulating the game physics. The objective of the game will be to
+navigate your mouse character around a hedge maze to capture all of the collectable rotating cheese segments in the
+shortest time possible, with the ability to replay the same level in order to beat your previous time record. There is a
+graphical display of the number of cheese segments collected, the current time elapsed since starting the level and the
+previous record time. The game can be downloaded below.&lt;/p>
+&lt;p>&lt;img src="https://jemgunay.co.uk/p/mousey-maze-game/frame.jpg"
+width="1920"
+height="1032"
+srcset="https://jemgunay.co.uk/p/mousey-maze-game/frame_hu9196175057613656587.jpg 480w, https://jemgunay.co.uk/p/mousey-maze-game/frame_hu493551639393671649.jpg 1024w"
+loading="lazy"
+alt="Initial game launch"
+class="gallery-image"
+data-flex-grow="186"
+data-flex-basis="446px"
+> &lt;img src="https://jemgunay.co.uk/p/mousey-maze-game/frame2.jpg"
+width="1920"
+height="1032"
+srcset="https://jemgunay.co.uk/p/mousey-maze-game/frame2_hu2272134211454246068.jpg 480w, https://jemgunay.co.uk/p/mousey-maze-game/frame2_hu11427264459533977298.jpg 1024w"
+loading="lazy"
+alt="Player character in top left corner of the maze"
+class="gallery-image"
+data-flex-grow="186"
+data-flex-basis="446px"
+>
+&lt;img src="https://jemgunay.co.uk/p/mousey-maze-game/frame3.jpg"
+width="1920"
+height="1032"
+srcset="https://jemgunay.co.uk/p/mousey-maze-game/frame3_hu11713865124943665399.jpg 480w, https://jemgunay.co.uk/p/mousey-maze-game/frame3_hu15321049467533215205.jpg 1024w"
+loading="lazy"
+alt="Winning screen"
+class="gallery-image"
+data-flex-grow="186"
+data-flex-basis="446px"
+> &lt;img src="https://jemgunay.co.uk/p/mousey-maze-game/frame4.jpg"
+width="1920"
+height="1032"
+srcset="https://jemgunay.co.uk/p/mousey-maze-game/frame4_hu13192209827238561144.jpg 480w, https://jemgunay.co.uk/p/mousey-maze-game/frame4_hu6960535771111806866.jpg 1024w"
+loading="lazy"
+alt="Hovering the mouse over the replay button"
+class="gallery-image"
+data-flex-grow="186"
+data-flex-basis="446px"
+>&lt;/p>
+&lt;p>The mouse was textured in &lt;a class="link" href="https://www.blender.org/" target="_blank" rel="noopener"
+>Blender&lt;/a> by unwrapping a sphere mesh and UV mapping a minimalistic
+mouse texture created in Photoshop to it. The Blender
+plug-in &lt;a class="link" href="https://bitbucket.org/iboshkov/blender2ogre" target="_blank" rel="noopener"
+>Blender RealXtend Tundra&lt;/a> was then used to export the Blender mesh
+with UV co-ordinate data and
+the &lt;a class="link" href="https://sourceforge.net/projects/ogre/files/ogre-tools/1.7.2/OgreCommandLineTools_1.7.2.zip" target="_blank" rel="noopener"
+>OgreCommandLineTools 1.7.2&lt;/a>
+set of scripts was used convert this into a &lt;code>.mesh&lt;/code> file to be rendered by the Ogre3D engine. Blender was also used to
+model and texture the cheese segment asset. I created an interpreter to parse game level creating instructions from a
+text file in order to make creating new levels more efficient without having to recompile the game each time. It ignores
+new lines and comment lines prefixed with a hash character; this improves readability by making it easy to group and
+label sections of wall creation instructions together. This project encouraged me to learn how to utilise Makefiles in
+order more efficiently build C++ programs.&lt;/p>
+&lt;p>&lt;img src="https://jemgunay.co.uk/p/mousey-maze-game/frame5.jpg"
+width="1936"
+height="1056"
+srcset="https://jemgunay.co.uk/p/mousey-maze-game/frame5_hu12004561549543409014.jpg 480w, https://jemgunay.co.uk/p/mousey-maze-game/frame5_hu6836510551829878449.jpg 1024w"
+loading="lazy"
+alt="Mouse texture in Photoshop"
+class="gallery-image"
+data-flex-grow="183"
+data-flex-basis="440px"
+> &lt;img src="https://jemgunay.co.uk/p/mousey-maze-game/frame6.jpg"
+width="1936"
+height="1056"
+srcset="https://jemgunay.co.uk/p/mousey-maze-game/frame6_hu351976017321011850.jpg 480w, https://jemgunay.co.uk/p/mousey-maze-game/frame6_hu14719848828558003773.jpg 1024w"
+loading="lazy"
+alt="Cheese texture UV mapped to the cheese segment mesh in Blender"
+class="gallery-image"
+data-flex-grow="183"
+data-flex-basis="440px"
+>&lt;/p>
+&lt;ul>
+&lt;li>Execute &lt;code>MazeGame&lt;/code> to launch the game.&lt;/li>
+&lt;li>WASD or arrow keys to roll the mouse.&lt;/li>
+&lt;li>Escape key to exit the game.&lt;/li>
+&lt;li>Built on Ubuntu 14.04. Dependencies: Ogre3D 1.9&lt;/li>
+&lt;/ul>
+&lt;p>TODO: Click to download&lt;/p></description></item><item><title>Ambient Lighting Photo Frame</title><link>https://jemgunay.co.uk/p/ambient-lighting-photo-frame/</link><pubDate>Mon, 19 Sep 2016 02:59:59 +0000</pubDate><guid>https://jemgunay.co.uk/p/ambient-lighting-photo-frame/</guid><description>&lt;img src="https://jemgunay.co.uk/p/ambient-lighting-photo-frame/preview.png" alt="Featured image of post Ambient Lighting Photo Frame" />&lt;p>I wanted to make a photo frame gift more interesting, so added an ambient lighting effect by attaching a
+small circuit to the back of the frame. Initially powered by an Arduino Uno, the C++ code controlling the timing of the
+RGB LEDs was recompiled for an ATtiny45 microcontroller (enabling AA battery power) to significantly reduced the
+project’s physical size, cost, and power consumption. The red, green, and blue LEDs can produce a smooth transition
+across most of the visible light spectrum with vibrant intensity which refracts nicely to illuminate the glass frame and
+backdrop.&lt;/p>
+&lt;p>&lt;img src="https://jemgunay.co.uk/p/ambient-lighting-photo-frame/frame.jpg"
+width="3264"
+height="1836"
+srcset="https://jemgunay.co.uk/p/ambient-lighting-photo-frame/frame_hu14606910164051644681.jpg 480w, https://jemgunay.co.uk/p/ambient-lighting-photo-frame/frame_hu10715920011948690449.jpg 1024w"
+loading="lazy"
+alt="The colour cycle"
+class="gallery-image"
+data-flex-grow="177"
+data-flex-basis="426px"
+> &lt;img src="https://jemgunay.co.uk/p/ambient-lighting-photo-frame/frame2.jpg"
+width="3264"
+height="1836"
+srcset="https://jemgunay.co.uk/p/ambient-lighting-photo-frame/frame2_hu10544709942967225568.jpg 480w, https://jemgunay.co.uk/p/ambient-lighting-photo-frame/frame2_hu3932855547178097760.jpg 1024w"
+loading="lazy"
+alt="Back of frame (blue)"
+class="gallery-image"
+data-flex-grow="177"
+data-flex-basis="426px"
+> &lt;img src="https://jemgunay.co.uk/p/ambient-lighting-photo-frame/frame3.jpg"
+width="3264"
+height="1836"
+srcset="https://jemgunay.co.uk/p/ambient-lighting-photo-frame/frame3_hu8195381554329540420.jpg 480w, https://jemgunay.co.uk/p/ambient-lighting-photo-frame/frame3_hu12814012635047113438.jpg 1024w"
+loading="lazy"
+alt="Back of frame (red/green)"
+class="gallery-image"
+data-flex-grow="177"
+data-flex-basis="426px"
+>&lt;/p>
+&lt;div class="video-wrapper">
+&lt;iframe loading="lazy"
+src="https://www.youtube.com/embed/4v7B8vSlyEk"
+allowfullscreen
+title="YouTube Video"
+>
+&lt;/iframe>
+&lt;/div></description></item><item><title>C++ Orbital Simulation (Part 1)</title><link>https://jemgunay.co.uk/p/orbital-simulation-part-1/</link><pubDate>Sun, 18 Sep 2016 21:05:26 +0000</pubDate><guid>https://jemgunay.co.uk/p/orbital-simulation-part-1/</guid><description>&lt;img src="https://jemgunay.co.uk/p/orbital-simulation-part-1/preview.png" alt="Featured image of post C++ Orbital Simulation (Part 1)" />&lt;p>I was curious about using the &lt;a class="link" href="https://github.com/erincatto/Box2D" target="_blank" rel="noopener"
+>Box2D&lt;/a> physics engine to simulate orbital physics,
+inspired by the gravitational pull mechanic of the planets in Angry Birds Space. The &lt;a class="link" href="http://www.sfml-dev.org" target="_blank" rel="noopener"
+>SFML&lt;/a>
+library was used to draw the planets in the simulation. Planet Earth is fixed to the centre of space, with a variable
+number of square and triangular satellites orbiting around it; for each satellite spawned, an impulse sized relative to
+the distance from the central planet is applied to launch it in a random direction, but with a velocity which guides the
+satellite into a stable orbit. I decided to use an abstract but clean style to make the simulation more interesting and
+satisfying to watch.&lt;/p>
+&lt;p>There are options to create and destroy satellites, which can in turn be dragged around with the mouse - a challenge is
+to try and throw the satellites back into a successful orbit. There are also controls for zooming and enabling/disabling
+the gravitational field which creates a gradual scattering effect. I intend to revisit the orbital test to create a more
+realistic and complex simulation or game.&lt;/p>
+&lt;p>The simulation can be seen in action below, followed by the program download link.&lt;/p>
+&lt;div class="video-wrapper">
+&lt;iframe loading="lazy"
+src="https://www.youtube.com/embed/qlLprQlhRuk"
+allowfullscreen
+title="YouTube Video"
+>
+&lt;/iframe>
+&lt;/div>
+&lt;p>TODO: Click to download&lt;/p></description></item></channel></rss>

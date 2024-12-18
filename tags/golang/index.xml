@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Golang on Jem Gunay</title><link>https://jemgunay.co.uk/tags/golang/</link><description>Recent content in Golang on Jem Gunay</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Thu, 10 Sep 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://jemgunay.co.uk/tags/golang/index.xml" rel="self" type="application/rss+xml"/><item><title>Evolutionary Driving with Genetic Algorithms</title><link>https://jemgunay.co.uk/p/evolutionary-driving-with-genetic-algorithms/</link><pubDate>Thu, 10 Sep 2020 00:00:00 +0000</pubDate><guid>https://jemgunay.co.uk/p/evolutionary-driving-with-genetic-algorithms/</guid><description>&lt;img src="https://jemgunay.co.uk/p/evolutionary-driving-with-genetic-algorithms/preview.png" alt="Featured image of post Evolutionary Driving with Genetic Algorithms" />&lt;p>See the GitHub repository &lt;a class="link" href="https://github.com/jemgunay/evolutionary-driving" target="_blank" rel="noopener"
+>here&lt;/a>.&lt;/p>
+&lt;p>I&amp;rsquo;m a massive fan of the Box2D physics engine and have wielded it in a few languages as part of game and simulation
+projects. I spotted a &lt;a class="link" href="https://github.com/ByteArena/box2d" target="_blank" rel="noopener"
+>Go port&lt;/a> and wanted to somehow combine this with the Pixel 2D
+game library and
+decided &lt;a class="link" href="http://domasx2.github.io/gamejs-box2d-car-example/" target="_blank" rel="noopener"
+>this&lt;/a> top-down car demo written in JS with Box2D would be a
+fun base to start with. So, I went ahead and migrated it to Go with Pixel &amp;amp; Box2D, adding enhancements such as vehicle
+health and destruction.&lt;/p>
+&lt;p>I&amp;rsquo;d studied evolutionary algorithms at uni but had never actually implemented them. I decided to encode the car&amp;rsquo;s
+movements as a genetic sequence, and iteratively evolve the car&amp;rsquo;s performance in order to solve a basic problem. The car
+evolves to drive to and gracefully brake on a green target point. It uses roulette wheel selection combined with random
+cross-overs, swaps and mutations to produce the following generation. The fitness function is a combination of the
+distance from the target and the final velocity at the end of the sequence execution to encourage the car to precisely
+park on the target rather than speed over it.&lt;/p>
+&lt;p>The following video illustrates the improvement in fitness between evolutionary iterations. I&amp;rsquo;ve also included a
+surprising solution which evolved after hundreds of iterations, showing how machine learning and evolution in general
+can provide interesting and less obvious solutions&amp;hellip;&lt;/p>
+&lt;div class="video-wrapper">
+&lt;iframe loading="lazy"
+src="https://www.youtube.com/embed/F2pwEOJhNMs"
+allowfullscreen
+title="YouTube Video"
+>
+&lt;/iframe>
+&lt;/div></description></item><item><title>Controlling Window Blinds with Alexa</title><link>https://jemgunay.co.uk/p/controlling-window-blinds-with-alexa/</link><pubDate>Tue, 08 Sep 2020 00:00:00 +0000</pubDate><guid>https://jemgunay.co.uk/p/controlling-window-blinds-with-alexa/</guid><description>&lt;img src="https://jemgunay.co.uk/p/controlling-window-blinds-with-alexa/preview.png" alt="Featured image of post Controlling Window Blinds with Alexa" />&lt;p>See the GitHub repository &lt;a class="link" href="https://github.com/jemgunay/echo-blinds" target="_blank" rel="noopener"
+>here&lt;/a>.&lt;/p>
+&lt;p>I created an Amazon Alexa skill server in Golang for controlling window blinds. It works by receiving instructions from
+Alexa utterances via AWS, which in turn trigger motors controlled via a Raspberry Pi Zero&amp;rsquo;s GPIO pins. These motors then
+pull the window blinds cords to rotate and pull them open. The motors and blinds cords were mounted to a 3D printed
+chassis, of which the models were precisely designed in Blender.&lt;/p>
+&lt;p>&lt;img src="https://jemgunay.co.uk/p/controlling-window-blinds-with-alexa/frame.jpeg"
+width="2592"
+height="4608"
+srcset="https://jemgunay.co.uk/p/controlling-window-blinds-with-alexa/frame_hu210251372238286484.jpeg 480w, https://jemgunay.co.uk/p/controlling-window-blinds-with-alexa/frame_hu6367401925089421934.jpeg 1024w"
+loading="lazy"
+alt="Initial menu"
+class="gallery-image"
+data-flex-grow="56"
+data-flex-basis="135px"
+> &lt;img src="https://jemgunay.co.uk/p/controlling-window-blinds-with-alexa/frame2.jpeg"
+width="2592"
+height="4608"
+srcset="https://jemgunay.co.uk/p/controlling-window-blinds-with-alexa/frame2_hu4145761068815898416.jpeg 480w, https://jemgunay.co.uk/p/controlling-window-blinds-with-alexa/frame2_hu3317240559596597738.jpeg 1024w"
+loading="lazy"
+alt="Server hosting &amp; world creation menu"
+class="gallery-image"
+data-flex-grow="56"
+data-flex-basis="135px"
+>&lt;/p>
+&lt;div class="video-wrapper">
+&lt;iframe loading="lazy"
+src="https://www.youtube.com/embed/fgj6HONCQOs"
+allowfullscreen
+title="YouTube Video"
+>
+&lt;/iframe>
+&lt;/div></description></item><item><title>Multiplayer Procedural Game Demo</title><link>https://jemgunay.co.uk/p/multiplayer-procedural-game-demo/</link><pubDate>Mon, 07 Sep 2020 00:00:00 +0000</pubDate><guid>https://jemgunay.co.uk/p/multiplayer-procedural-game-demo/</guid><description>&lt;img src="https://jemgunay.co.uk/p/multiplayer-procedural-game-demo/preview.png" alt="Featured image of post Multiplayer Procedural Game Demo" />&lt;p>See the GitHub repository &lt;a class="link" href="https://github.com/jemgunay/procedural-game" target="_blank" rel="noopener"
+>here&lt;/a>.&lt;/p>
+&lt;p>I was keen to apply my Golang experience to the world of game development, of which I&amp;rsquo;d explored in several other
+languages. I came across the Pixel 2D game library and wanted to combine it with the powerful concurrency model and
+networking packages that Go provides out of the box. The result was a multiplayer procedural terrain game consisting of:&lt;/p>
+&lt;ul>
+&lt;li>A seedable procedural world generator implemented with Perlin noise. Worlds consist of grassy mainland, bodies of
+water, sandy beaches, and a dynamically generated road network.&lt;/li>
+&lt;li>Ability to host multiplayer worlds for other players to join over TCP.&lt;/li>
+&lt;li>A basic weapons inventory and ammo system, with the ability to shoot other players.&lt;/li>
+&lt;li>A flexible and responsive menu system with buttons, text inputs and scroll bars.&lt;/li>
+&lt;li>Water wave shaders.&lt;/li>
+&lt;/ul>
+&lt;p>&lt;img src="https://jemgunay.co.uk/p/multiplayer-procedural-game-demo/frame.png"
+width="1024"
+height="768"
+srcset="https://jemgunay.co.uk/p/multiplayer-procedural-game-demo/frame_hu5639500397985427788.png 480w, https://jemgunay.co.uk/p/multiplayer-procedural-game-demo/frame_hu6682959269037469107.png 1024w"
+loading="lazy"
+alt="Initial menu"
+class="gallery-image"
+data-flex-grow="133"
+data-flex-basis="320px"
+> &lt;img src="https://jemgunay.co.uk/p/multiplayer-procedural-game-demo/frame2.png"
+width="1024"
+height="768"
+srcset="https://jemgunay.co.uk/p/multiplayer-procedural-game-demo/frame2_hu3421977475257489033.png 480w, https://jemgunay.co.uk/p/multiplayer-procedural-game-demo/frame2_hu4334257161669706193.png 1024w"
+loading="lazy"
+alt="Server hosting &amp; world creation menu"
+class="gallery-image"
+data-flex-grow="133"
+data-flex-basis="320px"
+> &lt;img src="https://jemgunay.co.uk/p/multiplayer-procedural-game-demo/frame3.png"
+width="1024"
+height="768"
+srcset="https://jemgunay.co.uk/p/multiplayer-procedural-game-demo/frame3_hu7337649393219526808.png 480w, https://jemgunay.co.uk/p/multiplayer-procedural-game-demo/frame3_hu1110367419143654132.png 1024w"
+loading="lazy"
+alt="Join server menu"
+class="gallery-image"
+data-flex-grow="133"
+data-flex-basis="320px"
+>&lt;/p>
+&lt;p>&lt;img src="https://jemgunay.co.uk/p/multiplayer-procedural-game-demo/frame4.png"
+width="1024"
+height="768"
+srcset="https://jemgunay.co.uk/p/multiplayer-procedural-game-demo/frame4_hu5628761198531880146.png 480w, https://jemgunay.co.uk/p/multiplayer-procedural-game-demo/frame4_hu4485808468217058574.png 1024w"
+loading="lazy"
+alt="Gameplay with two players"
+class="gallery-image"
+data-flex-grow="133"
+data-flex-basis="320px"
+> &lt;img src="https://jemgunay.co.uk/p/multiplayer-procedural-game-demo/frame5.png"
+width="1024"
+height="768"
+srcset="https://jemgunay.co.uk/p/multiplayer-procedural-game-demo/frame5_hu7372387667261321701.png 480w, https://jemgunay.co.uk/p/multiplayer-procedural-game-demo/frame5_hu14790872490848086108.png 1024w"
+loading="lazy"
+alt="Zoomed out gameplay"
+class="gallery-image"
+data-flex-grow="133"
+data-flex-basis="320px"
+> &lt;img src="https://jemgunay.co.uk/p/multiplayer-procedural-game-demo/frame6.png"
+width="1024"
+height="768"
+srcset="https://jemgunay.co.uk/p/multiplayer-procedural-game-demo/frame6_hu3253068923764947848.png 480w, https://jemgunay.co.uk/p/multiplayer-procedural-game-demo/frame6_hu15429480442823764227.png 1024w"
+loading="lazy"
+alt="Pause menu"
+class="gallery-image"
+data-flex-grow="133"
+data-flex-basis="320px"
+>&lt;/p></description></item></channel></rss>

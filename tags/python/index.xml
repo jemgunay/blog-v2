@@ -1,0 +1,411 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Python on Jem Gunay</title><link>https://jemgunay.co.uk/tags/python/</link><description>Recent content in Python on Jem Gunay</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Tue, 26 Sep 2017 07:00:00 +0000</lastBuildDate><atom:link href="https://jemgunay.co.uk/tags/python/index.xml" rel="self" type="application/rss+xml"/><item><title>Bottle Classifier &amp; Cocktail Resolver</title><link>https://jemgunay.co.uk/p/bottle-classifier-cocktail-resolver/</link><pubDate>Tue, 26 Sep 2017 07:00:00 +0000</pubDate><guid>https://jemgunay.co.uk/p/bottle-classifier-cocktail-resolver/</guid><description>&lt;img src="https://jemgunay.co.uk/p/bottle-classifier-cocktail-resolver/preview.png" alt="Featured image of post Bottle Classifier &amp; Cocktail Resolver" />&lt;p>See the GitHub repository &lt;a class="link" href="https://github.com/jemgunay/bottle-classifier" target="_blank" rel="noopener"
+>here&lt;/a>.&lt;/p>
+&lt;p>For my university third year dissertation project, I developed a computer vision-orientated application for detecting
+and classifying bottles from a camera stream or image frame, as well as displaying appropriate cocktail recipes based on
+the classified bottles in an aesthetically pleasing web page.&lt;/p>
+&lt;p>This was achieved using trained &lt;strong>HAAR/LBP&lt;/strong> cascades (using the &lt;a class="link" href="https://opencv.org/" target="_blank" rel="noopener"
+>OpenCV&lt;/a> implementations) for
+detection and colour histograms generated from detected regions of interest to improve classification performance. The
+applications were written primarily in Python utilising a wide number of libraries (list can be seen on GitHub
+repository), though web languages were also used for rendering the resolved recipes. The tool currently classifies
+&lt;em>Smirnoff Vodka&lt;/em> and &lt;em>Jack Daniel&amp;rsquo;s&lt;/em> bottles, as well as &lt;em>Red Bull&lt;/em> cans, &lt;em>Monster Energy&lt;/em> cans and an &lt;em>orange juice
+carton&lt;/em>. MySQL was used to store the scraped cocktail recipes.&lt;/p>
+&lt;p>Several command line tools were developed which allow the flexible execution and maintenance of the tool:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Recipe Scraper&lt;/strong>: used to scrape a recipe by name or multiple recipes by ingredient name from a cocktail recipe
+website into the database.&lt;/li>
+&lt;li>&lt;strong>Histogram Generator&lt;/strong>: used to generate specially formatted histogram files which represent the colour spectrum of
+the target image.&lt;/li>
+&lt;li>&lt;strong>Main Application&lt;/strong>: used to perform classification of the target image frame or camera stream. Also used to resolve
+the cocktail recipes and to launch the web server for hosting the recipe view render.&lt;/li>
+&lt;/ul>
+&lt;p>Screenshots of the classification of bottles from a live webcam feed:&lt;/p>
+&lt;p>&lt;img src="https://jemgunay.co.uk/p/bottle-classifier-cocktail-resolver/frame.png"
+width="600"
+height="335"
+srcset="https://jemgunay.co.uk/p/bottle-classifier-cocktail-resolver/frame_hu10248343704155948762.png 480w, https://jemgunay.co.uk/p/bottle-classifier-cocktail-resolver/frame_hu13656433202197453811.png 1024w"
+loading="lazy"
+alt="Example bottle classifications"
+class="gallery-image"
+data-flex-grow="179"
+data-flex-basis="429px"
+> &lt;img src="https://jemgunay.co.uk/p/bottle-classifier-cocktail-resolver/frame2.png"
+width="600"
+height="335"
+srcset="https://jemgunay.co.uk/p/bottle-classifier-cocktail-resolver/frame2_hu178515798945724208.png 480w, https://jemgunay.co.uk/p/bottle-classifier-cocktail-resolver/frame2_hu1614399620244658469.png 1024w"
+loading="lazy"
+alt="Example bottle classifications"
+class="gallery-image"
+data-flex-grow="179"
+data-flex-basis="429px"
+> &lt;img src="https://jemgunay.co.uk/p/bottle-classifier-cocktail-resolver/frame3.png"
+width="600"
+height="335"
+srcset="https://jemgunay.co.uk/p/bottle-classifier-cocktail-resolver/frame3_hu3980620513148193226.png 480w, https://jemgunay.co.uk/p/bottle-classifier-cocktail-resolver/frame3_hu17499495236751693152.png 1024w"
+loading="lazy"
+alt="Example bottle classifications"
+class="gallery-image"
+data-flex-grow="179"
+data-flex-basis="429px"
+>
+&lt;img src="https://jemgunay.co.uk/p/bottle-classifier-cocktail-resolver/frame4.png"
+width="600"
+height="335"
+srcset="https://jemgunay.co.uk/p/bottle-classifier-cocktail-resolver/frame4_hu15298461472701831588.png 480w, https://jemgunay.co.uk/p/bottle-classifier-cocktail-resolver/frame4_hu2500999430482250618.png 1024w"
+loading="lazy"
+alt="Example bottle classifications"
+class="gallery-image"
+data-flex-grow="179"
+data-flex-basis="429px"
+> &lt;img src="https://jemgunay.co.uk/p/bottle-classifier-cocktail-resolver/frame5.png"
+width="600"
+height="335"
+srcset="https://jemgunay.co.uk/p/bottle-classifier-cocktail-resolver/frame5_hu4405106009666152611.png 480w, https://jemgunay.co.uk/p/bottle-classifier-cocktail-resolver/frame5_hu12224516837932263985.png 1024w"
+loading="lazy"
+alt="Example bottle classifications"
+class="gallery-image"
+data-flex-grow="179"
+data-flex-basis="429px"
+>&lt;/p>
+&lt;p>Screenshots of the cocktail recipe lists resolved from classified bottles:&lt;/p>
+&lt;p>&lt;img src="https://jemgunay.co.uk/p/bottle-classifier-cocktail-resolver/frame6.png"
+width="1855"
+height="1056"
+srcset="https://jemgunay.co.uk/p/bottle-classifier-cocktail-resolver/frame6_hu4074398409383853274.png 480w, https://jemgunay.co.uk/p/bottle-classifier-cocktail-resolver/frame6_hu18142607044239141400.png 1024w"
+loading="lazy"
+alt="Example resolved cocktail recipe view"
+class="gallery-image"
+data-flex-grow="175"
+data-flex-basis="421px"
+> &lt;img src="https://jemgunay.co.uk/p/bottle-classifier-cocktail-resolver/frame7.png"
+width="1855"
+height="1056"
+srcset="https://jemgunay.co.uk/p/bottle-classifier-cocktail-resolver/frame7_hu7325782387439536279.png 480w, https://jemgunay.co.uk/p/bottle-classifier-cocktail-resolver/frame7_hu5564769176583133468.png 1024w"
+loading="lazy"
+alt="Example resolved cocktail recipe view"
+class="gallery-image"
+data-flex-grow="175"
+data-flex-basis="421px"
+>&lt;/p></description></item><item><title>Protein Sequence Motif Search Tool</title><link>https://jemgunay.co.uk/p/protein-sequence-motif-search-tool/</link><pubDate>Tue, 10 Jan 2017 20:40:38 +0000</pubDate><guid>https://jemgunay.co.uk/p/protein-sequence-motif-search-tool/</guid><description>&lt;img src="https://jemgunay.co.uk/p/protein-sequence-motif-search-tool/preview.jpg" alt="Featured image of post Protein Sequence Motif Search Tool" />&lt;p>See the GitHub repository &lt;a class="link" href="https://github.com/jemgunay/amyloid-motif" target="_blank" rel="noopener"
+>here&lt;/a>.&lt;/p>
+&lt;p>I took a Bioinformatics module which explores the development of methods and software tools for understanding biological
+data. I was tasked with producing a tool that searches a protein sequence for any matched motifs, providing the position
+of each motif found. In particular, the tool had to detect regions of protein sequences which could form amyloid
+associations; these have been associated with neurodegenerative diseases such as Alzheimer’s disease and Parkinson’s
+disease.&lt;/p>
+&lt;p>User provided input can consist of either a UniProt Accessor Code or a FASTA-Formatted Protein Sequence and will result
+in the output of the UniProt Accessor Code, the FASTA-Formatted Protein Sequence, the Protein Name and the corresponding
+Sequence Motif Matches. The tool has two main functions; the ability to search a singular protein sequence for patterns
+and the ability to search through a batch of protein sequences by their UniProt Accessor Codes all at once. For both
+functions, there are example inputs and options to clear input and output. The search algorithm and input validations
+utilise regular expressions to search for relevant motifs and to prevent malformed user input from leading to
+undesirable results or performance.&lt;/p>
+&lt;p>&lt;img src="https://jemgunay.co.uk/p/protein-sequence-motif-search-tool/frame.jpg"
+width="1936"
+height="963"
+srcset="https://jemgunay.co.uk/p/protein-sequence-motif-search-tool/frame_hu13330965581162241797.jpg 480w, https://jemgunay.co.uk/p/protein-sequence-motif-search-tool/frame_hu5548170376156196203.jpg 1024w"
+loading="lazy"
+alt="Single Search feature with empty input fields"
+class="gallery-image"
+data-flex-grow="201"
+data-flex-basis="482px"
+> &lt;img src="https://jemgunay.co.uk/p/protein-sequence-motif-search-tool/frame2.jpg"
+width="1936"
+height="960"
+srcset="https://jemgunay.co.uk/p/protein-sequence-motif-search-tool/frame2_hu5696001005605418627.jpg 480w, https://jemgunay.co.uk/p/protein-sequence-motif-search-tool/frame2_hu1269626937886437555.jpg 1024w"
+loading="lazy"
+alt="Single Search feature performed using a UniProt Accession Code"
+class="gallery-image"
+data-flex-grow="201"
+data-flex-basis="484px"
+> &lt;img src="https://jemgunay.co.uk/p/protein-sequence-motif-search-tool/frame3.jpg"
+width="1936"
+height="960"
+srcset="https://jemgunay.co.uk/p/protein-sequence-motif-search-tool/frame3_hu2750159817865462067.jpg 480w, https://jemgunay.co.uk/p/protein-sequence-motif-search-tool/frame3_hu11707596099242268180.jpg 1024w"
+loading="lazy"
+alt="Single Search feature performed using a FASTA-formatted Protein Sequence"
+class="gallery-image"
+data-flex-grow="201"
+data-flex-basis="484px"
+>&lt;/p>
+&lt;p>The tool was developed using Python 2.7, as well as HTML5, CSS3 and JavaScript. The Bootstrap front-end framework was
+used to design the front-end of the system efficiently and the jQuery library was used to write more elegant dynamic
+code. It can run offline on local web servers which allow the execution of Python files via CGI (Common Gateway
+Interface) assuming sufficient permissions have been set.&lt;/p>
+&lt;p>&lt;img src="https://jemgunay.co.uk/p/protein-sequence-motif-search-tool/frame4.jpg"
+width="1936"
+height="963"
+srcset="https://jemgunay.co.uk/p/protein-sequence-motif-search-tool/frame4_hu3106927501350415952.jpg 480w, https://jemgunay.co.uk/p/protein-sequence-motif-search-tool/frame4_hu5538284721267806982.jpg 1024w"
+loading="lazy"
+alt="Batch Search feature performed using a UniProt Accession Code"
+class="gallery-image"
+data-flex-grow="201"
+data-flex-basis="482px"
+> &lt;img src="https://jemgunay.co.uk/p/protein-sequence-motif-search-tool/frame5.jpg"
+width="1936"
+height="963"
+srcset="https://jemgunay.co.uk/p/protein-sequence-motif-search-tool/frame5_hu6771232006673790943.jpg 480w, https://jemgunay.co.uk/p/protein-sequence-motif-search-tool/frame5_hu11016791870340466159.jpg 1024w"
+loading="lazy"
+alt="Batch Search results output"
+class="gallery-image"
+data-flex-grow="201"
+data-flex-basis="482px"
+>&lt;/p></description></item><item><title>Bagel Turret: Remote Surveillance Turret (Part 2)</title><link>https://jemgunay.co.uk/p/bagel-turret-remote-surveillance-turret-part-2/</link><pubDate>Thu, 22 Sep 2016 23:05:44 +0000</pubDate><guid>https://jemgunay.co.uk/p/bagel-turret-remote-surveillance-turret-part-2/</guid><description>&lt;img src="https://jemgunay.co.uk/p/bagel-turret-remote-surveillance-turret-part-2/preview.png" alt="Featured image of post Bagel Turret: Remote Surveillance Turret (Part 2)" />&lt;p>Now that the framework for the turret movement was sorted, I moved onto the video streaming functionality. This was
+implemented by creating a web application using the Flask framework to serve the video stream one frame at a time to the
+user’s browser by reading an image from the Pi Camera and encoding it with appropriate headers before sending it as a
+response. When a user clicks a command button, a request is received by the server, and the desired action is carried
+out by the hardware manipulating Python classes such as stepping the servo to aim vertically, applying power to the
+motor to turn the turret horizontally or firing the gun. Basic access authentication is forced so that only users who
+have been provided with the username/password combination can access the turret’s stream.&lt;/p>
+&lt;p>In order to make connecting to the Raspberry Pi Flask server more straightforward, the Python script also sends a
+request to my external testing server which hosts a PHP script; this script logs the public IP address of the Pi and
+displays it to the user, allowing them to be able to access the turret’s stream (assuming the Pi is connected to a
+router which has its private IP port forwarded). Last but not least, the Bagel Turret wouldn’t be a Bagel Turret without
+a few bagels – the favicon is a tiny bagel and the web page for displaying the Raspberry Pi’s public IP address features
+a full size bagel just in case someone is uncertain about the purpose of the page.&lt;/p>
+&lt;p>&lt;img src="https://jemgunay.co.uk/p/bagel-turret-remote-surveillance-turret-part-2/frame1.jpg"
+width="1136"
+height="720"
+srcset="https://jemgunay.co.uk/p/bagel-turret-remote-surveillance-turret-part-2/frame1_hu15519298592468656800.jpg 480w, https://jemgunay.co.uk/p/bagel-turret-remote-surveillance-turret-part-2/frame1_hu9658912678116149645.jpg 1024w"
+loading="lazy"
+alt="Pure video stream without user input"
+class="gallery-image"
+data-flex-grow="157"
+data-flex-basis="378px"
+> &lt;img src="https://jemgunay.co.uk/p/bagel-turret-remote-surveillance-turret-part-2/frame2.jpg"
+width="1136"
+height="720"
+srcset="https://jemgunay.co.uk/p/bagel-turret-remote-surveillance-turret-part-2/frame2_hu9832342822964504137.jpg 480w, https://jemgunay.co.uk/p/bagel-turret-remote-surveillance-turret-part-2/frame2_hu13419397641547359220.jpg 1024w"
+loading="lazy"
+alt="Video stream with user input"
+class="gallery-image"
+data-flex-grow="157"
+data-flex-basis="378px"
+> &lt;img src="https://jemgunay.co.uk/p/bagel-turret-remote-surveillance-turret-part-2/frame3.jpg"
+width="1136"
+height="720"
+srcset="https://jemgunay.co.uk/p/bagel-turret-remote-surveillance-turret-part-2/frame3_hu10261164919792022978.jpg 480w, https://jemgunay.co.uk/p/bagel-turret-remote-surveillance-turret-part-2/frame3_hu11030818895759301664.jpg 1024w"
+loading="lazy"
+alt="External web page showing the Pi’s public IP address"
+class="gallery-image"
+data-flex-grow="157"
+data-flex-basis="378px"
+>&lt;/p>
+&lt;p>&lt;a class="link" href="https://github.com/jemgunay/bagel-turret" target="_blank" rel="noopener"
+>GitHub project repository&lt;/a>&lt;/p>
+&lt;p>&lt;a class="link" href="https://jemgunay.co.uk/p/bagel-turret-remote-surveillance-turret-part-1" >Click here to read part 1!&lt;/a>&lt;/p></description></item><item><title>Bagel Turret: Remote Surveillance Turret (Part 1)</title><link>https://jemgunay.co.uk/p/bagel-turret-remote-surveillance-turret-part-1/</link><pubDate>Thu, 22 Sep 2016 20:50:15 +0000</pubDate><guid>https://jemgunay.co.uk/p/bagel-turret-remote-surveillance-turret-part-1/</guid><description>&lt;img src="https://jemgunay.co.uk/p/bagel-turret-remote-surveillance-turret-part-1/preview.png" alt="Featured image of post Bagel Turret: Remote Surveillance Turret (Part 1)" />&lt;p>See the GitHub repository &lt;a class="link" href="https://github.com/jemgunay/bagel-turret" target="_blank" rel="noopener"
+>here&lt;/a>.&lt;/p>
+&lt;p>My flat mates and I were fooling around with some cheap BB guns and an fun idea dawned on me: to build an automatic
+surveillance turret! I wanted to develop a web interface for controlling the aiming and firing of the turret and could
+then apply computer vision technologies to detect and aim for specific targets to test the accuracy of the gun.&lt;/p>
+&lt;p>I dug out my old childhood &lt;a class="link" href="http://www.meccano.com" target="_blank" rel="noopener"
+>Meccano&lt;/a> set which would be used to construct a frame to mount the
+gun and electronics onto. I searched online for a cheap electric BB gun that would be easy to modify; I went with the
+automatic CYBER STRYKE X4 BB gun as it was cheap and had a semi-transparent housing, meaning I would be able to locate
+the electronics and firing mechanisms with ease. Having experimented with &lt;a class="link" href="http://opencv.org" target="_blank" rel="noopener"
+>OpenCV&lt;/a> on my old original
+Raspberry Pi, I soon realised that if I wanted to stream the turret’s view to a web interface in real time with minimum
+lag, as well as perform object classification/detection, I would have to invest in a Raspberry Pi 3 which has
+significantly more processing power. I already had a NOIR Pi Camera which I will use for now to stream the turret&amp;rsquo;s
+view - I may get a standard Pi Camera when I reach the computer vision implementation phase as the colourisation from
+the IR light may impact upon accuracy.&lt;/p>
+&lt;p>&lt;img src="https://jemgunay.co.uk/p/bagel-turret-remote-surveillance-turret-part-1/frame1.jpg"
+width="1136"
+height="720"
+srcset="https://jemgunay.co.uk/p/bagel-turret-remote-surveillance-turret-part-1/frame1_hu14943883050479881308.jpg 480w, https://jemgunay.co.uk/p/bagel-turret-remote-surveillance-turret-part-1/frame1_hu3427232530715679048.jpg 1024w"
+loading="lazy"
+alt="Original BB gun"
+class="gallery-image"
+data-flex-grow="157"
+data-flex-basis="378px"
+> &lt;img src="https://jemgunay.co.uk/p/bagel-turret-remote-surveillance-turret-part-1/frame2.jpg"
+width="1136"
+height="720"
+srcset="https://jemgunay.co.uk/p/bagel-turret-remote-surveillance-turret-part-1/frame2_hu5891564207614353582.jpg 480w, https://jemgunay.co.uk/p/bagel-turret-remote-surveillance-turret-part-1/frame2_hu18107498915043079096.jpg 1024w"
+loading="lazy"
+alt="Recently cut wood pieces for the base support"
+class="gallery-image"
+data-flex-grow="157"
+data-flex-basis="378px"
+> &lt;img src="https://jemgunay.co.uk/p/bagel-turret-remote-surveillance-turret-part-1/frame3.jpg"
+width="1136"
+height="720"
+srcset="https://jemgunay.co.uk/p/bagel-turret-remote-surveillance-turret-part-1/frame3_hu1046428587605751645.jpg 480w, https://jemgunay.co.uk/p/bagel-turret-remote-surveillance-turret-part-1/frame3_hu153433107724829722.jpg 1024w"
+loading="lazy"
+alt="Finished wood base support"
+class="gallery-image"
+data-flex-grow="157"
+data-flex-basis="378px"
+>&lt;/p>
+&lt;p>A cheap hobby motor was used to control the horizontal rotation and a servo was used to control the vertical aiming. I
+hacked together a couple of gears to reduce the load on the motor and glue-gunned a retractable arm to the servo and
+attached the other end to the gun, allowing the arm to extend and retract when the servo changes orientation. The servo
+was wired directly to the Pi&amp;rsquo;s 5V output, though the motor required more power; by using an L293D Motor Driver IC, I was
+able to supply power via a 9V battery to the motor whilst providing easier control over the motor&amp;rsquo;s direction of
+rotation. Short python classes were then written to interface with the motor and servo, making it easier for me to test
+how well they functioned under the weight of the gun. The servo struggled to sustain the weight of the gun so I trimmed
+off the extra aesthetic plastic housing and removed the battery storage section towards the back – this can be
+repositioned elsewhere on the turret frame reducing the load on the servo. Despite these modifications, sharp movements
+caused the unstable Meccano base to wobble; I decided to build a new bottom base out of wood to structure the rest of
+the Meccano frame onto.&lt;/p>
+&lt;p>&lt;img src="https://jemgunay.co.uk/p/bagel-turret-remote-surveillance-turret-part-1/frame4.jpg"
+width="1136"
+height="720"
+srcset="https://jemgunay.co.uk/p/bagel-turret-remote-surveillance-turret-part-1/frame4_hu1863856955815549440.jpg 480w, https://jemgunay.co.uk/p/bagel-turret-remote-surveillance-turret-part-1/frame4_hu15940367980352454228.jpg 1024w"
+loading="lazy"
+alt="Close up of turret BB gun with Raspberry Pi and PiCamera mounted"
+class="gallery-image"
+data-flex-grow="157"
+data-flex-basis="378px"
+> &lt;img src="https://jemgunay.co.uk/p/bagel-turret-remote-surveillance-turret-part-1/frame5.jpg"
+width="1136"
+height="720"
+srcset="https://jemgunay.co.uk/p/bagel-turret-remote-surveillance-turret-part-1/frame5_hu7145363529745108944.jpg 480w, https://jemgunay.co.uk/p/bagel-turret-remote-surveillance-turret-part-1/frame5_hu15636187973817497220.jpg 1024w"
+loading="lazy"
+alt="Motor mechanism for horizontal rotation"
+class="gallery-image"
+data-flex-grow="157"
+data-flex-basis="378px"
+> &lt;img src="https://jemgunay.co.uk/p/bagel-turret-remote-surveillance-turret-part-1/frame6.jpg"
+width="1136"
+height="720"
+srcset="https://jemgunay.co.uk/p/bagel-turret-remote-surveillance-turret-part-1/frame6_hu16452581732079321866.jpg 480w, https://jemgunay.co.uk/p/bagel-turret-remote-surveillance-turret-part-1/frame6_hu14348787629500977231.jpg 1024w"
+loading="lazy"
+alt="Servo mechanism for vertical rotation"
+class="gallery-image"
+data-flex-grow="157"
+data-flex-basis="378px"
+>&lt;/p>
+&lt;p>A further python script was then programmed to create a simple demo to show off the horizontal and vertical aiming
+capabilities - this can be seen in action below. The Python scripts for this project can be found on GitHub below.&lt;/p>
+&lt;p>&lt;img src="https://jemgunay.co.uk/p/bagel-turret-remote-surveillance-turret-part-1/frame7.jpg"
+width="1136"
+height="720"
+srcset="https://jemgunay.co.uk/p/bagel-turret-remote-surveillance-turret-part-1/frame7_hu216252765430017826.jpg 480w, https://jemgunay.co.uk/p/bagel-turret-remote-surveillance-turret-part-1/frame7_hu17790491105135308366.jpg 1024w"
+loading="lazy"
+alt="Side on view of turret"
+class="gallery-image"
+data-flex-grow="157"
+data-flex-basis="378px"
+> &lt;img src="https://jemgunay.co.uk/p/bagel-turret-remote-surveillance-turret-part-1/frame8.jpg"
+width="1136"
+height="720"
+srcset="https://jemgunay.co.uk/p/bagel-turret-remote-surveillance-turret-part-1/frame8_hu10387947804662451847.jpg 480w, https://jemgunay.co.uk/p/bagel-turret-remote-surveillance-turret-part-1/frame8_hu10044582923454436096.jpg 1024w"
+loading="lazy"
+alt="Servo mechanism for vertical rotation"
+class="gallery-image"
+data-flex-grow="157"
+data-flex-basis="378px"
+>&lt;/p>
+&lt;div class="video-wrapper">
+&lt;iframe loading="lazy"
+src="https://www.youtube.com/embed/ZvdLwr1eku8"
+allowfullscreen
+title="YouTube Video"
+>
+&lt;/iframe>
+&lt;/div>
+&lt;p>&lt;a class="link" href="https://jemgunay.co.uk/p/bagel-turret-remote-surveillance-turret-part-2" >Click here to read part 2!&lt;/a>&lt;/p></description></item><item><title>Blender 3D Modelled Chess Board</title><link>https://jemgunay.co.uk/p/blender-3d-modelled-chess-board/</link><pubDate>Mon, 19 Sep 2016 04:35:45 +0000</pubDate><guid>https://jemgunay.co.uk/p/blender-3d-modelled-chess-board/</guid><description>&lt;img src="https://jemgunay.co.uk/p/blender-3d-modelled-chess-board/preview.png" alt="Featured image of post Blender 3D Modelled Chess Board" />&lt;p>I took a module at university focussing on 3D modelling techniques which gave me the opportunity to create a realistic
+and substantial model of a photographed object. I had to create an animation including the model and had to produce a
+Python script which manipulated the scene in some way. I settled on modelling my chess board/pieces, sculpting them to
+scale and texturing them realistically.&lt;/p>
+&lt;p>&lt;img src="https://jemgunay.co.uk/p/blender-3d-modelled-chess-board/frame.jpg"
+width="2048"
+height="1152"
+srcset="https://jemgunay.co.uk/p/blender-3d-modelled-chess-board/frame_hu7973605474016446449.jpg 480w, https://jemgunay.co.uk/p/blender-3d-modelled-chess-board/frame_hu13156138935466318709.jpg 1024w"
+loading="lazy"
+alt="Original real life chess board photo"
+class="gallery-image"
+data-flex-grow="177"
+data-flex-basis="426px"
+> &lt;img src="https://jemgunay.co.uk/p/blender-3d-modelled-chess-board/frame2.jpg"
+width="1920"
+height="1080"
+srcset="https://jemgunay.co.uk/p/blender-3d-modelled-chess-board/frame2_hu13120141217724445097.jpg 480w, https://jemgunay.co.uk/p/blender-3d-modelled-chess-board/frame2_hu7738251120141100847.jpg 1024w"
+loading="lazy"
+alt="Entire room scene with chess board"
+class="gallery-image"
+data-flex-grow="177"
+data-flex-basis="426px"
+> &lt;img src="https://jemgunay.co.uk/p/blender-3d-modelled-chess-board/frame3.jpg"
+width="1920"
+height="1080"
+srcset="https://jemgunay.co.uk/p/blender-3d-modelled-chess-board/frame3_hu6903742630288931920.jpg 480w, https://jemgunay.co.uk/p/blender-3d-modelled-chess-board/frame3_hu14700324747992516516.jpg 1024w"
+loading="lazy"
+alt="Entire room scene with chess board"
+class="gallery-image"
+data-flex-grow="177"
+data-flex-basis="426px"
+>&lt;/p>
+&lt;p>&lt;img src="https://jemgunay.co.uk/p/blender-3d-modelled-chess-board/frame4.jpg"
+width="1920"
+height="1080"
+srcset="https://jemgunay.co.uk/p/blender-3d-modelled-chess-board/frame4_hu2463025021958615333.jpg 480w, https://jemgunay.co.uk/p/blender-3d-modelled-chess-board/frame4_hu17298839119104193681.jpg 1024w"
+loading="lazy"
+alt="Chess board model close up render"
+class="gallery-image"
+data-flex-grow="177"
+data-flex-basis="426px"
+> &lt;img src="https://jemgunay.co.uk/p/blender-3d-modelled-chess-board/frame5.jpg"
+width="1920"
+height="1080"
+srcset="https://jemgunay.co.uk/p/blender-3d-modelled-chess-board/frame5_hu10842888992139386422.jpg 480w, https://jemgunay.co.uk/p/blender-3d-modelled-chess-board/frame5_hu1439035983326232467.jpg 1024w"
+loading="lazy"
+alt="Chess board model close up render"
+class="gallery-image"
+data-flex-grow="177"
+data-flex-basis="426px"
+> &lt;img src="https://jemgunay.co.uk/p/blender-3d-modelled-chess-board/frame6.jpg"
+width="1920"
+height="1080"
+srcset="https://jemgunay.co.uk/p/blender-3d-modelled-chess-board/frame6_hu1723209388347619785.jpg 480w, https://jemgunay.co.uk/p/blender-3d-modelled-chess-board/frame6_hu7634928425954803834.jpg 1024w"
+loading="lazy"
+alt="Chess board model close up render with exploding king"
+class="gallery-image"
+data-flex-grow="177"
+data-flex-basis="426px"
+>&lt;/p>
+&lt;p>I animated the camera panning in towards the chess board as the piece storage draws open; a game is played by invisible
+players, taking turns one move at a time. Once a king is in check mate, he explodes out of shame, scattering shards of
+himself across the scene. This was achieved using Blender&amp;rsquo;s Cell Fracture add-on.&lt;/p>
+&lt;div class="video-wrapper">
+&lt;iframe loading="lazy"
+src="https://www.youtube.com/embed/pH1fOCwrZd0"
+allowfullscreen
+title="YouTube Video"
+>
+&lt;/iframe>
+&lt;/div>
+&lt;p>The Python script randomises the positions and orientations of all chess pieces on their side of the board, creating a
+new game scenario. However, the script does not respect the rules of chess, meaning unrealistic and impossible game
+scenarios can be generated. Within Blender, the user can move a chess piece from one of the storage trays above the
+board and execute the script; this causes the piece to be included in the new randomised game scene. When a piece is
+moved below the top of the board, it is excluded from the game scene.&lt;/p>
+&lt;p>&lt;img src="https://jemgunay.co.uk/p/blender-3d-modelled-chess-board/frame7.jpg"
+width="1920"
+height="1080"
+srcset="https://jemgunay.co.uk/p/blender-3d-modelled-chess-board/frame7_hu16683978600884719025.jpg 480w, https://jemgunay.co.uk/p/blender-3d-modelled-chess-board/frame7_hu10299288328908555119.jpg 1024w"
+loading="lazy"
+alt="A game scene randomised by the Python script"
+class="gallery-image"
+data-flex-grow="177"
+data-flex-basis="426px"
+> &lt;img src="https://jemgunay.co.uk/p/blender-3d-modelled-chess-board/frame8.jpg"
+width="1920"
+height="1080"
+srcset="https://jemgunay.co.uk/p/blender-3d-modelled-chess-board/frame8_hu16252829169903676070.jpg 480w, https://jemgunay.co.uk/p/blender-3d-modelled-chess-board/frame8_hu8177914460344014962.jpg 1024w"
+loading="lazy"
+alt="A game scene randomised by the Python script"
+class="gallery-image"
+data-flex-grow="177"
+data-flex-basis="426px"
+> &lt;img src="https://jemgunay.co.uk/p/blender-3d-modelled-chess-board/frame9.jpg"
+width="1920"
+height="1080"
+srcset="https://jemgunay.co.uk/p/blender-3d-modelled-chess-board/frame9_hu12946676668665460199.jpg 480w, https://jemgunay.co.uk/p/blender-3d-modelled-chess-board/frame9_hu13853770120061317282.jpg 1024w"
+loading="lazy"
+alt="A game scene randomised by the Python script"
+class="gallery-image"
+data-flex-grow="177"
+data-flex-basis="426px"
+>&lt;/p></description></item></channel></rss>

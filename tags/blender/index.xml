@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Blender on Jem Gunay</title><link>https://jemgunay.co.uk/tags/blender/</link><description>Recent content in Blender on Jem Gunay</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Tue, 08 Sep 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://jemgunay.co.uk/tags/blender/index.xml" rel="self" type="application/rss+xml"/><item><title>Controlling Window Blinds with Alexa</title><link>https://jemgunay.co.uk/p/controlling-window-blinds-with-alexa/</link><pubDate>Tue, 08 Sep 2020 00:00:00 +0000</pubDate><guid>https://jemgunay.co.uk/p/controlling-window-blinds-with-alexa/</guid><description>&lt;img src="https://jemgunay.co.uk/p/controlling-window-blinds-with-alexa/preview.png" alt="Featured image of post Controlling Window Blinds with Alexa" />&lt;p>See the GitHub repository &lt;a class="link" href="https://github.com/jemgunay/echo-blinds" target="_blank" rel="noopener"
+>here&lt;/a>.&lt;/p>
+&lt;p>I created an Amazon Alexa skill server in Golang for controlling window blinds. It works by receiving instructions from
+Alexa utterances via AWS, which in turn trigger motors controlled via a Raspberry Pi Zero&amp;rsquo;s GPIO pins. These motors then
+pull the window blinds cords to rotate and pull them open. The motors and blinds cords were mounted to a 3D printed
+chassis, of which the models were precisely designed in Blender.&lt;/p>
+&lt;p>&lt;img src="https://jemgunay.co.uk/p/controlling-window-blinds-with-alexa/frame.jpeg"
+width="2592"
+height="4608"
+srcset="https://jemgunay.co.uk/p/controlling-window-blinds-with-alexa/frame_hu210251372238286484.jpeg 480w, https://jemgunay.co.uk/p/controlling-window-blinds-with-alexa/frame_hu6367401925089421934.jpeg 1024w"
+loading="lazy"
+alt="Initial menu"
+class="gallery-image"
+data-flex-grow="56"
+data-flex-basis="135px"
+> &lt;img src="https://jemgunay.co.uk/p/controlling-window-blinds-with-alexa/frame2.jpeg"
+width="2592"
+height="4608"
+srcset="https://jemgunay.co.uk/p/controlling-window-blinds-with-alexa/frame2_hu4145761068815898416.jpeg 480w, https://jemgunay.co.uk/p/controlling-window-blinds-with-alexa/frame2_hu3317240559596597738.jpeg 1024w"
+loading="lazy"
+alt="Server hosting &amp; world creation menu"
+class="gallery-image"
+data-flex-grow="56"
+data-flex-basis="135px"
+>&lt;/p>
+&lt;div class="video-wrapper">
+&lt;iframe loading="lazy"
+src="https://www.youtube.com/embed/fgj6HONCQOs"
+allowfullscreen
+title="YouTube Video"
+>
+&lt;/iframe>
+&lt;/div></description></item><item><title>Blender 3D Modelled Chess Board</title><link>https://jemgunay.co.uk/p/blender-3d-modelled-chess-board/</link><pubDate>Mon, 19 Sep 2016 04:35:45 +0000</pubDate><guid>https://jemgunay.co.uk/p/blender-3d-modelled-chess-board/</guid><description>&lt;img src="https://jemgunay.co.uk/p/blender-3d-modelled-chess-board/preview.png" alt="Featured image of post Blender 3D Modelled Chess Board" />&lt;p>I took a module at university focussing on 3D modelling techniques which gave me the opportunity to create a realistic
+and substantial model of a photographed object. I had to create an animation including the model and had to produce a
+Python script which manipulated the scene in some way. I settled on modelling my chess board/pieces, sculpting them to
+scale and texturing them realistically.&lt;/p>
+&lt;p>&lt;img src="https://jemgunay.co.uk/p/blender-3d-modelled-chess-board/frame.jpg"
+width="2048"
+height="1152"
+srcset="https://jemgunay.co.uk/p/blender-3d-modelled-chess-board/frame_hu7973605474016446449.jpg 480w, https://jemgunay.co.uk/p/blender-3d-modelled-chess-board/frame_hu13156138935466318709.jpg 1024w"
+loading="lazy"
+alt="Original real life chess board photo"
+class="gallery-image"
+data-flex-grow="177"
+data-flex-basis="426px"
+> &lt;img src="https://jemgunay.co.uk/p/blender-3d-modelled-chess-board/frame2.jpg"
+width="1920"
+height="1080"
+srcset="https://jemgunay.co.uk/p/blender-3d-modelled-chess-board/frame2_hu13120141217724445097.jpg 480w, https://jemgunay.co.uk/p/blender-3d-modelled-chess-board/frame2_hu7738251120141100847.jpg 1024w"
+loading="lazy"
+alt="Entire room scene with chess board"
+class="gallery-image"
+data-flex-grow="177"
+data-flex-basis="426px"
+> &lt;img src="https://jemgunay.co.uk/p/blender-3d-modelled-chess-board/frame3.jpg"
+width="1920"
+height="1080"
+srcset="https://jemgunay.co.uk/p/blender-3d-modelled-chess-board/frame3_hu6903742630288931920.jpg 480w, https://jemgunay.co.uk/p/blender-3d-modelled-chess-board/frame3_hu14700324747992516516.jpg 1024w"
+loading="lazy"
+alt="Entire room scene with chess board"
+class="gallery-image"
+data-flex-grow="177"
+data-flex-basis="426px"
+>&lt;/p>
+&lt;p>&lt;img src="https://jemgunay.co.uk/p/blender-3d-modelled-chess-board/frame4.jpg"
+width="1920"
+height="1080"
+srcset="https://jemgunay.co.uk/p/blender-3d-modelled-chess-board/frame4_hu2463025021958615333.jpg 480w, https://jemgunay.co.uk/p/blender-3d-modelled-chess-board/frame4_hu17298839119104193681.jpg 1024w"
+loading="lazy"
+alt="Chess board model close up render"
+class="gallery-image"
+data-flex-grow="177"
+data-flex-basis="426px"
+> &lt;img src="https://jemgunay.co.uk/p/blender-3d-modelled-chess-board/frame5.jpg"
+width="1920"
+height="1080"
+srcset="https://jemgunay.co.uk/p/blender-3d-modelled-chess-board/frame5_hu10842888992139386422.jpg 480w, https://jemgunay.co.uk/p/blender-3d-modelled-chess-board/frame5_hu1439035983326232467.jpg 1024w"
+loading="lazy"
+alt="Chess board model close up render"
+class="gallery-image"
+data-flex-grow="177"
+data-flex-basis="426px"
+> &lt;img src="https://jemgunay.co.uk/p/blender-3d-modelled-chess-board/frame6.jpg"
+width="1920"
+height="1080"
+srcset="https://jemgunay.co.uk/p/blender-3d-modelled-chess-board/frame6_hu1723209388347619785.jpg 480w, https://jemgunay.co.uk/p/blender-3d-modelled-chess-board/frame6_hu7634928425954803834.jpg 1024w"
+loading="lazy"
+alt="Chess board model close up render with exploding king"
+class="gallery-image"
+data-flex-grow="177"
+data-flex-basis="426px"
+>&lt;/p>
+&lt;p>I animated the camera panning in towards the chess board as the piece storage draws open; a game is played by invisible
+players, taking turns one move at a time. Once a king is in check mate, he explodes out of shame, scattering shards of
+himself across the scene. This was achieved using Blender&amp;rsquo;s Cell Fracture add-on.&lt;/p>
+&lt;div class="video-wrapper">
+&lt;iframe loading="lazy"
+src="https://www.youtube.com/embed/pH1fOCwrZd0"
+allowfullscreen
+title="YouTube Video"
+>
+&lt;/iframe>
+&lt;/div>
+&lt;p>The Python script randomises the positions and orientations of all chess pieces on their side of the board, creating a
+new game scenario. However, the script does not respect the rules of chess, meaning unrealistic and impossible game
+scenarios can be generated. Within Blender, the user can move a chess piece from one of the storage trays above the
+board and execute the script; this causes the piece to be included in the new randomised game scene. When a piece is
+moved below the top of the board, it is excluded from the game scene.&lt;/p>
+&lt;p>&lt;img src="https://jemgunay.co.uk/p/blender-3d-modelled-chess-board/frame7.jpg"
+width="1920"
+height="1080"
+srcset="https://jemgunay.co.uk/p/blender-3d-modelled-chess-board/frame7_hu16683978600884719025.jpg 480w, https://jemgunay.co.uk/p/blender-3d-modelled-chess-board/frame7_hu10299288328908555119.jpg 1024w"
+loading="lazy"
+alt="A game scene randomised by the Python script"
+class="gallery-image"
+data-flex-grow="177"
+data-flex-basis="426px"
+> &lt;img src="https://jemgunay.co.uk/p/blender-3d-modelled-chess-board/frame8.jpg"
+width="1920"
+height="1080"
+srcset="https://jemgunay.co.uk/p/blender-3d-modelled-chess-board/frame8_hu16252829169903676070.jpg 480w, https://jemgunay.co.uk/p/blender-3d-modelled-chess-board/frame8_hu8177914460344014962.jpg 1024w"
+loading="lazy"
+alt="A game scene randomised by the Python script"
+class="gallery-image"
+data-flex-grow="177"
+data-flex-basis="426px"
+> &lt;img src="https://jemgunay.co.uk/p/blender-3d-modelled-chess-board/frame9.jpg"
+width="1920"
+height="1080"
+srcset="https://jemgunay.co.uk/p/blender-3d-modelled-chess-board/frame9_hu12946676668665460199.jpg 480w, https://jemgunay.co.uk/p/blender-3d-modelled-chess-board/frame9_hu13853770120061317282.jpg 1024w"
+loading="lazy"
+alt="A game scene randomised by the Python script"
+class="gallery-image"
+data-flex-grow="177"
+data-flex-basis="426px"
+>&lt;/p></description></item></channel></rss>

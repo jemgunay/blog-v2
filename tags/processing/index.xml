@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Processing on Jem Gunay</title><link>https://jemgunay.co.uk/tags/processing/</link><description>Recent content in Processing on Jem Gunay</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Mon, 19 Sep 2016 03:19:37 +0000</lastBuildDate><atom:link href="https://jemgunay.co.uk/tags/processing/index.xml" rel="self" type="application/rss+xml"/><item><title>Trippy Recursive Circles in Processing</title><link>https://jemgunay.co.uk/p/trippy-recursive-circles-in-processing/</link><pubDate>Mon, 19 Sep 2016 03:19:37 +0000</pubDate><guid>https://jemgunay.co.uk/p/trippy-recursive-circles-in-processing/</guid><description>&lt;img src="https://jemgunay.co.uk/p/trippy-recursive-circles-in-processing/preview.png" alt="Featured image of post Trippy Recursive Circles in Processing" />&lt;p>Simple use of recursion to make a warped tunnelling effect with circles using &lt;a class="link" href="https://processing.org/" target="_blank" rel="noopener"
+>Processing&lt;/a>.
+Processing sketch/source and compiled executable can be found below.&lt;/p>
+&lt;ul>
+&lt;li>Starts off slowly iterating over the four different rendering modes.&lt;/li>
+&lt;li>Use keys 1, 2, 3 and 4 to change the visual/render mode (dynamic rainbow, static rainbow, dynamic greyscale, static
+greyscale).&lt;/li>
+&lt;li>Use left and right arrow keys to switch to a different motion path (there are 4 motion paths, each with varied use of
+the trigonometric functions sin, cos and tan).&lt;/li>
+&lt;/ul>
+&lt;p>TODO: Click to download application &amp;amp; source files&lt;/p>
+&lt;div class="video-wrapper">
+&lt;iframe loading="lazy"
+src="https://www.youtube.com/embed/qIsaU927Jxs"
+allowfullscreen
+title="YouTube Video"
+>
+&lt;/iframe>
+&lt;/div></description></item></channel></rss>

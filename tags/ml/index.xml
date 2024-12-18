@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>ML on Jem Gunay</title><link>https://jemgunay.co.uk/tags/ml/</link><description>Recent content in ML on Jem Gunay</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Thu, 10 Sep 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://jemgunay.co.uk/tags/ml/index.xml" rel="self" type="application/rss+xml"/><item><title>Evolutionary Driving with Genetic Algorithms</title><link>https://jemgunay.co.uk/p/evolutionary-driving-with-genetic-algorithms/</link><pubDate>Thu, 10 Sep 2020 00:00:00 +0000</pubDate><guid>https://jemgunay.co.uk/p/evolutionary-driving-with-genetic-algorithms/</guid><description>&lt;img src="https://jemgunay.co.uk/p/evolutionary-driving-with-genetic-algorithms/preview.png" alt="Featured image of post Evolutionary Driving with Genetic Algorithms" />&lt;p>See the GitHub repository &lt;a class="link" href="https://github.com/jemgunay/evolutionary-driving" target="_blank" rel="noopener"
+>here&lt;/a>.&lt;/p>
+&lt;p>I&amp;rsquo;m a massive fan of the Box2D physics engine and have wielded it in a few languages as part of game and simulation
+projects. I spotted a &lt;a class="link" href="https://github.com/ByteArena/box2d" target="_blank" rel="noopener"
+>Go port&lt;/a> and wanted to somehow combine this with the Pixel 2D
+game library and
+decided &lt;a class="link" href="http://domasx2.github.io/gamejs-box2d-car-example/" target="_blank" rel="noopener"
+>this&lt;/a> top-down car demo written in JS with Box2D would be a
+fun base to start with. So, I went ahead and migrated it to Go with Pixel &amp;amp; Box2D, adding enhancements such as vehicle
+health and destruction.&lt;/p>
+&lt;p>I&amp;rsquo;d studied evolutionary algorithms at uni but had never actually implemented them. I decided to encode the car&amp;rsquo;s
+movements as a genetic sequence, and iteratively evolve the car&amp;rsquo;s performance in order to solve a basic problem. The car
+evolves to drive to and gracefully brake on a green target point. It uses roulette wheel selection combined with random
+cross-overs, swaps and mutations to produce the following generation. The fitness function is a combination of the
+distance from the target and the final velocity at the end of the sequence execution to encourage the car to precisely
+park on the target rather than speed over it.&lt;/p>
+&lt;p>The following video illustrates the improvement in fitness between evolutionary iterations. I&amp;rsquo;ve also included a
+surprising solution which evolved after hundreds of iterations, showing how machine learning and evolution in general
+can provide interesting and less obvious solutions&amp;hellip;&lt;/p>
+&lt;div class="video-wrapper">
+&lt;iframe loading="lazy"
+src="https://www.youtube.com/embed/F2pwEOJhNMs"
+allowfullscreen
+title="YouTube Video"
+>
+&lt;/iframe>
+&lt;/div></description></item><item><title>Bottle Classifier &amp; Cocktail Resolver</title><link>https://jemgunay.co.uk/p/bottle-classifier-cocktail-resolver/</link><pubDate>Tue, 26 Sep 2017 07:00:00 +0000</pubDate><guid>https://jemgunay.co.uk/p/bottle-classifier-cocktail-resolver/</guid><description>&lt;img src="https://jemgunay.co.uk/p/bottle-classifier-cocktail-resolver/preview.png" alt="Featured image of post Bottle Classifier &amp; Cocktail Resolver" />&lt;p>See the GitHub repository &lt;a class="link" href="https://github.com/jemgunay/bottle-classifier" target="_blank" rel="noopener"
+>here&lt;/a>.&lt;/p>
+&lt;p>For my university third year dissertation project, I developed a computer vision-orientated application for detecting
+and classifying bottles from a camera stream or image frame, as well as displaying appropriate cocktail recipes based on
+the classified bottles in an aesthetically pleasing web page.&lt;/p>
+&lt;p>This was achieved using trained &lt;strong>HAAR/LBP&lt;/strong> cascades (using the &lt;a class="link" href="https://opencv.org/" target="_blank" rel="noopener"
+>OpenCV&lt;/a> implementations) for
+detection and colour histograms generated from detected regions of interest to improve classification performance. The
+applications were written primarily in Python utilising a wide number of libraries (list can be seen on GitHub
+repository), though web languages were also used for rendering the resolved recipes. The tool currently classifies
+&lt;em>Smirnoff Vodka&lt;/em> and &lt;em>Jack Daniel&amp;rsquo;s&lt;/em> bottles, as well as &lt;em>Red Bull&lt;/em> cans, &lt;em>Monster Energy&lt;/em> cans and an &lt;em>orange juice
+carton&lt;/em>. MySQL was used to store the scraped cocktail recipes.&lt;/p>
+&lt;p>Several command line tools were developed which allow the flexible execution and maintenance of the tool:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Recipe Scraper&lt;/strong>: used to scrape a recipe by name or multiple recipes by ingredient name from a cocktail recipe
+website into the database.&lt;/li>
+&lt;li>&lt;strong>Histogram Generator&lt;/strong>: used to generate specially formatted histogram files which represent the colour spectrum of
+the target image.&lt;/li>
+&lt;li>&lt;strong>Main Application&lt;/strong>: used to perform classification of the target image frame or camera stream. Also used to resolve
+the cocktail recipes and to launch the web server for hosting the recipe view render.&lt;/li>
+&lt;/ul>
+&lt;p>Screenshots of the classification of bottles from a live webcam feed:&lt;/p>
+&lt;p>&lt;img src="https://jemgunay.co.uk/p/bottle-classifier-cocktail-resolver/frame.png"
+width="600"
+height="335"
+srcset="https://jemgunay.co.uk/p/bottle-classifier-cocktail-resolver/frame_hu10248343704155948762.png 480w, https://jemgunay.co.uk/p/bottle-classifier-cocktail-resolver/frame_hu13656433202197453811.png 1024w"
+loading="lazy"
+alt="Example bottle classifications"
+class="gallery-image"
+data-flex-grow="179"
+data-flex-basis="429px"
+> &lt;img src="https://jemgunay.co.uk/p/bottle-classifier-cocktail-resolver/frame2.png"
+width="600"
+height="335"
+srcset="https://jemgunay.co.uk/p/bottle-classifier-cocktail-resolver/frame2_hu178515798945724208.png 480w, https://jemgunay.co.uk/p/bottle-classifier-cocktail-resolver/frame2_hu1614399620244658469.png 1024w"
+loading="lazy"
+alt="Example bottle classifications"
+class="gallery-image"
+data-flex-grow="179"
+data-flex-basis="429px"
+> &lt;img src="https://jemgunay.co.uk/p/bottle-classifier-cocktail-resolver/frame3.png"
+width="600"
+height="335"
+srcset="https://jemgunay.co.uk/p/bottle-classifier-cocktail-resolver/frame3_hu3980620513148193226.png 480w, https://jemgunay.co.uk/p/bottle-classifier-cocktail-resolver/frame3_hu17499495236751693152.png 1024w"
+loading="lazy"
+alt="Example bottle classifications"
+class="gallery-image"
+data-flex-grow="179"
+data-flex-basis="429px"
+>
+&lt;img src="https://jemgunay.co.uk/p/bottle-classifier-cocktail-resolver/frame4.png"
+width="600"
+height="335"
+srcset="https://jemgunay.co.uk/p/bottle-classifier-cocktail-resolver/frame4_hu15298461472701831588.png 480w, https://jemgunay.co.uk/p/bottle-classifier-cocktail-resolver/frame4_hu2500999430482250618.png 1024w"
+loading="lazy"
+alt="Example bottle classifications"
+class="gallery-image"
+data-flex-grow="179"
+data-flex-basis="429px"
+> &lt;img src="https://jemgunay.co.uk/p/bottle-classifier-cocktail-resolver/frame5.png"
+width="600"
+height="335"
+srcset="https://jemgunay.co.uk/p/bottle-classifier-cocktail-resolver/frame5_hu4405106009666152611.png 480w, https://jemgunay.co.uk/p/bottle-classifier-cocktail-resolver/frame5_hu12224516837932263985.png 1024w"
+loading="lazy"
+alt="Example bottle classifications"
+class="gallery-image"
+data-flex-grow="179"
+data-flex-basis="429px"
+>&lt;/p>
+&lt;p>Screenshots of the cocktail recipe lists resolved from classified bottles:&lt;/p>
+&lt;p>&lt;img src="https://jemgunay.co.uk/p/bottle-classifier-cocktail-resolver/frame6.png"
+width="1855"
+height="1056"
+srcset="https://jemgunay.co.uk/p/bottle-classifier-cocktail-resolver/frame6_hu4074398409383853274.png 480w, https://jemgunay.co.uk/p/bottle-classifier-cocktail-resolver/frame6_hu18142607044239141400.png 1024w"
+loading="lazy"
+alt="Example resolved cocktail recipe view"
+class="gallery-image"
+data-flex-grow="175"
+data-flex-basis="421px"
+> &lt;img src="https://jemgunay.co.uk/p/bottle-classifier-cocktail-resolver/frame7.png"
+width="1855"
+height="1056"
+srcset="https://jemgunay.co.uk/p/bottle-classifier-cocktail-resolver/frame7_hu7325782387439536279.png 480w, https://jemgunay.co.uk/p/bottle-classifier-cocktail-resolver/frame7_hu5564769176583133468.png 1024w"
+loading="lazy"
+alt="Example resolved cocktail recipe view"
+class="gallery-image"
+data-flex-grow="175"
+data-flex-basis="421px"
+>&lt;/p></description></item></channel></rss>

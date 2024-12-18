@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Flash (AS3) on Jem Gunay</title><link>https://jemgunay.co.uk/tags/flash-as3/</link><description>Recent content in Flash (AS3) on Jem Gunay</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sun, 18 Sep 2016 21:51:56 +0000</lastBuildDate><atom:link href="https://jemgunay.co.uk/tags/flash-as3/index.xml" rel="self" type="application/rss+xml"/><item><title>Flash Tables Craft Children's Game</title><link>https://jemgunay.co.uk/p/flash-tables-craft-childrens-game/</link><pubDate>Sun, 18 Sep 2016 21:51:56 +0000</pubDate><guid>https://jemgunay.co.uk/p/flash-tables-craft-childrens-game/</guid><description>&lt;img src="https://jemgunay.co.uk/p/flash-tables-craft-childrens-game/preview.png" alt="Featured image of post Flash Tables Craft Children's Game" />&lt;p>My little brother and sister (aged 7 and 8 at the time) wanted a more motivational way to practice their times tables
+for their school homework. They are obsessed with the popular game Minecraft, so I combined the two!&lt;/p>
+&lt;ul>
+&lt;li>Options to select multiple tables to practice with randomised question order.&lt;/li>
+&lt;li>Optional timer to speed up the pace of a game.&lt;/li>
+&lt;li>Summary at the end with correctly and incorrectly answered questions with their solutions.&lt;/li>
+&lt;li>Characters from the game pop in and out at random areas and timings around the screen, with sounds and textures from
+the game recycled throughout.&lt;/li>
+&lt;/ul>
+&lt;p>TODO: Add SWF screenshots here.
+TODO: Add SWF download.&lt;/p></description></item><item><title>Flash Multiplayer Dwarf Game</title><link>https://jemgunay.co.uk/p/flash-multiplayer-dwarf-game/</link><pubDate>Sun, 18 Sep 2016 20:03:23 +0000</pubDate><guid>https://jemgunay.co.uk/p/flash-multiplayer-dwarf-game/</guid><description>&lt;img src="https://jemgunay.co.uk/p/flash-multiplayer-dwarf-game/preview.png" alt="Featured image of post Flash Multiplayer Dwarf Game" />&lt;p>This is one of the first large projects I worked on when starting out with AS3. I worked on this with two friends; I
+wrote the code, Matty created the majority of the graphics and Reuben provided ideas and tested the game. I wanted to
+read into multiplayer game development so took a look at &lt;a class="link" href="https://playerio.com" target="_blank" rel="noopener"
+>Player.IO&lt;/a>. By writing AS3 client side
+code and C# server side code tests, I implemented the API with a basic blocky terrain generation algorithm I had been
+working on to create a basic multiplayer base. We then decided to expand on this by creating a Minecraft/Terraria
+inspired side-scroller with dwarves who explore and destroy the terrain.&lt;/p>
+&lt;p>Although basic and occasionally buggy, it has a great deal of character and I&amp;rsquo;m proud to call it a first major completed
+project.&lt;/p>
+&lt;ul>
+&lt;li>Enter your name and select one of the two dwarf characters to join the game.&lt;/li>
+&lt;li>Normal biomes have mushrooms and exploding pumpkins. Snowy biomes have a destructible snowman.&lt;/li>
+&lt;li>WASD or ARROWS to move, CTRL + Left Click to remove block (temperamental), type &lt;code>/help&lt;/code> in chat for commands. Enter
+to send a message in chat.&lt;/li>
+&lt;/ul>
+&lt;p>TODO: Add SWF screenshots here.
+TODO: Add SWF download.&lt;/p></description></item></channel></rss>

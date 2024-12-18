@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Electronics on Jem Gunay</title><link>https://jemgunay.co.uk/tags/electronics/</link><description>Recent content in Electronics on Jem Gunay</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Tue, 08 Sep 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://jemgunay.co.uk/tags/electronics/index.xml" rel="self" type="application/rss+xml"/><item><title>Controlling Window Blinds with Alexa</title><link>https://jemgunay.co.uk/p/controlling-window-blinds-with-alexa/</link><pubDate>Tue, 08 Sep 2020 00:00:00 +0000</pubDate><guid>https://jemgunay.co.uk/p/controlling-window-blinds-with-alexa/</guid><description>&lt;img src="https://jemgunay.co.uk/p/controlling-window-blinds-with-alexa/preview.png" alt="Featured image of post Controlling Window Blinds with Alexa" />&lt;p>See the GitHub repository &lt;a class="link" href="https://github.com/jemgunay/echo-blinds" target="_blank" rel="noopener"
+>here&lt;/a>.&lt;/p>
+&lt;p>I created an Amazon Alexa skill server in Golang for controlling window blinds. It works by receiving instructions from
+Alexa utterances via AWS, which in turn trigger motors controlled via a Raspberry Pi Zero&amp;rsquo;s GPIO pins. These motors then
+pull the window blinds cords to rotate and pull them open. The motors and blinds cords were mounted to a 3D printed
+chassis, of which the models were precisely designed in Blender.&lt;/p>
+&lt;p>&lt;img src="https://jemgunay.co.uk/p/controlling-window-blinds-with-alexa/frame.jpeg"
+width="2592"
+height="4608"
+srcset="https://jemgunay.co.uk/p/controlling-window-blinds-with-alexa/frame_hu210251372238286484.jpeg 480w, https://jemgunay.co.uk/p/controlling-window-blinds-with-alexa/frame_hu6367401925089421934.jpeg 1024w"
+loading="lazy"
+alt="Initial menu"
+class="gallery-image"
+data-flex-grow="56"
+data-flex-basis="135px"
+> &lt;img src="https://jemgunay.co.uk/p/controlling-window-blinds-with-alexa/frame2.jpeg"
+width="2592"
+height="4608"
+srcset="https://jemgunay.co.uk/p/controlling-window-blinds-with-alexa/frame2_hu4145761068815898416.jpeg 480w, https://jemgunay.co.uk/p/controlling-window-blinds-with-alexa/frame2_hu3317240559596597738.jpeg 1024w"
+loading="lazy"
+alt="Server hosting &amp; world creation menu"
+class="gallery-image"
+data-flex-grow="56"
+data-flex-basis="135px"
+>&lt;/p>
+&lt;div class="video-wrapper">
+&lt;iframe loading="lazy"
+src="https://www.youtube.com/embed/fgj6HONCQOs"
+allowfullscreen
+title="YouTube Video"
+>
+&lt;/iframe>
+&lt;/div></description></item><item><title>Bagel Turret: Remote Surveillance Turret (Part 2)</title><link>https://jemgunay.co.uk/p/bagel-turret-remote-surveillance-turret-part-2/</link><pubDate>Thu, 22 Sep 2016 23:05:44 +0000</pubDate><guid>https://jemgunay.co.uk/p/bagel-turret-remote-surveillance-turret-part-2/</guid><description>&lt;img src="https://jemgunay.co.uk/p/bagel-turret-remote-surveillance-turret-part-2/preview.png" alt="Featured image of post Bagel Turret: Remote Surveillance Turret (Part 2)" />&lt;p>Now that the framework for the turret movement was sorted, I moved onto the video streaming functionality. This was
+implemented by creating a web application using the Flask framework to serve the video stream one frame at a time to the
+user’s browser by reading an image from the Pi Camera and encoding it with appropriate headers before sending it as a
+response. When a user clicks a command button, a request is received by the server, and the desired action is carried
+out by the hardware manipulating Python classes such as stepping the servo to aim vertically, applying power to the
+motor to turn the turret horizontally or firing the gun. Basic access authentication is forced so that only users who
+have been provided with the username/password combination can access the turret’s stream.&lt;/p>
+&lt;p>In order to make connecting to the Raspberry Pi Flask server more straightforward, the Python script also sends a
+request to my external testing server which hosts a PHP script; this script logs the public IP address of the Pi and
+displays it to the user, allowing them to be able to access the turret’s stream (assuming the Pi is connected to a
+router which has its private IP port forwarded). Last but not least, the Bagel Turret wouldn’t be a Bagel Turret without
+a few bagels – the favicon is a tiny bagel and the web page for displaying the Raspberry Pi’s public IP address features
+a full size bagel just in case someone is uncertain about the purpose of the page.&lt;/p>
+&lt;p>&lt;img src="https://jemgunay.co.uk/p/bagel-turret-remote-surveillance-turret-part-2/frame1.jpg"
+width="1136"
+height="720"
+srcset="https://jemgunay.co.uk/p/bagel-turret-remote-surveillance-turret-part-2/frame1_hu15519298592468656800.jpg 480w, https://jemgunay.co.uk/p/bagel-turret-remote-surveillance-turret-part-2/frame1_hu9658912678116149645.jpg 1024w"
+loading="lazy"
+alt="Pure video stream without user input"
+class="gallery-image"
+data-flex-grow="157"
+data-flex-basis="378px"
+> &lt;img src="https://jemgunay.co.uk/p/bagel-turret-remote-surveillance-turret-part-2/frame2.jpg"
+width="1136"
+height="720"
+srcset="https://jemgunay.co.uk/p/bagel-turret-remote-surveillance-turret-part-2/frame2_hu9832342822964504137.jpg 480w, https://jemgunay.co.uk/p/bagel-turret-remote-surveillance-turret-part-2/frame2_hu13419397641547359220.jpg 1024w"
+loading="lazy"
+alt="Video stream with user input"
+class="gallery-image"
+data-flex-grow="157"
+data-flex-basis="378px"
+> &lt;img src="https://jemgunay.co.uk/p/bagel-turret-remote-surveillance-turret-part-2/frame3.jpg"
+width="1136"
+height="720"
+srcset="https://jemgunay.co.uk/p/bagel-turret-remote-surveillance-turret-part-2/frame3_hu10261164919792022978.jpg 480w, https://jemgunay.co.uk/p/bagel-turret-remote-surveillance-turret-part-2/frame3_hu11030818895759301664.jpg 1024w"
+loading="lazy"
+alt="External web page showing the Pi’s public IP address"
+class="gallery-image"
+data-flex-grow="157"
+data-flex-basis="378px"
+>&lt;/p>
+&lt;p>&lt;a class="link" href="https://github.com/jemgunay/bagel-turret" target="_blank" rel="noopener"
+>GitHub project repository&lt;/a>&lt;/p>
+&lt;p>&lt;a class="link" href="https://jemgunay.co.uk/p/bagel-turret-remote-surveillance-turret-part-1" >Click here to read part 1!&lt;/a>&lt;/p></description></item><item><title>Bagel Turret: Remote Surveillance Turret (Part 1)</title><link>https://jemgunay.co.uk/p/bagel-turret-remote-surveillance-turret-part-1/</link><pubDate>Thu, 22 Sep 2016 20:50:15 +0000</pubDate><guid>https://jemgunay.co.uk/p/bagel-turret-remote-surveillance-turret-part-1/</guid><description>&lt;img src="https://jemgunay.co.uk/p/bagel-turret-remote-surveillance-turret-part-1/preview.png" alt="Featured image of post Bagel Turret: Remote Surveillance Turret (Part 1)" />&lt;p>See the GitHub repository &lt;a class="link" href="https://github.com/jemgunay/bagel-turret" target="_blank" rel="noopener"
+>here&lt;/a>.&lt;/p>
+&lt;p>My flat mates and I were fooling around with some cheap BB guns and an fun idea dawned on me: to build an automatic
+surveillance turret! I wanted to develop a web interface for controlling the aiming and firing of the turret and could
+then apply computer vision technologies to detect and aim for specific targets to test the accuracy of the gun.&lt;/p>
+&lt;p>I dug out my old childhood &lt;a class="link" href="http://www.meccano.com" target="_blank" rel="noopener"
+>Meccano&lt;/a> set which would be used to construct a frame to mount the
+gun and electronics onto. I searched online for a cheap electric BB gun that would be easy to modify; I went with the
+automatic CYBER STRYKE X4 BB gun as it was cheap and had a semi-transparent housing, meaning I would be able to locate
+the electronics and firing mechanisms with ease. Having experimented with &lt;a class="link" href="http://opencv.org" target="_blank" rel="noopener"
+>OpenCV&lt;/a> on my old original
+Raspberry Pi, I soon realised that if I wanted to stream the turret’s view to a web interface in real time with minimum
+lag, as well as perform object classification/detection, I would have to invest in a Raspberry Pi 3 which has
+significantly more processing power. I already had a NOIR Pi Camera which I will use for now to stream the turret&amp;rsquo;s
+view - I may get a standard Pi Camera when I reach the computer vision implementation phase as the colourisation from
+the IR light may impact upon accuracy.&lt;/p>
+&lt;p>&lt;img src="https://jemgunay.co.uk/p/bagel-turret-remote-surveillance-turret-part-1/frame1.jpg"
+width="1136"
+height="720"
+srcset="https://jemgunay.co.uk/p/bagel-turret-remote-surveillance-turret-part-1/frame1_hu14943883050479881308.jpg 480w, https://jemgunay.co.uk/p/bagel-turret-remote-surveillance-turret-part-1/frame1_hu3427232530715679048.jpg 1024w"
+loading="lazy"
+alt="Original BB gun"
+class="gallery-image"
+data-flex-grow="157"
+data-flex-basis="378px"
+> &lt;img src="https://jemgunay.co.uk/p/bagel-turret-remote-surveillance-turret-part-1/frame2.jpg"
+width="1136"
+height="720"
+srcset="https://jemgunay.co.uk/p/bagel-turret-remote-surveillance-turret-part-1/frame2_hu5891564207614353582.jpg 480w, https://jemgunay.co.uk/p/bagel-turret-remote-surveillance-turret-part-1/frame2_hu18107498915043079096.jpg 1024w"
+loading="lazy"
+alt="Recently cut wood pieces for the base support"
+class="gallery-image"
+data-flex-grow="157"
+data-flex-basis="378px"
+> &lt;img src="https://jemgunay.co.uk/p/bagel-turret-remote-surveillance-turret-part-1/frame3.jpg"
+width="1136"
+height="720"
+srcset="https://jemgunay.co.uk/p/bagel-turret-remote-surveillance-turret-part-1/frame3_hu1046428587605751645.jpg 480w, https://jemgunay.co.uk/p/bagel-turret-remote-surveillance-turret-part-1/frame3_hu153433107724829722.jpg 1024w"
+loading="lazy"
+alt="Finished wood base support"
+class="gallery-image"
+data-flex-grow="157"
+data-flex-basis="378px"
+>&lt;/p>
+&lt;p>A cheap hobby motor was used to control the horizontal rotation and a servo was used to control the vertical aiming. I
+hacked together a couple of gears to reduce the load on the motor and glue-gunned a retractable arm to the servo and
+attached the other end to the gun, allowing the arm to extend and retract when the servo changes orientation. The servo
+was wired directly to the Pi&amp;rsquo;s 5V output, though the motor required more power; by using an L293D Motor Driver IC, I was
+able to supply power via a 9V battery to the motor whilst providing easier control over the motor&amp;rsquo;s direction of
+rotation. Short python classes were then written to interface with the motor and servo, making it easier for me to test
+how well they functioned under the weight of the gun. The servo struggled to sustain the weight of the gun so I trimmed
+off the extra aesthetic plastic housing and removed the battery storage section towards the back – this can be
+repositioned elsewhere on the turret frame reducing the load on the servo. Despite these modifications, sharp movements
+caused the unstable Meccano base to wobble; I decided to build a new bottom base out of wood to structure the rest of
+the Meccano frame onto.&lt;/p>
+&lt;p>&lt;img src="https://jemgunay.co.uk/p/bagel-turret-remote-surveillance-turret-part-1/frame4.jpg"
+width="1136"
+height="720"
+srcset="https://jemgunay.co.uk/p/bagel-turret-remote-surveillance-turret-part-1/frame4_hu1863856955815549440.jpg 480w, https://jemgunay.co.uk/p/bagel-turret-remote-surveillance-turret-part-1/frame4_hu15940367980352454228.jpg 1024w"
+loading="lazy"
+alt="Close up of turret BB gun with Raspberry Pi and PiCamera mounted"
+class="gallery-image"
+data-flex-grow="157"
+data-flex-basis="378px"
+> &lt;img src="https://jemgunay.co.uk/p/bagel-turret-remote-surveillance-turret-part-1/frame5.jpg"
+width="1136"
+height="720"
+srcset="https://jemgunay.co.uk/p/bagel-turret-remote-surveillance-turret-part-1/frame5_hu7145363529745108944.jpg 480w, https://jemgunay.co.uk/p/bagel-turret-remote-surveillance-turret-part-1/frame5_hu15636187973817497220.jpg 1024w"
+loading="lazy"
+alt="Motor mechanism for horizontal rotation"
+class="gallery-image"
+data-flex-grow="157"
+data-flex-basis="378px"
+> &lt;img src="https://jemgunay.co.uk/p/bagel-turret-remote-surveillance-turret-part-1/frame6.jpg"
+width="1136"
+height="720"
+srcset="https://jemgunay.co.uk/p/bagel-turret-remote-surveillance-turret-part-1/frame6_hu16452581732079321866.jpg 480w, https://jemgunay.co.uk/p/bagel-turret-remote-surveillance-turret-part-1/frame6_hu14348787629500977231.jpg 1024w"
+loading="lazy"
+alt="Servo mechanism for vertical rotation"
+class="gallery-image"
+data-flex-grow="157"
+data-flex-basis="378px"
+>&lt;/p>
+&lt;p>A further python script was then programmed to create a simple demo to show off the horizontal and vertical aiming
+capabilities - this can be seen in action below. The Python scripts for this project can be found on GitHub below.&lt;/p>
+&lt;p>&lt;img src="https://jemgunay.co.uk/p/bagel-turret-remote-surveillance-turret-part-1/frame7.jpg"
+width="1136"
+height="720"
+srcset="https://jemgunay.co.uk/p/bagel-turret-remote-surveillance-turret-part-1/frame7_hu216252765430017826.jpg 480w, https://jemgunay.co.uk/p/bagel-turret-remote-surveillance-turret-part-1/frame7_hu17790491105135308366.jpg 1024w"
+loading="lazy"
+alt="Side on view of turret"
+class="gallery-image"
+data-flex-grow="157"
+data-flex-basis="378px"
+> &lt;img src="https://jemgunay.co.uk/p/bagel-turret-remote-surveillance-turret-part-1/frame8.jpg"
+width="1136"
+height="720"
+srcset="https://jemgunay.co.uk/p/bagel-turret-remote-surveillance-turret-part-1/frame8_hu10387947804662451847.jpg 480w, https://jemgunay.co.uk/p/bagel-turret-remote-surveillance-turret-part-1/frame8_hu10044582923454436096.jpg 1024w"
+loading="lazy"
+alt="Servo mechanism for vertical rotation"
+class="gallery-image"
+data-flex-grow="157"
+data-flex-basis="378px"
+>&lt;/p>
+&lt;div class="video-wrapper">
+&lt;iframe loading="lazy"
+src="https://www.youtube.com/embed/ZvdLwr1eku8"
+allowfullscreen
+title="YouTube Video"
+>
+&lt;/iframe>
+&lt;/div>
+&lt;p>&lt;a class="link" href="https://jemgunay.co.uk/p/bagel-turret-remote-surveillance-turret-part-2" >Click here to read part 2!&lt;/a>&lt;/p></description></item><item><title>Ambient Lighting Photo Frame</title><link>https://jemgunay.co.uk/p/ambient-lighting-photo-frame/</link><pubDate>Mon, 19 Sep 2016 02:59:59 +0000</pubDate><guid>https://jemgunay.co.uk/p/ambient-lighting-photo-frame/</guid><description>&lt;img src="https://jemgunay.co.uk/p/ambient-lighting-photo-frame/preview.png" alt="Featured image of post Ambient Lighting Photo Frame" />&lt;p>I wanted to make a photo frame gift more interesting, so added an ambient lighting effect by attaching a
+small circuit to the back of the frame. Initially powered by an Arduino Uno, the C++ code controlling the timing of the
+RGB LEDs was recompiled for an ATtiny45 microcontroller (enabling AA battery power) to significantly reduced the
+project’s physical size, cost, and power consumption. The red, green, and blue LEDs can produce a smooth transition
+across most of the visible light spectrum with vibrant intensity which refracts nicely to illuminate the glass frame and
+backdrop.&lt;/p>
+&lt;p>&lt;img src="https://jemgunay.co.uk/p/ambient-lighting-photo-frame/frame.jpg"
+width="3264"
+height="1836"
+srcset="https://jemgunay.co.uk/p/ambient-lighting-photo-frame/frame_hu14606910164051644681.jpg 480w, https://jemgunay.co.uk/p/ambient-lighting-photo-frame/frame_hu10715920011948690449.jpg 1024w"
+loading="lazy"
+alt="The colour cycle"
+class="gallery-image"
+data-flex-grow="177"
+data-flex-basis="426px"
+> &lt;img src="https://jemgunay.co.uk/p/ambient-lighting-photo-frame/frame2.jpg"
+width="3264"
+height="1836"
+srcset="https://jemgunay.co.uk/p/ambient-lighting-photo-frame/frame2_hu10544709942967225568.jpg 480w, https://jemgunay.co.uk/p/ambient-lighting-photo-frame/frame2_hu3932855547178097760.jpg 1024w"
+loading="lazy"
+alt="Back of frame (blue)"
+class="gallery-image"
+data-flex-grow="177"
+data-flex-basis="426px"
+> &lt;img src="https://jemgunay.co.uk/p/ambient-lighting-photo-frame/frame3.jpg"
+width="3264"
+height="1836"
+srcset="https://jemgunay.co.uk/p/ambient-lighting-photo-frame/frame3_hu8195381554329540420.jpg 480w, https://jemgunay.co.uk/p/ambient-lighting-photo-frame/frame3_hu12814012635047113438.jpg 1024w"
+loading="lazy"
+alt="Back of frame (red/green)"
+class="gallery-image"
+data-flex-grow="177"
+data-flex-basis="426px"
+>&lt;/p>
+&lt;div class="video-wrapper">
+&lt;iframe loading="lazy"
+src="https://www.youtube.com/embed/4v7B8vSlyEk"
+allowfullscreen
+title="YouTube Video"
+>
+&lt;/iframe>
+&lt;/div></description></item></channel></rss>

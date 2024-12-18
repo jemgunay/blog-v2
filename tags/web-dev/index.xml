@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Web Dev on Jem Gunay</title><link>https://jemgunay.co.uk/tags/web-dev/</link><description>Recent content in Web Dev on Jem Gunay</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Tue, 26 Sep 2017 13:00:00 +0000</lastBuildDate><atom:link href="https://jemgunay.co.uk/tags/web-dev/index.xml" rel="self" type="application/rss+xml"/><item><title>liteboard Course Management System</title><link>https://jemgunay.co.uk/p/liteboard-course-management-system/</link><pubDate>Tue, 26 Sep 2017 13:00:00 +0000</pubDate><guid>https://jemgunay.co.uk/p/liteboard-course-management-system/</guid><description>&lt;img src="https://jemgunay.co.uk/p/liteboard-course-management-system/preview.png" alt="Featured image of post liteboard Course Management System" />&lt;p>See the GitHub repository &lt;a class="link" href="https://github.com/jemgunay/liteboard" target="_blank" rel="noopener"
+>here&lt;/a>.&lt;/p>
+&lt;p>&lt;strong>liteboard&lt;/strong> is a flexible, lightweight and open-source course management system developed for courses and schools which
+do not have access to alternative paid learning tools such as Blackboard or Moodle. The high school sixth form where my
+mum teaches at is an example of such a school, whose resources are limited to a local network shared documents system
+which offers little structure or clarity; in addition, students cannot access this system from home. &amp;rsquo;liteboard'
+overcomes these limitations and is currently being successfully trialled by the school&amp;rsquo;s sociology department.&lt;/p>
+&lt;p>The following features are supported:&lt;/p>
+&lt;ul>
+&lt;li>Categorised homepage alerts and news article posts for extended reading.&lt;/li>
+&lt;li>Year plan/calendar with multiple views (year/month/week/day).&lt;/li>
+&lt;li>Customisable nested folder functionality for organising uploaded files and written descriptions (including description
+formatting tools).&lt;/li>
+&lt;li>Login portal for &amp;lsquo;Student&amp;rsquo; and &amp;lsquo;Teacher&amp;rsquo; accounts; the latter offers administrator controls for creating and modifying
+content.&lt;/li>
+&lt;li>Account log in and download counters to provide a rough estimate of how many students are using the system.&lt;/li>
+&lt;li>Slick and responsive user interface design - information is displayed very cleanly on mobile (see below).&lt;/li>
+&lt;/ul>
+&lt;p>This comprehensive feature set allows teachers to organise their files and other course content in an organised fashion,
+facilitates the presentation of important dates and notes for students and fellow teachers and can be accessed any the
+majority of desktop, tablet and mobile devices at school or from home; for example, this is useful for students who have
+missed lessons due to illness, providing them with the means to catch up with missed lessons from home.&lt;/p>
+&lt;p>The project was developed in PHP with the &lt;a class="link" href="https://fatfreeframework.com" target="_blank" rel="noopener"
+>Fat-Free Framework (F3)&lt;/a> for the back end. HTML, CSS (with Bootstrap) and
+Javascript/jQuery were used for the front end functionality. The application files can be found on GitHub (link at the
+bottom) where installation instructions are provided.&lt;/p>
+&lt;p>Screenshots on desktop:&lt;/p>
+&lt;p>&lt;img src="https://jemgunay.co.uk/p/liteboard-course-management-system/frame.png"
+width="1920"
+height="952"
+srcset="https://jemgunay.co.uk/p/liteboard-course-management-system/frame_hu17349309641015120078.png 480w, https://jemgunay.co.uk/p/liteboard-course-management-system/frame_hu8865505292199707974.png 1024w"
+loading="lazy"
+alt="Log in screen"
+class="gallery-image"
+data-flex-grow="201"
+data-flex-basis="484px"
+> &lt;img src="https://jemgunay.co.uk/p/liteboard-course-management-system/frame2.png"
+width="1920"
+height="952"
+srcset="https://jemgunay.co.uk/p/liteboard-course-management-system/frame2_hu18303025857241693653.png 480w, https://jemgunay.co.uk/p/liteboard-course-management-system/frame2_hu7447687314822250536.png 1024w"
+loading="lazy"
+alt="Editing a description from the Teacher account"
+class="gallery-image"
+data-flex-grow="201"
+data-flex-basis="484px"
+>
+&lt;img src="https://jemgunay.co.uk/p/liteboard-course-management-system/frame3.png"
+width="1920"
+height="952"
+srcset="https://jemgunay.co.uk/p/liteboard-course-management-system/frame3_hu11805905592935585571.png 480w, https://jemgunay.co.uk/p/liteboard-course-management-system/frame3_hu15761717916657140607.png 1024w"
+loading="lazy"
+alt="Same folder as previous image but from the Student account view"
+class="gallery-image"
+data-flex-grow="201"
+data-flex-basis="484px"
+> &lt;img src="https://jemgunay.co.uk/p/liteboard-course-management-system/frame4.png"
+width="1919"
+height="950"
+srcset="https://jemgunay.co.uk/p/liteboard-course-management-system/frame4_hu1917903944417180241.png 480w, https://jemgunay.co.uk/p/liteboard-course-management-system/frame4_hu7377449418941651926.png 1024w"
+loading="lazy"
+alt="Alerts and News homepage from Student account view"
+class="gallery-image"
+data-flex-grow="202"
+data-flex-basis="484px"
+>&lt;/p>
+&lt;p>&lt;img src="https://jemgunay.co.uk/p/liteboard-course-management-system/frame5.png"
+width="1920"
+height="953"
+srcset="https://jemgunay.co.uk/p/liteboard-course-management-system/frame5_hu3444321646534642072.png 480w, https://jemgunay.co.uk/p/liteboard-course-management-system/frame5_hu14555228391079631386.png 1024w"
+loading="lazy"
+alt="Alerts and News homepage from Teacher account view"
+class="gallery-image"
+data-flex-grow="201"
+data-flex-basis="483px"
+> &lt;img src="https://jemgunay.co.uk/p/liteboard-course-management-system/frame6.png"
+width="1920"
+height="950"
+srcset="https://jemgunay.co.uk/p/liteboard-course-management-system/frame6_hu9942242098145017571.png 480w, https://jemgunay.co.uk/p/liteboard-course-management-system/frame6_hu12548304240784262644.png 1024w"
+loading="lazy"
+alt="Year Plan/Calendar page from Student account view"
+class="gallery-image"
+data-flex-grow="202"
+data-flex-basis="485px"
+> &lt;img src="https://jemgunay.co.uk/p/liteboard-course-management-system/frame7.png"
+width="1920"
+height="952"
+srcset="https://jemgunay.co.uk/p/liteboard-course-management-system/frame7_hu15601107983589485212.png 480w, https://jemgunay.co.uk/p/liteboard-course-management-system/frame7_hu4542553201725199676.png 1024w"
+loading="lazy"
+alt="Year Plan/Calendar page from Teacher account view"
+class="gallery-image"
+data-flex-grow="201"
+data-flex-basis="484px"
+>&lt;/p>
+&lt;p>Screenshots demonstrating the responsive design on mobile:&lt;/p>
+&lt;p>&lt;img src="https://jemgunay.co.uk/p/liteboard-course-management-system/frame8.png"
+width="540"
+height="960"
+srcset="https://jemgunay.co.uk/p/liteboard-course-management-system/frame8_hu7127533418181037438.png 480w, https://jemgunay.co.uk/p/liteboard-course-management-system/frame8_hu16213418415769652507.png 1024w"
+loading="lazy"
+alt="Alerts and News homepage on a mobile device"
+class="gallery-image"
+data-flex-grow="56"
+data-flex-basis="135px"
+> &lt;img src="https://jemgunay.co.uk/p/liteboard-course-management-system/frame9.png"
+width="540"
+height="960"
+srcset="https://jemgunay.co.uk/p/liteboard-course-management-system/frame9_hu14720795001966703262.png 480w, https://jemgunay.co.uk/p/liteboard-course-management-system/frame9_hu9391032419832530448.png 1024w"
+loading="lazy"
+alt="Collapsed side navigation menu on a mobile device"
+class="gallery-image"
+data-flex-grow="56"
+data-flex-basis="135px"
+>
+&lt;img src="https://jemgunay.co.uk/p/liteboard-course-management-system/frame10.png"
+width="787"
+height="565"
+srcset="https://jemgunay.co.uk/p/liteboard-course-management-system/frame10_hu5790468594994108585.png 480w, https://jemgunay.co.uk/p/liteboard-course-management-system/frame10_hu9087711157321060312.png 1024w"
+loading="lazy"
+alt="Files in a folder on a tablet device"
+class="gallery-image"
+data-flex-grow="139"
+data-flex-basis="334px"
+>&lt;/p></description></item><item><title>Bottle Classifier &amp; Cocktail Resolver</title><link>https://jemgunay.co.uk/p/bottle-classifier-cocktail-resolver/</link><pubDate>Tue, 26 Sep 2017 07:00:00 +0000</pubDate><guid>https://jemgunay.co.uk/p/bottle-classifier-cocktail-resolver/</guid><description>&lt;img src="https://jemgunay.co.uk/p/bottle-classifier-cocktail-resolver/preview.png" alt="Featured image of post Bottle Classifier &amp; Cocktail Resolver" />&lt;p>See the GitHub repository &lt;a class="link" href="https://github.com/jemgunay/bottle-classifier" target="_blank" rel="noopener"
+>here&lt;/a>.&lt;/p>
+&lt;p>For my university third year dissertation project, I developed a computer vision-orientated application for detecting
+and classifying bottles from a camera stream or image frame, as well as displaying appropriate cocktail recipes based on
+the classified bottles in an aesthetically pleasing web page.&lt;/p>
+&lt;p>This was achieved using trained &lt;strong>HAAR/LBP&lt;/strong> cascades (using the &lt;a class="link" href="https://opencv.org/" target="_blank" rel="noopener"
+>OpenCV&lt;/a> implementations) for
+detection and colour histograms generated from detected regions of interest to improve classification performance. The
+applications were written primarily in Python utilising a wide number of libraries (list can be seen on GitHub
+repository), though web languages were also used for rendering the resolved recipes. The tool currently classifies
+&lt;em>Smirnoff Vodka&lt;/em> and &lt;em>Jack Daniel&amp;rsquo;s&lt;/em> bottles, as well as &lt;em>Red Bull&lt;/em> cans, &lt;em>Monster Energy&lt;/em> cans and an &lt;em>orange juice
+carton&lt;/em>. MySQL was used to store the scraped cocktail recipes.&lt;/p>
+&lt;p>Several command line tools were developed which allow the flexible execution and maintenance of the tool:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Recipe Scraper&lt;/strong>: used to scrape a recipe by name or multiple recipes by ingredient name from a cocktail recipe
+website into the database.&lt;/li>
+&lt;li>&lt;strong>Histogram Generator&lt;/strong>: used to generate specially formatted histogram files which represent the colour spectrum of
+the target image.&lt;/li>
+&lt;li>&lt;strong>Main Application&lt;/strong>: used to perform classification of the target image frame or camera stream. Also used to resolve
+the cocktail recipes and to launch the web server for hosting the recipe view render.&lt;/li>
+&lt;/ul>
+&lt;p>Screenshots of the classification of bottles from a live webcam feed:&lt;/p>
+&lt;p>&lt;img src="https://jemgunay.co.uk/p/bottle-classifier-cocktail-resolver/frame.png"
+width="600"
+height="335"
+srcset="https://jemgunay.co.uk/p/bottle-classifier-cocktail-resolver/frame_hu10248343704155948762.png 480w, https://jemgunay.co.uk/p/bottle-classifier-cocktail-resolver/frame_hu13656433202197453811.png 1024w"
+loading="lazy"
+alt="Example bottle classifications"
+class="gallery-image"
+data-flex-grow="179"
+data-flex-basis="429px"
+> &lt;img src="https://jemgunay.co.uk/p/bottle-classifier-cocktail-resolver/frame2.png"
+width="600"
+height="335"
+srcset="https://jemgunay.co.uk/p/bottle-classifier-cocktail-resolver/frame2_hu178515798945724208.png 480w, https://jemgunay.co.uk/p/bottle-classifier-cocktail-resolver/frame2_hu1614399620244658469.png 1024w"
+loading="lazy"
+alt="Example bottle classifications"
+class="gallery-image"
+data-flex-grow="179"
+data-flex-basis="429px"
+> &lt;img src="https://jemgunay.co.uk/p/bottle-classifier-cocktail-resolver/frame3.png"
+width="600"
+height="335"
+srcset="https://jemgunay.co.uk/p/bottle-classifier-cocktail-resolver/frame3_hu3980620513148193226.png 480w, https://jemgunay.co.uk/p/bottle-classifier-cocktail-resolver/frame3_hu17499495236751693152.png 1024w"
+loading="lazy"
+alt="Example bottle classifications"
+class="gallery-image"
+data-flex-grow="179"
+data-flex-basis="429px"
+>
+&lt;img src="https://jemgunay.co.uk/p/bottle-classifier-cocktail-resolver/frame4.png"
+width="600"
+height="335"
+srcset="https://jemgunay.co.uk/p/bottle-classifier-cocktail-resolver/frame4_hu15298461472701831588.png 480w, https://jemgunay.co.uk/p/bottle-classifier-cocktail-resolver/frame4_hu2500999430482250618.png 1024w"
+loading="lazy"
+alt="Example bottle classifications"
+class="gallery-image"
+data-flex-grow="179"
+data-flex-basis="429px"
+> &lt;img src="https://jemgunay.co.uk/p/bottle-classifier-cocktail-resolver/frame5.png"
+width="600"
+height="335"
+srcset="https://jemgunay.co.uk/p/bottle-classifier-cocktail-resolver/frame5_hu4405106009666152611.png 480w, https://jemgunay.co.uk/p/bottle-classifier-cocktail-resolver/frame5_hu12224516837932263985.png 1024w"
+loading="lazy"
+alt="Example bottle classifications"
+class="gallery-image"
+data-flex-grow="179"
+data-flex-basis="429px"
+>&lt;/p>
+&lt;p>Screenshots of the cocktail recipe lists resolved from classified bottles:&lt;/p>
+&lt;p>&lt;img src="https://jemgunay.co.uk/p/bottle-classifier-cocktail-resolver/frame6.png"
+width="1855"
+height="1056"
+srcset="https://jemgunay.co.uk/p/bottle-classifier-cocktail-resolver/frame6_hu4074398409383853274.png 480w, https://jemgunay.co.uk/p/bottle-classifier-cocktail-resolver/frame6_hu18142607044239141400.png 1024w"
+loading="lazy"
+alt="Example resolved cocktail recipe view"
+class="gallery-image"
+data-flex-grow="175"
+data-flex-basis="421px"
+> &lt;img src="https://jemgunay.co.uk/p/bottle-classifier-cocktail-resolver/frame7.png"
+width="1855"
+height="1056"
+srcset="https://jemgunay.co.uk/p/bottle-classifier-cocktail-resolver/frame7_hu7325782387439536279.png 480w, https://jemgunay.co.uk/p/bottle-classifier-cocktail-resolver/frame7_hu5564769176583133468.png 1024w"
+loading="lazy"
+alt="Example resolved cocktail recipe view"
+class="gallery-image"
+data-flex-grow="175"
+data-flex-basis="421px"
+>&lt;/p></description></item><item><title>Protein Sequence Motif Search Tool</title><link>https://jemgunay.co.uk/p/protein-sequence-motif-search-tool/</link><pubDate>Tue, 10 Jan 2017 20:40:38 +0000</pubDate><guid>https://jemgunay.co.uk/p/protein-sequence-motif-search-tool/</guid><description>&lt;img src="https://jemgunay.co.uk/p/protein-sequence-motif-search-tool/preview.jpg" alt="Featured image of post Protein Sequence Motif Search Tool" />&lt;p>See the GitHub repository &lt;a class="link" href="https://github.com/jemgunay/amyloid-motif" target="_blank" rel="noopener"
+>here&lt;/a>.&lt;/p>
+&lt;p>I took a Bioinformatics module which explores the development of methods and software tools for understanding biological
+data. I was tasked with producing a tool that searches a protein sequence for any matched motifs, providing the position
+of each motif found. In particular, the tool had to detect regions of protein sequences which could form amyloid
+associations; these have been associated with neurodegenerative diseases such as Alzheimer’s disease and Parkinson’s
+disease.&lt;/p>
+&lt;p>User provided input can consist of either a UniProt Accessor Code or a FASTA-Formatted Protein Sequence and will result
+in the output of the UniProt Accessor Code, the FASTA-Formatted Protein Sequence, the Protein Name and the corresponding
+Sequence Motif Matches. The tool has two main functions; the ability to search a singular protein sequence for patterns
+and the ability to search through a batch of protein sequences by their UniProt Accessor Codes all at once. For both
+functions, there are example inputs and options to clear input and output. The search algorithm and input validations
+utilise regular expressions to search for relevant motifs and to prevent malformed user input from leading to
+undesirable results or performance.&lt;/p>
+&lt;p>&lt;img src="https://jemgunay.co.uk/p/protein-sequence-motif-search-tool/frame.jpg"
+width="1936"
+height="963"
+srcset="https://jemgunay.co.uk/p/protein-sequence-motif-search-tool/frame_hu13330965581162241797.jpg 480w, https://jemgunay.co.uk/p/protein-sequence-motif-search-tool/frame_hu5548170376156196203.jpg 1024w"
+loading="lazy"
+alt="Single Search feature with empty input fields"
+class="gallery-image"
+data-flex-grow="201"
+data-flex-basis="482px"
+> &lt;img src="https://jemgunay.co.uk/p/protein-sequence-motif-search-tool/frame2.jpg"
+width="1936"
+height="960"
+srcset="https://jemgunay.co.uk/p/protein-sequence-motif-search-tool/frame2_hu5696001005605418627.jpg 480w, https://jemgunay.co.uk/p/protein-sequence-motif-search-tool/frame2_hu1269626937886437555.jpg 1024w"
+loading="lazy"
+alt="Single Search feature performed using a UniProt Accession Code"
+class="gallery-image"
+data-flex-grow="201"
+data-flex-basis="484px"
+> &lt;img src="https://jemgunay.co.uk/p/protein-sequence-motif-search-tool/frame3.jpg"
+width="1936"
+height="960"
+srcset="https://jemgunay.co.uk/p/protein-sequence-motif-search-tool/frame3_hu2750159817865462067.jpg 480w, https://jemgunay.co.uk/p/protein-sequence-motif-search-tool/frame3_hu11707596099242268180.jpg 1024w"
+loading="lazy"
+alt="Single Search feature performed using a FASTA-formatted Protein Sequence"
+class="gallery-image"
+data-flex-grow="201"
+data-flex-basis="484px"
+>&lt;/p>
+&lt;p>The tool was developed using Python 2.7, as well as HTML5, CSS3 and JavaScript. The Bootstrap front-end framework was
+used to design the front-end of the system efficiently and the jQuery library was used to write more elegant dynamic
+code. It can run offline on local web servers which allow the execution of Python files via CGI (Common Gateway
+Interface) assuming sufficient permissions have been set.&lt;/p>
+&lt;p>&lt;img src="https://jemgunay.co.uk/p/protein-sequence-motif-search-tool/frame4.jpg"
+width="1936"
+height="963"
+srcset="https://jemgunay.co.uk/p/protein-sequence-motif-search-tool/frame4_hu3106927501350415952.jpg 480w, https://jemgunay.co.uk/p/protein-sequence-motif-search-tool/frame4_hu5538284721267806982.jpg 1024w"
+loading="lazy"
+alt="Batch Search feature performed using a UniProt Accession Code"
+class="gallery-image"
+data-flex-grow="201"
+data-flex-basis="482px"
+> &lt;img src="https://jemgunay.co.uk/p/protein-sequence-motif-search-tool/frame5.jpg"
+width="1936"
+height="963"
+srcset="https://jemgunay.co.uk/p/protein-sequence-motif-search-tool/frame5_hu6771232006673790943.jpg 480w, https://jemgunay.co.uk/p/protein-sequence-motif-search-tool/frame5_hu11016791870340466159.jpg 1024w"
+loading="lazy"
+alt="Batch Search results output"
+class="gallery-image"
+data-flex-grow="201"
+data-flex-basis="482px"
+>&lt;/p></description></item></channel></rss>

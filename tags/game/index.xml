@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Game on Jem Gunay</title><link>https://jemgunay.co.uk/tags/game/</link><description>Recent content in Game on Jem Gunay</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Thu, 10 Sep 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://jemgunay.co.uk/tags/game/index.xml" rel="self" type="application/rss+xml"/><item><title>Evolutionary Driving with Genetic Algorithms</title><link>https://jemgunay.co.uk/p/evolutionary-driving-with-genetic-algorithms/</link><pubDate>Thu, 10 Sep 2020 00:00:00 +0000</pubDate><guid>https://jemgunay.co.uk/p/evolutionary-driving-with-genetic-algorithms/</guid><description>&lt;img src="https://jemgunay.co.uk/p/evolutionary-driving-with-genetic-algorithms/preview.png" alt="Featured image of post Evolutionary Driving with Genetic Algorithms" />&lt;p>See the GitHub repository &lt;a class="link" href="https://github.com/jemgunay/evolutionary-driving" target="_blank" rel="noopener"
+>here&lt;/a>.&lt;/p>
+&lt;p>I&amp;rsquo;m a massive fan of the Box2D physics engine and have wielded it in a few languages as part of game and simulation
+projects. I spotted a &lt;a class="link" href="https://github.com/ByteArena/box2d" target="_blank" rel="noopener"
+>Go port&lt;/a> and wanted to somehow combine this with the Pixel 2D
+game library and
+decided &lt;a class="link" href="http://domasx2.github.io/gamejs-box2d-car-example/" target="_blank" rel="noopener"
+>this&lt;/a> top-down car demo written in JS with Box2D would be a
+fun base to start with. So, I went ahead and migrated it to Go with Pixel &amp;amp; Box2D, adding enhancements such as vehicle
+health and destruction.&lt;/p>
+&lt;p>I&amp;rsquo;d studied evolutionary algorithms at uni but had never actually implemented them. I decided to encode the car&amp;rsquo;s
+movements as a genetic sequence, and iteratively evolve the car&amp;rsquo;s performance in order to solve a basic problem. The car
+evolves to drive to and gracefully brake on a green target point. It uses roulette wheel selection combined with random
+cross-overs, swaps and mutations to produce the following generation. The fitness function is a combination of the
+distance from the target and the final velocity at the end of the sequence execution to encourage the car to precisely
+park on the target rather than speed over it.&lt;/p>
+&lt;p>The following video illustrates the improvement in fitness between evolutionary iterations. I&amp;rsquo;ve also included a
+surprising solution which evolved after hundreds of iterations, showing how machine learning and evolution in general
+can provide interesting and less obvious solutions&amp;hellip;&lt;/p>
+&lt;div class="video-wrapper">
+&lt;iframe loading="lazy"
+src="https://www.youtube.com/embed/F2pwEOJhNMs"
+allowfullscreen
+title="YouTube Video"
+>
+&lt;/iframe>
+&lt;/div></description></item><item><title>Multiplayer Procedural Game Demo</title><link>https://jemgunay.co.uk/p/multiplayer-procedural-game-demo/</link><pubDate>Mon, 07 Sep 2020 00:00:00 +0000</pubDate><guid>https://jemgunay.co.uk/p/multiplayer-procedural-game-demo/</guid><description>&lt;img src="https://jemgunay.co.uk/p/multiplayer-procedural-game-demo/preview.png" alt="Featured image of post Multiplayer Procedural Game Demo" />&lt;p>See the GitHub repository &lt;a class="link" href="https://github.com/jemgunay/procedural-game" target="_blank" rel="noopener"
+>here&lt;/a>.&lt;/p>
+&lt;p>I was keen to apply my Golang experience to the world of game development, of which I&amp;rsquo;d explored in several other
+languages. I came across the Pixel 2D game library and wanted to combine it with the powerful concurrency model and
+networking packages that Go provides out of the box. The result was a multiplayer procedural terrain game consisting of:&lt;/p>
+&lt;ul>
+&lt;li>A seedable procedural world generator implemented with Perlin noise. Worlds consist of grassy mainland, bodies of
+water, sandy beaches, and a dynamically generated road network.&lt;/li>
+&lt;li>Ability to host multiplayer worlds for other players to join over TCP.&lt;/li>
+&lt;li>A basic weapons inventory and ammo system, with the ability to shoot other players.&lt;/li>
+&lt;li>A flexible and responsive menu system with buttons, text inputs and scroll bars.&lt;/li>
+&lt;li>Water wave shaders.&lt;/li>
+&lt;/ul>
+&lt;p>&lt;img src="https://jemgunay.co.uk/p/multiplayer-procedural-game-demo/frame.png"
+width="1024"
+height="768"
+srcset="https://jemgunay.co.uk/p/multiplayer-procedural-game-demo/frame_hu5639500397985427788.png 480w, https://jemgunay.co.uk/p/multiplayer-procedural-game-demo/frame_hu6682959269037469107.png 1024w"
+loading="lazy"
+alt="Initial menu"
+class="gallery-image"
+data-flex-grow="133"
+data-flex-basis="320px"
+> &lt;img src="https://jemgunay.co.uk/p/multiplayer-procedural-game-demo/frame2.png"
+width="1024"
+height="768"
+srcset="https://jemgunay.co.uk/p/multiplayer-procedural-game-demo/frame2_hu3421977475257489033.png 480w, https://jemgunay.co.uk/p/multiplayer-procedural-game-demo/frame2_hu4334257161669706193.png 1024w"
+loading="lazy"
+alt="Server hosting &amp; world creation menu"
+class="gallery-image"
+data-flex-grow="133"
+data-flex-basis="320px"
+> &lt;img src="https://jemgunay.co.uk/p/multiplayer-procedural-game-demo/frame3.png"
+width="1024"
+height="768"
+srcset="https://jemgunay.co.uk/p/multiplayer-procedural-game-demo/frame3_hu7337649393219526808.png 480w, https://jemgunay.co.uk/p/multiplayer-procedural-game-demo/frame3_hu1110367419143654132.png 1024w"
+loading="lazy"
+alt="Join server menu"
+class="gallery-image"
+data-flex-grow="133"
+data-flex-basis="320px"
+>&lt;/p>
+&lt;p>&lt;img src="https://jemgunay.co.uk/p/multiplayer-procedural-game-demo/frame4.png"
+width="1024"
+height="768"
+srcset="https://jemgunay.co.uk/p/multiplayer-procedural-game-demo/frame4_hu5628761198531880146.png 480w, https://jemgunay.co.uk/p/multiplayer-procedural-game-demo/frame4_hu4485808468217058574.png 1024w"
+loading="lazy"
+alt="Gameplay with two players"
+class="gallery-image"
+data-flex-grow="133"
+data-flex-basis="320px"
+> &lt;img src="https://jemgunay.co.uk/p/multiplayer-procedural-game-demo/frame5.png"
+width="1024"
+height="768"
+srcset="https://jemgunay.co.uk/p/multiplayer-procedural-game-demo/frame5_hu7372387667261321701.png 480w, https://jemgunay.co.uk/p/multiplayer-procedural-game-demo/frame5_hu14790872490848086108.png 1024w"
+loading="lazy"
+alt="Zoomed out gameplay"
+class="gallery-image"
+data-flex-grow="133"
+data-flex-basis="320px"
+> &lt;img src="https://jemgunay.co.uk/p/multiplayer-procedural-game-demo/frame6.png"
+width="1024"
+height="768"
+srcset="https://jemgunay.co.uk/p/multiplayer-procedural-game-demo/frame6_hu3253068923764947848.png 480w, https://jemgunay.co.uk/p/multiplayer-procedural-game-demo/frame6_hu15429480442823764227.png 1024w"
+loading="lazy"
+alt="Pause menu"
+class="gallery-image"
+data-flex-grow="133"
+data-flex-basis="320px"
+>&lt;/p></description></item><item><title>C++ Mousey Maze Game</title><link>https://jemgunay.co.uk/p/mousey-maze-game/</link><pubDate>Tue, 10 Jan 2017 15:59:54 +0000</pubDate><guid>https://jemgunay.co.uk/p/mousey-maze-game/</guid><description>&lt;img src="https://jemgunay.co.uk/p/mousey-maze-game/preview.png" alt="Featured image of post C++ Mousey Maze Game" />&lt;p>This classical maze game was developed during my university games computing module. It is written in C++ and compiled
+under Linux with g++, utilising the Ogre3D graphical library for rendering the scene (with its shipped OIS library for
+handling mouse and keyboard input) and ODE for simulating the game physics. The objective of the game will be to
+navigate your mouse character around a hedge maze to capture all of the collectable rotating cheese segments in the
+shortest time possible, with the ability to replay the same level in order to beat your previous time record. There is a
+graphical display of the number of cheese segments collected, the current time elapsed since starting the level and the
+previous record time. The game can be downloaded below.&lt;/p>
+&lt;p>&lt;img src="https://jemgunay.co.uk/p/mousey-maze-game/frame.jpg"
+width="1920"
+height="1032"
+srcset="https://jemgunay.co.uk/p/mousey-maze-game/frame_hu9196175057613656587.jpg 480w, https://jemgunay.co.uk/p/mousey-maze-game/frame_hu493551639393671649.jpg 1024w"
+loading="lazy"
+alt="Initial game launch"
+class="gallery-image"
+data-flex-grow="186"
+data-flex-basis="446px"
+> &lt;img src="https://jemgunay.co.uk/p/mousey-maze-game/frame2.jpg"
+width="1920"
+height="1032"
+srcset="https://jemgunay.co.uk/p/mousey-maze-game/frame2_hu2272134211454246068.jpg 480w, https://jemgunay.co.uk/p/mousey-maze-game/frame2_hu11427264459533977298.jpg 1024w"
+loading="lazy"
+alt="Player character in top left corner of the maze"
+class="gallery-image"
+data-flex-grow="186"
+data-flex-basis="446px"
+>
+&lt;img src="https://jemgunay.co.uk/p/mousey-maze-game/frame3.jpg"
+width="1920"
+height="1032"
+srcset="https://jemgunay.co.uk/p/mousey-maze-game/frame3_hu11713865124943665399.jpg 480w, https://jemgunay.co.uk/p/mousey-maze-game/frame3_hu15321049467533215205.jpg 1024w"
+loading="lazy"
+alt="Winning screen"
+class="gallery-image"
+data-flex-grow="186"
+data-flex-basis="446px"
+> &lt;img src="https://jemgunay.co.uk/p/mousey-maze-game/frame4.jpg"
+width="1920"
+height="1032"
+srcset="https://jemgunay.co.uk/p/mousey-maze-game/frame4_hu13192209827238561144.jpg 480w, https://jemgunay.co.uk/p/mousey-maze-game/frame4_hu6960535771111806866.jpg 1024w"
+loading="lazy"
+alt="Hovering the mouse over the replay button"
+class="gallery-image"
+data-flex-grow="186"
+data-flex-basis="446px"
+>&lt;/p>
+&lt;p>The mouse was textured in &lt;a class="link" href="https://www.blender.org/" target="_blank" rel="noopener"
+>Blender&lt;/a> by unwrapping a sphere mesh and UV mapping a minimalistic
+mouse texture created in Photoshop to it. The Blender
+plug-in &lt;a class="link" href="https://bitbucket.org/iboshkov/blender2ogre" target="_blank" rel="noopener"
+>Blender RealXtend Tundra&lt;/a> was then used to export the Blender mesh
+with UV co-ordinate data and
+the &lt;a class="link" href="https://sourceforge.net/projects/ogre/files/ogre-tools/1.7.2/OgreCommandLineTools_1.7.2.zip" target="_blank" rel="noopener"
+>OgreCommandLineTools 1.7.2&lt;/a>
+set of scripts was used convert this into a &lt;code>.mesh&lt;/code> file to be rendered by the Ogre3D engine. Blender was also used to
+model and texture the cheese segment asset. I created an interpreter to parse game level creating instructions from a
+text file in order to make creating new levels more efficient without having to recompile the game each time. It ignores
+new lines and comment lines prefixed with a hash character; this improves readability by making it easy to group and
+label sections of wall creation instructions together. This project encouraged me to learn how to utilise Makefiles in
+order more efficiently build C++ programs.&lt;/p>
+&lt;p>&lt;img src="https://jemgunay.co.uk/p/mousey-maze-game/frame5.jpg"
+width="1936"
+height="1056"
+srcset="https://jemgunay.co.uk/p/mousey-maze-game/frame5_hu12004561549543409014.jpg 480w, https://jemgunay.co.uk/p/mousey-maze-game/frame5_hu6836510551829878449.jpg 1024w"
+loading="lazy"
+alt="Mouse texture in Photoshop"
+class="gallery-image"
+data-flex-grow="183"
+data-flex-basis="440px"
+> &lt;img src="https://jemgunay.co.uk/p/mousey-maze-game/frame6.jpg"
+width="1936"
+height="1056"
+srcset="https://jemgunay.co.uk/p/mousey-maze-game/frame6_hu351976017321011850.jpg 480w, https://jemgunay.co.uk/p/mousey-maze-game/frame6_hu14719848828558003773.jpg 1024w"
+loading="lazy"
+alt="Cheese texture UV mapped to the cheese segment mesh in Blender"
+class="gallery-image"
+data-flex-grow="183"
+data-flex-basis="440px"
+>&lt;/p>
+&lt;ul>
+&lt;li>Execute &lt;code>MazeGame&lt;/code> to launch the game.&lt;/li>
+&lt;li>WASD or arrow keys to roll the mouse.&lt;/li>
+&lt;li>Escape key to exit the game.&lt;/li>
+&lt;li>Built on Ubuntu 14.04. Dependencies: Ogre3D 1.9&lt;/li>
+&lt;/ul>
+&lt;p>TODO: Click to download&lt;/p></description></item><item><title>Flash Tables Craft Children's Game</title><link>https://jemgunay.co.uk/p/flash-tables-craft-childrens-game/</link><pubDate>Sun, 18 Sep 2016 21:51:56 +0000</pubDate><guid>https://jemgunay.co.uk/p/flash-tables-craft-childrens-game/</guid><description>&lt;img src="https://jemgunay.co.uk/p/flash-tables-craft-childrens-game/preview.png" alt="Featured image of post Flash Tables Craft Children's Game" />&lt;p>My little brother and sister (aged 7 and 8 at the time) wanted a more motivational way to practice their times tables
+for their school homework. They are obsessed with the popular game Minecraft, so I combined the two!&lt;/p>
+&lt;ul>
+&lt;li>Options to select multiple tables to practice with randomised question order.&lt;/li>
+&lt;li>Optional timer to speed up the pace of a game.&lt;/li>
+&lt;li>Summary at the end with correctly and incorrectly answered questions with their solutions.&lt;/li>
+&lt;li>Characters from the game pop in and out at random areas and timings around the screen, with sounds and textures from
+the game recycled throughout.&lt;/li>
+&lt;/ul>
+&lt;p>TODO: Add SWF screenshots here.
+TODO: Add SWF download.&lt;/p></description></item><item><title>Flash Multiplayer Dwarf Game</title><link>https://jemgunay.co.uk/p/flash-multiplayer-dwarf-game/</link><pubDate>Sun, 18 Sep 2016 20:03:23 +0000</pubDate><guid>https://jemgunay.co.uk/p/flash-multiplayer-dwarf-game/</guid><description>&lt;img src="https://jemgunay.co.uk/p/flash-multiplayer-dwarf-game/preview.png" alt="Featured image of post Flash Multiplayer Dwarf Game" />&lt;p>This is one of the first large projects I worked on when starting out with AS3. I worked on this with two friends; I
+wrote the code, Matty created the majority of the graphics and Reuben provided ideas and tested the game. I wanted to
+read into multiplayer game development so took a look at &lt;a class="link" href="https://playerio.com" target="_blank" rel="noopener"
+>Player.IO&lt;/a>. By writing AS3 client side
+code and C# server side code tests, I implemented the API with a basic blocky terrain generation algorithm I had been
+working on to create a basic multiplayer base. We then decided to expand on this by creating a Minecraft/Terraria
+inspired side-scroller with dwarves who explore and destroy the terrain.&lt;/p>
+&lt;p>Although basic and occasionally buggy, it has a great deal of character and I&amp;rsquo;m proud to call it a first major completed
+project.&lt;/p>
+&lt;ul>
+&lt;li>Enter your name and select one of the two dwarf characters to join the game.&lt;/li>
+&lt;li>Normal biomes have mushrooms and exploding pumpkins. Snowy biomes have a destructible snowman.&lt;/li>
+&lt;li>WASD or ARROWS to move, CTRL + Left Click to remove block (temperamental), type &lt;code>/help&lt;/code> in chat for commands. Enter
+to send a message in chat.&lt;/li>
+&lt;/ul>
+&lt;p>TODO: Add SWF screenshots here.
+TODO: Add SWF download.&lt;/p></description></item></channel></rss>
