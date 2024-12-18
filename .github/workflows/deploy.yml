@@ -49,8 +49,6 @@ jobs:
 #                  folder: public
 #                  clean: true
 #                  single-commit: true
-              uses: actions/checkout@v4
-              run: make build
               uses: FirebaseExtended/action-hosting-deploy@v0
               with:
                 repoToken: ${{ secrets.GITHUB_TOKEN }}
