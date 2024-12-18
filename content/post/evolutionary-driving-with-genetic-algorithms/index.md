@@ -3,7 +3,7 @@ title: Evolutionary Driving with Genetic Algorithms
 description:
 slug: evolutionary-driving-with-genetic-algorithms
 date: 2020-09-10 00:00:00
-#image: cover.jpg
+image: preview.png
 #categories:
 #  - Example Category
 tags:

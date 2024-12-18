@@ -3,7 +3,7 @@ title: "C++ Mousey Maze Game"
 description:
 slug: mousey-maze-game
 date: 2017-01-10 15:59:54
-#image: cover.jpg
+image: preview.png
 #categories:
 #  - Example Category
 tags:

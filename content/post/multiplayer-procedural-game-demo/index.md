@@ -3,7 +3,7 @@ title: Multiplayer Procedural Game Demo
 description:
 slug: multiplayer-procedural-game-demo
 date: 2020-09-07 00:00:00
-#image: cover.jpg
+image: preview.png
 #categories:
 #  - Example Category
 tags:

@@ -3,7 +3,7 @@ title: Trippy Recursive Circles in Processing
 description:
 slug: trippy-recursive-circles-in-processing
 date: 2016-09-19 03:19:37
-#image: cover.jpg
+image: preview.png
 #categories:
 #  - Example Category
 tags:

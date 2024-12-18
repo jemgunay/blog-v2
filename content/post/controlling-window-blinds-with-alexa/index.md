@@ -3,7 +3,7 @@ title: Controlling Window Blinds with Alexa
 description:
 slug: controlling-window-blinds-with-alexa
 date: 2020-09-08 00:00:00
-#image: cover.jpg
+image: preview.png
 #categories:
 #  - Example Category
 tags:

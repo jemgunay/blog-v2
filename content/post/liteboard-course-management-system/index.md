@@ -3,7 +3,7 @@ title: "liteboard Course Management System"
 description:
 slug: liteboard-course-management-system
 date: 2017-09-26 13:00:00
-#image: cover.jpg
+image: preview.png
 #categories:
 #  - Example Category
 tags:

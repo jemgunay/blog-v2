@@ -3,7 +3,7 @@ title: Ambient Lighting Photo Frame
 description:
 slug: ambient-lighting-photo-frame
 date: 2016-09-19 02:59:59
-#image: cover.jpg
+image: preview.png
 #categories:
 #  - Example Category
 tags:

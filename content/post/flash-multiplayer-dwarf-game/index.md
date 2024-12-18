@@ -3,7 +3,7 @@ title: Flash Multiplayer Dwarf Game
 description:
 slug: flash-multiplayer-dwarf-game
 date: 2016-09-18 20:03:23
-#image: cover.jpg
+image: preview.png
 #categories:
 #  - Example Category
 tags:
