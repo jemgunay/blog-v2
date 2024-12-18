@@ -8,7 +8,7 @@ clean:
 
 .PHONY: build
 build: clean
-	hugo
+	hugo --minify
 
 .PHONY: deploy
 deploy: build
