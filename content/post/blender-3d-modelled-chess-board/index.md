@@ -3,7 +3,7 @@ title: Blender 3D Modelled Chess Board
 description:
 slug: blender-3d-modelled-chess-board
 date: 2016-09-19 04:35:45
-#image: cover.jpg
+image: preview.png
 #categories:
 #  - Example Category
 tags:

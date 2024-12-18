@@ -3,13 +3,12 @@ title: "C++ Orbital Simulation (Part 2)"
 description:
 slug: orbital-simulation-part-2
 date: 2017-09-26 00:00:00
-#image: cover.jpg
+image: preview.jpg
 #categories:
 #  - Example Category
 tags:
   - "C++"
   - Simulation
-  - Game
 weight: 1
 ---
 

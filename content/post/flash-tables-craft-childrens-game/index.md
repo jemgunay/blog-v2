@@ -3,7 +3,7 @@ title: Flash Tables Craft Children's Game
 description:
 slug: flash-tables-craft-childrens-game
 date: 2016-09-18 21:51:56
-#image: cover.jpg
+image: preview.png
 #categories:
 #  - Example Category
 tags:

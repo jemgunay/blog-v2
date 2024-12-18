@@ -1,10 +1,10 @@
 ---
 title: Links
 links:
-  - title: Spotify Unwrapped
-    description: My app for visualising Spotify playlists.
-    website: https://spotify-unwrapped.jemgunay.co.uk
-    image: /spotify-unwrapped/images/favicon.ico
+  - title: Projects Instagram
+    description: A showcase of my favourite 3D printing projects!
+    website: https://www.instagram.com/tinker_turk/
+    image: instagram_preview.png
 menu:
   main:
     weight: 3

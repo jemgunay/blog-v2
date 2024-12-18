@@ -3,7 +3,7 @@ title: Bottle Classifier & Cocktail Resolver
 description:
 slug: bottle-classifier-cocktail-resolver
 date: 2017-09-26 07:00:00
-#image: cover.png
+image: preview.png
 #categories:
 #  - Example Category
 tags:

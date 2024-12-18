@@ -3,7 +3,7 @@ title: "Bagel Turret: Remote Surveillance Turret (Part 2)"
 description:
 slug: bagel-turret-remote-surveillance-turret-part-2
 date: 2016-09-22 23:05:44
-#image: cover.jpg
+image: preview.png
 #categories:
 #  - Example Category
 tags:
