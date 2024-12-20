@@ -17,13 +17,16 @@ Official theme docs [here](https://stack.jimmycai.com/guide/).
 ## TODO
 
 - migrate blog posts
+    - general pass over blog content & rewrite
     - https://ruffle.rs/ - test browser extension
-    - dwarf game
-        - fix swf download
-        - add pics if possible?
-    - tables craft
+    - dwarf game & tables craft
         - fix swf download
         - add pics if possible?
     - mousey maze exe download
-- general pass over blog content & rewrite/flesh out
+- new blog posts
+  - spotify unwrapped
+  - zombie survival
+  - life-metrics & canlendar graph
+  - torpedo?
+  - vault bubbletea CLI
 - file downloads

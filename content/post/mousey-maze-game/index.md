@@ -9,6 +9,7 @@ image: preview.png
 tags:
   - "C++"
   - Game
+  - Blender
 weight: 1
 ---
 

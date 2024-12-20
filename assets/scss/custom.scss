@@ -8,3 +8,32 @@
 .left-sidebar  {
     --sidebar-avatar-size: 190px;
 }
+
+
+.article-list .article-header,
+.menu-social a,
+.tagCloud-tags a,
+.menu-bottom-section,
+#main-menu li,
+.site-name,
+.related-content article,
+.article-list--compact.links article,
+.article-list--compact.search-result--list article
+{
+    transition: 0.3s;
+    opacity: 1;
+}
+
+.article-list .article-header:hover,
+.menu-social a:hover,
+.tagCloud-tags a:hover,
+.menu-bottom-section:hover,
+#main-menu li:hover,
+.site-name:hover,
+.related-content article:hover,
+.article-list--compact.links article:hover,
+.article-list--compact.search-result--list article:hover
+{
+    transition: 0.3s;
+    opacity: 0.7;
+}
